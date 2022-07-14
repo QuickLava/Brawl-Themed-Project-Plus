@@ -1,0 +1,2 @@
+Rotate -11.65
+Scale height to 450
