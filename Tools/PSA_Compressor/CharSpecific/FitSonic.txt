@@ -1,0 +1,799 @@
+﻿DataSize0x9C
+07C Par00 18
+080 Par01 20
+084 Par02 8
+088 Par03 C
+08C Par04 4
+090 Par05 1
+094 Art0
+098 Art1
+
+Art0
+4-2
+034 Par00-0 C
+
+Art1
+4-A
+030 Par01D3 1E
+034 Par01-0 C
+038 Par01-1 68
+040 Par01-3 6
+X02 26-13x
+
+Par00
+Homing Attack (paramSpecialN__11ftSonicNode)
+
+0x0 Grounded Initial V Momentum
+Grounded initial Vertical momentum on startup
+
+0x4 Aerial Initial V Momentum
+Aerial initial Vertical momentum on startup
+
+0x8 Momentum Preservation
+Momentum preservation (Set to 2, it will multiply current momentum by 2. Set to 0.5, current momentum will be halved.)
+
+*0xC Min Hold Frame
+Minimum hold frame on startup
+
+*0x10 Max Hold Frame
+Maximum hold frame on startup
+
+0x14
+Related to curve. Lower number = smaller curves
+
+0x18
+Homing Intensity. Lower number = better homing.
+
+0x1C
+Homing Dash Speed (Higher number = travel slower, and cancel before you reach your target if too high.)
+
+0x20
+Homing Dash Acceleration?
+
+0x24
+Homing Dash Deceleration?
+
+0x28
+ ??
+
+*0x2C
+Homing Dash Duration?
+
+0x30 Bounce H Momentum
+Floor-bounce horazontal momentum (Hit wall = backward)
+
+0x34 Bounce V Momentum 1
+Floor-bounce vertical momentum (Hit wall = downward)
+
+0x38 Bounce V Momentum 2
+Floor-bounce vertical momentum (Hit wall = rise)
+
+0x3C Recoil Mobility
+Person-bounce aerial mobility
+
+0x40 Recoil V Momentum
+Person-bounce vertical momentum
+
+0x44 Recoil Gravity
+Person-bounce Gravity
+
+*0x48
+Person-bounce Height related
+
+0x4C No-Homing Angle
+No-homing dash angle (Degrees)
+
+0x50 No-Homing Speed
+No-homing dash speed
+
+*0x54 No-Homing Duration 1
+No-homing dash duration (deceleration start timing)
+
+0x58 No-Homing Deceleration
+No-homing dash deceleration
+
+*0x5C No-Homing Duration 2
+No-homing dash duration (deceleration start-end)
+
+Par01
+Spin Dash (paramSpecialS__11ftSonicNode)
+
+*0x0 Min Charge Frame
+Minimum charge frame
+
+*0x4
+If 0x0 is larger than 0x4, can't dash
+
+0x8
+Momentum during charge on ground
+
+0xC
+Base speed
+
+0x10
+Speed growth rate
+
+0x14
+Angle of jump?
+
+0x18
+ ?? (read on jump)
+
+0x1C
+Height of initial dash jump (Not affect jump without dash)
+
+0x20
+Friction?
+
+0x24
+ ?? (read on jump, affects angle)
+
+0x28
+Speed
+
+0x2C
+ ?? (read on jump, affects angle)
+
+*0x30
+How long you can move around (frames)
+
+0x34
+Aerial horizontal acceleration
+
+0x38
+ ?? (read on jump)
+
+0x3C
+ ?? (read on jump)
+
+0x40
+ ?? (read on turn/land on ground)
+
+0x44
+Damage multiplier after hitting ground
+
+0x48
+Damage multiplier before hitting ground
+
+0x4C
+Skidding friction
+
+0x50
+Skidding friction?
+
+0x54
+No Description Available.
+
+0x58
+No Description Available.
+
+0x5C
+No Description Available.
+
+0x60
+No Description Available.
+
+0x64
+No Description Available.
+
+0x68
+No Description Available.
+
+*0x6C
+No Description Available.
+
+0x70
+No Description Available.
+
+0x74
+No Description Available.
+
+0x78
+No Description Available.
+
+0x7C
+No Description Available.
+
+Par02
+Spring Jump (paramSpecialHi__11ftSonicNode)
+
+0x0 Jump Startup Time
+How much time before you jump (negative will make spring invisible)
+
+0x4
+ ??
+
+0x8 Ground V Momentum
+Grounded jump height
+
+0xC Air V Momentum
+Aerial Jump height ratio (relative to ground version)
+
+0x10 Gravity
+Gravity
+
+0x14
+Gravity?
+
+0x18
+Maximum horizontal drift speed during fall after spring?
+
+0x1C
+Drift control during fall after spring?
+
+Par03
+Spin Charge (paramSpecialLw__11ftSonicNode)
+
+0x0
+Required interval to button tap
+
+0x4
+Deceleration
+
+0x8
+Charge Speed (higher =slow)
+
+0xC
+No Description Available.
+
+0x10
+Animation Speed on charging
+
+0x14
+No Description Available.
+
+0x18
+No Description Available.
+
+0x1C
+No Description Available.
+
+*0x20
+No Description Available.
+
+0x24
+No Description Available.
+
+0x28
+No Description Available.
+
+*0x2C
+No Description Available.
+
+Par04
+paramSpinJump__11ftSonicNode
+
+0x0
+No Description Available.
+
+0x4
+No Description Available.
+
+0x8
+No Description Available.
+
+0xC
+No Description Available.
+
+Par05
+paramDash__11ftSonicNode
+
+0x0
+No Description Available.
+
+Par00-0
+Spring Attribute
+
+0x0
+Unknown
+
+0x4 X Offset
+Sonic X Offset
+
+0x8 Y Offset
+Sonic Y Offset
+
+0xC Duration (Ground)
+Grounded spring duration (Frames)
+
+0x10 V Momentum (Air)
+Aerial spring initial vertical momentum
+
+0x14 Gravity
+Gravity
+
+0x18
+Unknown
+
+0x1C
+ ??
+
+0x20 Spinning
+Aerial spring max spin speed
+
+0x24 Bounce Momentum
+Aerial spring bounced momentum
+
+0x28 Bounce Spinning
+Aerial spring spin speed when bounced
+
+*0x2C
+No Description Available.
+
+Par01D3
+Data3
+
+*0x0
+No Description Available.
+
+*0x4
+No Description Available.
+
+*0x8
+No Description Available.
+
+*0xC
+No Description Available.
+
+*0x10
+No Description Available.
+
+*0x14
+No Description Available.
+
+*0x18
+No Description Available.
+
+*0x1C
+No Description Available.
+
+*0x20
+No Description Available.
+
+*0x24
+No Description Available.
+
+*0x28
+No Description Available.
+
+*0x2C
+No Description Available.
+
+*0x30
+No Description Available.
+
+*0x34
+No Description Available.
+
+*0x38
+No Description Available.
+
+*0x3C
+No Description Available.
+
+*0x40
+No Description Available.
+
+*0x44
+No Description Available.
+
+*0x48
+No Description Available.
+
+*0x4C
+No Description Available.
+
+*0x50
+No Description Available.
+
+*0x54
+No Description Available.
+
+*0x58
+No Description Available.
+
+*0x5C
+No Description Available.
+
+*0x60
+No Description Available.
+
+*0x64
+No Description Available.
+
+*0x68
+No Description Available.
+
+*0x6C
+No Description Available.
+
+*0x70
+No Description Available.
+
+*0x74
+No Description Available.
+
+Par01-0
+Super Sonic Attribute
+
+0x0 H acceleration
+Horizontal Acceleration
+
+0x4 Max H Speed
+Max horizontal speed
+
+0x8 V acceleration
+Vertical Acceleration
+
+0xC Max V Speed
+Max vertical speed
+
+0x10 Sensitivity
+Joystick sensitivity. If over 1, can't move.
+
+0x14 Deceleration
+Deceleration
+
+0x18
+Relate to turn
+
+0x1C Fall Speed
+Fall Speed
+
+0x20
+No Description Available.
+
+0x24
+No Description Available.
+
+*0x28 Flashing Time
+The time when the character starts flashing, counting from the start time (frames)
+
+*0x2C FS Duration
+FS Duration
+
+Par01-1
+HitDataList
+
+HitData0-0
+No Description Available.
+
+HitData0-1
+No Description Available.
+
+HitData0-2
+No Description Available.
+
+HitData0-3
+No Description Available.
+
+HitData0-4
+No Description Available.
+
+HitData0-5
+No Description Available.
+
+HitData0-6
+No Description Available.
+
+Flags(HitData0-7)
+No Description Available.
+
+HitData1-0
+No Description Available.
+
+HitData1-1
+No Description Available.
+
+HitData1-2
+No Description Available.
+
+HitData1-3
+No Description Available.
+
+HitData1-4
+No Description Available.
+
+HitData1-5
+No Description Available.
+
+HitData1-6
+No Description Available.
+
+Flags(HitData1-7)
+No Description Available.
+
+HitData2-0
+No Description Available.
+
+HitData2-1
+No Description Available.
+
+HitData2-2
+No Description Available.
+
+HitData2-3
+No Description Available.
+
+HitData2-4
+No Description Available.
+
+HitData2-5
+No Description Available.
+
+HitData2-6
+No Description Available.
+
+Flags(HitData2-7)
+No Description Available.
+
+HitData3-0
+No Description Available.
+
+HitData3-1
+No Description Available.
+
+HitData3-2
+No Description Available.
+
+HitData3-3
+No Description Available.
+
+HitData3-4
+No Description Available.
+
+HitData3-5
+No Description Available.
+
+HitData3-6
+No Description Available.
+
+Flags(HitData3-7)
+No Description Available.
+
+HitData4-0
+No Description Available.
+
+HitData4-1
+No Description Available.
+
+HitData4-2
+No Description Available.
+
+HitData4-3
+No Description Available.
+
+HitData4-4
+No Description Available.
+
+HitData4-5
+No Description Available.
+
+HitData4-6
+No Description Available.
+
+Flags(HitData4-7)
+No Description Available.
+
+HitData5-0
+No Description Available.
+
+HitData5-1
+No Description Available.
+
+HitData5-2
+No Description Available.
+
+HitData5-3
+No Description Available.
+
+HitData5-4
+No Description Available.
+
+HitData5-5
+No Description Available.
+
+HitData5-6
+No Description Available.
+
+Flags(HitData5-7)
+No Description Available.
+
+HitData6-0
+No Description Available.
+
+HitData6-1
+No Description Available.
+
+HitData6-2
+No Description Available.
+
+HitData6-3
+No Description Available.
+
+HitData6-4
+No Description Available.
+
+HitData6-5
+No Description Available.
+
+HitData6-6
+No Description Available.
+
+Flags(HitData6-7)
+No Description Available.
+
+HitData7-0
+No Description Available.
+
+HitData7-1
+No Description Available.
+
+HitData7-2
+No Description Available.
+
+HitData7-3
+No Description Available.
+
+HitData7-4
+No Description Available.
+
+HitData7-5
+No Description Available.
+
+HitData7-6
+No Description Available.
+
+Flags(HitData7-7)
+No Description Available.
+
+HitData8-0
+No Description Available.
+
+HitData8-1
+No Description Available.
+
+HitData8-2
+No Description Available.
+
+HitData8-3
+No Description Available.
+
+HitData8-4
+No Description Available.
+
+HitData8-5
+No Description Available.
+
+HitData8-6
+No Description Available.
+
+Flags(HitData8-7)
+No Description Available.
+
+HitData9-0
+No Description Available.
+
+HitData9-1
+No Description Available.
+
+HitData9-2
+No Description Available.
+
+HitData9-3
+No Description Available.
+
+HitData9-4
+No Description Available.
+
+HitData9-5
+No Description Available.
+
+HitData9-6
+No Description Available.
+
+Flags(HitData9-7)
+No Description Available.
+
+HitData10-0
+No Description Available.
+
+HitData10-1
+No Description Available.
+
+HitData10-2
+No Description Available.
+
+HitData10-3
+No Description Available.
+
+HitData10-4
+No Description Available.
+
+HitData10-5
+No Description Available.
+
+HitData10-6
+No Description Available.
+
+Flags(HitData10-7)
+No Description Available.
+
+HitData11-0
+No Description Available.
+
+HitData11-1
+No Description Available.
+
+HitData11-2
+No Description Available.
+
+HitData11-3
+No Description Available.
+
+HitData11-4
+No Description Available.
+
+HitData11-5
+No Description Available.
+
+HitData11-6
+No Description Available.
+
+Flags(HitData11-7)
+No Description Available.
+
+HitData12-0
+No Description Available.
+
+HitData12-1
+No Description Available.
+
+HitData12-2
+No Description Available.
+
+HitData12-3
+No Description Available.
+
+HitData12-4
+No Description Available.
+
+HitData12-5
+No Description Available.
+
+HitData12-6
+No Description Available.
+
+Flags(HitData12-7)
+No Description Available.
+
+Par01-3
+ExtraParams3
+
+0x0
+No Description Available.
+
+0x4
+No Description Available.
+
+0x8
+No Description Available.
+
+0xC
+No Description Available.
+
+0x10
+No Description Available.
+
+*0x14
+No Description Available.
+
+EXD 26-13x
+Flash Overlay Effect
+
+Offset(Event)
+Event Data(Flash Overlay Effect)
+
+Flags
+No Description Available.
+

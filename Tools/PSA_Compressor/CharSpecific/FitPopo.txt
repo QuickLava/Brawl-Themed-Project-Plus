@@ -1,0 +1,519 @@
+﻿DataSize0xC4
+08C Par00 4
+090 Par01 4
+094 Par02 16
+098 Par03 16
+09C Par04 A
+0A0 Par05 1
+0AC Art0
+0B0 Art1
+0B4 Art2
+0B8 Art3
+0BC Art4
+0C0 Par13 4
+XNS 29xNana Sound Lists
+
+Art0
+1-1
+034 Par00-0 4
+
+Art1
+3-2
+034 Par01-0 12
+038 Par01-1 8
+
+Art2
+4-3
+034 Par02-0 10
+038 Par02-1 10
+X03 2D-10x
+X0A 2D-10-00x
+
+Art3
+5-1
+034 Par03-0 1
+
+Art4
+1-1
+034 Par04-0 1
+
+Par00
+Ice Shot (paramSpecialN__10ftPopoNode)
+
+0x0 Air V Momentum
+Vertical momentum for 1st aerial usage
+
+0x4 Landing Lag
+Landing lag that occurs only when landing during aerial action
+
+0x8 X Offset
+X offset where generate ice block
+
+0xC Y Offset
+Y offset where generate ice block
+
+Par01
+Blizzard (paramSpecialLw__10ftPopoNode)
+
+0x0 X Offset
+X offset where generate blizzard
+
+0x4 Y Offset
+Y offset where generate blizzard
+
+0x8 Nana Snap Distance
+Maximum distance from Nana where a synchronous action (ground only)
+
+*0xC
+No Description Available.
+
+Par02
+Squall Hammer (paramSpecialS__10ftPopoNode)
+
+0x0 Nana Snap Distance
+Maximum distance from Nana where a synchronous action
+
+0x4
+ % of initial solo grounded horizontal velocity subtracted from initial velocity?
+
+0x8
+Unknown
+
+0xC Grounded Initial H Velocity
+Grounded initial horizontal velocity
+
+0x10 Aerial Initial H Velocity
+Aerial initial horizontal velocity
+
+0x14 Grounded H Acceleration
+Grounded horizontal acceleration
+
+0x18 Aerial H Acceleration
+Aerial horizontal acceleration
+
+0x1C
+ % of initial solo grounded vertical velocity subtracted from initial velocity?
+
+0x20 Grounded Max H Speed
+Grounded max horizontal speed
+
+0x24 Aerial Max H Speed
+Aerial max horizontal speed
+
+0x28 Aerial Solo Initial V Momentum
+Aerial initial vertical momentum when solo action
+
+0x2C Aerial Synced Initial V Momentum
+Aerial initial vertical momentum when synced action
+
+0x30 Solo Gravity
+Gravity when solo action
+
+0x34 Synced Gravity
+Gravity when synced action
+
+0x38 Solo Max Fall Speed
+Max fall speed when solo action
+
+0x3C Synced Max Fall Speed
+Max fall speed when synced action
+
+0x40 Solo V momentum per Tap B
+Vertical momentum added per B button press when solo action
+
+0x44 Synced V momentum per Tap B
+Vertical momentum added per B button press when synced action
+
+*0x48 Interval
+Frames interval at which the rise enable by B button press
+
+0x4C Wall Bounce H Preservation
+Wall bounce horizontal momentum preservation
+
+0x50
+Unknown
+
+*0x54
+No Description Available.
+
+Par03
+Belay (paramSpecialHi__10ftPopoNode)
+
+0x0 Nana Snap Distance
+Maximum distance from Nana where a synchronous action
+
+0x4
+No Description Available.
+
+0x8
+No Description Available.
+
+0xC
+Unknown, read on a couple of opening pre-jump frames
+
+0x10
+pre-jump horizontal braking (higher = more decelleration)
+
+0x14
+pre-jump vertical braking (higher = more decelleration)
+
+0x18
+pre-jump gravity
+
+0x1C
+unknown, read once pre-jump
+
+0x20
+bonus height from nana
+
+0x24
+bonus height from nana inverse ratio (higher = less jump)
+
+0x28
+fall speed modifier of nana throw
+
+0x2C
+No Description Available.
+
+0x30
+No Description Available.
+
+0x34
+No Description Available.
+
+0x38
+No Description Available.
+
+0x3C
+No Description Available.
+
+0x40
+No Description Available.
+
+0x44
+No Description Available.
+
+0x48
+No Description Available.
+
+0x4C
+Solo vertical height boost
+
+0x50
+No Description Available.
+
+0x54
+No Description Available.
+
+Par04
+paramSpecialHiPartner__10ftPopoNode
+
+0x0
+No Description Available.
+
+0x4
+No Description Available.
+
+0x8
+No Description Available.
+
+0xC
+No Description Available.
+
+0x10
+No Description Available.
+
+0x14
+No Description Available.
+
+0x18
+No Description Available.
+
+0x1C
+No Description Available.
+
+0x20
+No Description Available.
+
+0x24
+No Description Available.
+
+Par05
+Iceberg (paramFinal__10ftPopoNode)
+
+0x0 Nana Snap Distance
+Maximum distance from Nana where a synchronous action
+
+Par13
+ExtraParams13
+
+*0x0
+No Description Available.
+
+*0x4
+No Description Available.
+
+0x8
+No Description Available.
+
+0xC
+No Description Available.
+
+Par00-0
+Blizzard Article
+
+0x0 Speed
+Blizzard Speed
+
+0x4 V Acceleration
+Blizzard rising acceleration
+
+0x8 Random Angle 1
+Random angle to based on the bottom. Random angle from 0x8 to 0xC.
+
+0xC Random Angle 2
+Random angle to based on the bottom. Random angle from 0x8 to 0xC.
+
+Par01-0
+Ice Block Article
+
+0x0 Initial H Speed
+Initial horizontal speed when shot Ice block
+
+0x4 Grounded Max Horizontal Speed
+Grounded max horizontal speed
+
+0x8 Initial V Speed
+Initial vertical speed on generate
+
+0xC Gravity
+Gravity
+
+0x10
+Unknown, not affect fall speed
+
+*0x14
+Frame count for something?
+
+*0x18
+Frame count for something?
+
+*0x1C
+Frame count for something?
+
+0x20 Size Multiplier
+Ice block size multiplier (per frame)
+
+0x24
+Damage multiplier
+
+*0x28
+Frame count for something?
+
+*0x2C Duration
+How many frames before they delete
+
+0x30
+No Description Available.
+
+0x34
+No Description Available.
+
+0x38
+No Description Available.
+
+*0x3C
+No Description Available.
+
+*0x40
+No Description Available.
+
+0x44
+No Description Available.
+
+Par01-1
+hitDataIceShot__17wnPopoIceShotNode
+
+0x0
+No Description Available.
+
+0x4
+No Description Available.
+
+0x8
+No Description Available.
+
+0xC
+No Description Available.
+
+0x10
+No Description Available.
+
+0x14
+No Description Available.
+
+0x18
+No Description Available.
+
+Flags 0x1C
+No Description Available.
+
+Par02-0
+IceBerg Article
+
+*0x0
+ ?? (read on hand clap)
+
+*0x4
+How many frames before iceberg rises
+
+0x8
+Iceberg rising speed
+
+*0xC
+How many frames iceberg is out for
+
+0x10
+No Description Available.
+
+0x14
+ ?? (32 makes it almost instant)
+
+*0x18
+ ?? (read on descent)
+
+*0x1C
+No Description Available.
+
+*0x20
+No Description Available.
+
+*0x24
+No Description Available.
+
+*0x28
+No Description Available.
+
+*0x2C
+No Description Available.
+
+*0x30
+No Description Available.
+
+*0x34
+No Description Available.
+
+*0x38
+No Description Available.
+
+*0x3C
+No Description Available.
+
+Par02-1
+hitDataIceBerg__17wnPopoIceBergNode
+
+HitData0-0
+No Description Available.
+
+HitData0-1
+No Description Available.
+
+HitData0-2
+No Description Available.
+
+HitData0-3
+No Description Available.
+
+HitData0-4
+No Description Available.
+
+HitData0-5
+No Description Available.
+
+HitData0-6
+No Description Available.
+
+Flags(HitData0-7)
+No Description Available.
+
+HitData1-0
+No Description Available.
+
+HitData1-1
+No Description Available.
+
+HitData1-2
+No Description Available.
+
+HitData1-3
+No Description Available.
+
+HitData1-4
+No Description Available.
+
+HitData1-5
+No Description Available.
+
+HitData1-6
+No Description Available.
+
+Flags(HitData1-7)
+No Description Available.
+
+Par03-0
+ExtraParams0
+
+*0x0
+No Description Available.
+
+Par04-0
+ExtraParams0
+
+0x0
+No Description Available.
+
+EXD 2D-10x
+Extra Data3
+
+Offset
+No Description Available.
+
+Offset>Count
+No Description Available.
+
+Flags
+No Description Available.
+
+EXD 2D-10-00x
+Extra Data3>Offset
+
+Data0-0
+No Description Available.
+
+Data0-1
+No Description Available.
+
+Data1-0
+No Description Available.
+
+Data1-1
+No Description Available.
+
+Data2-0
+No Description Available.
+
+Data2-1
+No Description Available.
+
+Data3-0
+No Description Available.
+
+Data3-1
+No Description Available.
+
+Data4-0
+No Description Available.
+
+Data4-1
+No Description Available.
+
