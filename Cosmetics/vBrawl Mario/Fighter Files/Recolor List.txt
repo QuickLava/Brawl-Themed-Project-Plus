@@ -1,0 +1,30 @@
+0 vBrawl
+1 Default
+2 Fire
+3 Blue
+4 Yellow
+5 Black
+6 Green
+7 Flying
+8 DK NES Boxart
+9 Golf Blue
+10 Golf White
+11 Advance P4
+12 Advance P4 (Virtual Console)
+13 Advance P3
+14 Ice
+15 DK Jr. G&W
+16 Mario Bros. NES
+17 SMB1
+18 World
+19 Fire 3
+20 Modern Classic
+21 L+W Emblems
+22 L Emblem
+23 Mario Bros
+24 Superball
+25 White Raccoon
+26 Beta Flying
+27 Beta Ice
+28 Fiery Mario
+29 DK Jr.

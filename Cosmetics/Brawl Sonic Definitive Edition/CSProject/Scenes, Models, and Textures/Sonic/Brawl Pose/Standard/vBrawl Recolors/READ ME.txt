@@ -1,0 +1,28 @@
+AKA, What Do?
+
+When you first open the blend file, use your arrow keys
+to swap between the different outfits and combinations that
+are included. This is controlled by the dope sheet.
+Later edits can be added to this as unique key frames.
+
+The way this is setup, you can batch render all costumes.
+When you go to render, hit "Render Animation" and it should
+work. Before doing so, go into the "compositor" and make an
+output node with the directory of your choosing for both the
+main render and the stock heads. You can adjust the amount of
+frames in the animation by going to the "timeline" to account
+for additional costumes that you've added beyond the 16.
+
+If you want to add more tints, you'll need to edit a shader
+that has the "tint selector" node group and adjust it to your
+needs. This will affect ALL shaders that use it.
+
+If you want to add more accessories (that's wild), import the model
+and bind it to the shape keys as needed. Don't be afraid to mess around
+with the file to see how things work. Otherwise, you can also duplicate
+pre-existing models within the file if you want to recolor them.
+
+If you want to add more textures in the image sequences, simply place
+it in the appropriate folder.
+
+For other questions, Google is your friend (or whatever you use).

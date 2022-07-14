@@ -1,0 +1,3405 @@
+startTime 0;
+endTime 1;
+angularUnit deg;
+anim unused translateX CapM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY CapM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ CapM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX CapM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY CapM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ CapM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX CapM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY CapM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ CapM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX EyeYellowM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY EyeYellowM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ EyeYellowM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX EyeYellowM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY EyeYellowM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ EyeYellowM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX EyeYellowM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY EyeYellowM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ EyeYellowM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX FaceDmgM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY FaceDmgM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ FaceDmgM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX FaceDmgM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY FaceDmgM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ FaceDmgM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX FaceDmgM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY FaceDmgM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ FaceDmgM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX FaceM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY FaceM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ FaceM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX FaceM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY FaceM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ FaceM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX FaceM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY FaceM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ FaceM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX HairM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY HairM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ HairM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX HairM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY HairM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ HairM unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX HairM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY HairM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ HairM unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX HairMb unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY HairMb unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ HairMb unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX HairMb unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY HairMb unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ HairMb unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX HairMb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY HairMb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ HairMb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX TransN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY TransN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ TransN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX TransN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY TransN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ TransN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX TransN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY TransN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ TransN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX XRotN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY XRotN unused unused unused
+animData {
+ keys {
+ 0 6.233952045440674 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ XRotN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX XRotN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY XRotN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ XRotN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX XRotN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY XRotN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ XRotN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX YRotN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY YRotN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ YRotN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX YRotN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY YRotN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ YRotN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX YRotN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY YRotN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ YRotN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX HipN unused unused unused
+animData {
+ keys {
+ 0 0.042706459760665894 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY HipN unused unused unused
+animData {
+ keys {
+ 0 -2.226201295852661 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ HipN unused unused unused
+animData {
+ keys {
+ 0 -0.668175220489502 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX HipN unused unused unused
+animData {
+ keys {
+ 0 16.979834908726065 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY HipN unused unused unused
+animData {
+ keys {
+ 0 46.353966726883634 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ HipN unused unused unused
+animData {
+ keys {
+ 0 13.629948993499449 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX HipN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY HipN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ HipN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX ThrowN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY ThrowN unused unused unused
+animData {
+ keys {
+ 0 -6.233952045440674 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ ThrowN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX ThrowN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY ThrowN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ ThrowN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX ThrowN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY ThrowN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ ThrowN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LLegJ unused unused unused
+animData {
+ keys {
+ 0 1.0377659797668457 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LLegJ unused unused unused
+animData {
+ keys {
+ 0 -0.005160271655768156 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LLegJ unused unused unused
+animData {
+ keys {
+ 0 -0.18362799286842346 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LLegJ unused unused unused
+animData {
+ keys {
+ 0 -47.56335758736653 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LLegJ unused unused unused
+animData {
+ keys {
+ 0 33.66588972087155 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LLegJ unused unused unused
+animData {
+ keys {
+ 0 12.400159773060313 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LLegJ unused unused unused
+animData {
+ keys {
+ 0 0.94915372133255 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LLegJ unused unused unused
+animData {
+ keys {
+ 0 0.94915372133255 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LLegJ unused unused unused
+animData {
+ keys {
+ 0 1.1339000463485718 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RLegJ unused unused unused
+animData {
+ keys {
+ 0 -1.2306599617004395 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RLegJ unused unused unused
+animData {
+ keys {
+ 0 0.0049669998697936535 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RLegJ unused unused unused
+animData {
+ keys {
+ 0 0.03133099898695946 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RLegJ unused unused unused
+animData {
+ keys {
+ 0 -312.20453186669783 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RLegJ unused unused unused
+animData {
+ keys {
+ 0 -73.6315019698668 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RLegJ unused unused unused
+animData {
+ keys {
+ 0 54.781078030507466 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RLegJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RLegJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RLegJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX WaistN unused unused unused
+animData {
+ keys {
+ 0 -0.011824417859315872 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY WaistN unused unused unused
+animData {
+ keys {
+ 0 1.1407356262207031 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ WaistN unused unused unused
+animData {
+ keys {
+ 0 0.012221110984683037 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX WaistN unused unused unused
+animData {
+ keys {
+ 0 -8.236692459753042 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY WaistN unused unused unused
+animData {
+ keys {
+ 0 3.615313042788837 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ WaistN unused unused unused
+animData {
+ keys {
+ 0 -1.9210056451048956 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX WaistN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY WaistN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ WaistN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX WaistNb unused unused unused
+animData {
+ keys {
+ 0 0.0021404707804322243 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY WaistNb unused unused unused
+animData {
+ keys {
+ 0 1.2708210945129395 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ WaistNb unused unused unused
+animData {
+ keys {
+ 0 0.009829774498939514 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX WaistNb unused unused unused
+animData {
+ keys {
+ 0 4.009639500367537 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY WaistNb unused unused unused
+animData {
+ keys {
+ 0 1.2351470769561876 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ WaistNb unused unused unused
+animData {
+ keys {
+ 0 -1.4319408352001224 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX WaistNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY WaistNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ WaistNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LKneeJ unused unused unused
+animData {
+ keys {
+ 0 0.015530000440776348 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LKneeJ unused unused unused
+animData {
+ keys {
+ 0 -2.099212884902954 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LKneeJ unused unused unused
+animData {
+ keys {
+ 0 -0.040553998202085495 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LKneeJ unused unused unused
+animData {
+ keys {
+ 0 61.86799693594807 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LKneeJ unused unused unused
+animData {
+ keys {
+ 0 -0.3100000082707969 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LKneeJ unused unused unused
+animData {
+ keys {
+ 0 -0.43799999447265725 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LKneeJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LKneeJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LKneeJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RKneeJ unused unused unused
+animData {
+ keys {
+ 0 -0.025991205126047134 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RKneeJ unused unused unused
+animData {
+ keys {
+ 0 2.111952304840088 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RKneeJ unused unused unused
+animData {
+ keys {
+ 0 0.09933272004127502 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RKneeJ unused unused unused
+animData {
+ keys {
+ 0 17.367432776198658 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RKneeJ unused unused unused
+animData {
+ keys {
+ 0 -6.970245614038447 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RKneeJ unused unused unused
+animData {
+ keys {
+ 0 9.092030219324569 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RKneeJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RKneeJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RKneeJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX BustN unused unused unused
+animData {
+ keys {
+ 0 -1.431167078180806e-07 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY BustN unused unused unused
+animData {
+ keys {
+ 0 1.2762789726257324 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ BustN unused unused unused
+animData {
+ keys {
+ 0 -7.701209114863161e-10 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX BustN unused unused unused
+animData {
+ keys {
+ 0 1.551071228395419e-06 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY BustN unused unused unused
+animData {
+ keys {
+ 0 6.183014585205045e-06 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ BustN unused unused unused
+animData {
+ keys {
+ 0 16.3846197810526 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX BustN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY BustN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ BustN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LFootE unused unused unused
+animData {
+ keys {
+ 0 0.019460085779428482 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LFootE unused unused unused
+animData {
+ keys {
+ 0 -1.5496540069580078 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LFootE unused unused unused
+animData {
+ keys {
+ 0 -0.05081799626350403 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LFootE unused unused unused
+animData {
+ keys {
+ 0 1.8698889362433433 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LFootE unused unused unused
+animData {
+ keys {
+ 0 9.787638028739824 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LFootE unused unused unused
+animData {
+ keys {
+ 0 -2.6064114997776784 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LFootE unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LFootE unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LFootE unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LFootJ unused unused unused
+animData {
+ keys {
+ 0 0.19740739464759827 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LFootJ unused unused unused
+animData {
+ keys {
+ 0 -1.2932298183441162 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LFootJ unused unused unused
+animData {
+ keys {
+ 0 0.05537215992808342 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LFootJ unused unused unused
+animData {
+ keys {
+ 0 -10.981839402282255 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LFootJ unused unused unused
+animData {
+ keys {
+ 0 -8.647942418547741 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LFootJ unused unused unused
+animData {
+ keys {
+ 0 -19.39887276178573 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LFootJ unused unused unused
+animData {
+ keys {
+ 0 1.052054524421692 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LFootJ unused unused unused
+animData {
+ keys {
+ 0 0.9946702718734741 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LFootJ unused unused unused
+animData {
+ keys {
+ 0 0.9852564930915833 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RFootE unused unused unused
+animData {
+ keys {
+ 0 0.38283419609069824 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RFootE unused unused unused
+animData {
+ keys {
+ 0 1.2020211219787598 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RFootE unused unused unused
+animData {
+ keys {
+ 0 0.11624042689800262 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RFootE unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RFootE unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RFootE unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RFootE unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RFootE unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RFootE unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RFootJ unused unused unused
+animData {
+ keys {
+ 0 -0.3899940848350525 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RFootJ unused unused unused
+animData {
+ keys {
+ 0 1.5569500923156738 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RFootJ unused unused unused
+animData {
+ keys {
+ 0 0.24219873547554016 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RFootJ unused unused unused
+animData {
+ keys {
+ 0 50.9341754710783 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RFootJ unused unused unused
+animData {
+ keys {
+ 0 -11.894408170682963 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RFootJ unused unused unused
+animData {
+ keys {
+ 0 -17.618578831980027 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RFootJ unused unused unused
+animData {
+ keys {
+ 0 1.073957920074463 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RFootJ unused unused unused
+animData {
+ keys {
+ 0 1.073957920074463 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RFootJ unused unused unused
+animData {
+ keys {
+ 0 1.073957920074463 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LShoulderN unused unused unused
+animData {
+ keys {
+ 0 0.943481981754303 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LShoulderN unused unused unused
+animData {
+ keys {
+ 0 0.8792240023612976 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LShoulderN unused unused unused
+animData {
+ keys {
+ 0 -0.23185299336910248 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LShoulderN unused unused unused
+animData {
+ keys {
+ 0 -42.92600065038637 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LShoulderN unused unused unused
+animData {
+ keys {
+ 0 24.164999255188135 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LShoulderN unused unused unused
+animData {
+ keys {
+ 0 -45.999999003336896 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LShoulderN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LShoulderN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LShoulderN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX NeckN unused unused unused
+animData {
+ keys {
+ 0 0.047427959740161896 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY NeckN unused unused unused
+animData {
+ keys {
+ 0 1.2231978178024292 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ NeckN unused unused unused
+animData {
+ keys {
+ 0 0.1614115685224533 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX NeckN unused unused unused
+animData {
+ keys {
+ 0 -3.0230099235793206 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY NeckN unused unused unused
+animData {
+ keys {
+ 0 -4.40250643189797 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ NeckN unused unused unused
+animData {
+ keys {
+ 0 -16.34854272185659 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX NeckN unused unused unused
+animData {
+ keys {
+ 0 1.0113427639007568 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY NeckN unused unused unused
+animData {
+ keys {
+ 0 1.0113428831100464 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ NeckN unused unused unused
+animData {
+ keys {
+ 0 1.0113426446914673 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RShoulderN unused unused unused
+animData {
+ keys {
+ 0 -0.9013299345970154 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RShoulderN unused unused unused
+animData {
+ keys {
+ 0 0.9641137719154358 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RShoulderN unused unused unused
+animData {
+ keys {
+ 0 -0.23190979659557343 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RShoulderN unused unused unused
+animData {
+ keys {
+ 0 -161.43510005237647 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RShoulderN unused unused unused
+animData {
+ keys {
+ 0 5.3227805074561 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RShoulderN unused unused unused
+animData {
+ keys {
+ 0 -21.25933945206904 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RShoulderN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RShoulderN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RShoulderN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LToeN unused unused unused
+animData {
+ keys {
+ 0 -0.011186208575963974 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LToeN unused unused unused
+animData {
+ keys {
+ 0 -0.9348334670066833 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LToeN unused unused unused
+animData {
+ keys {
+ 0 1.2586511373519897 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LToeN unused unused unused
+animData {
+ keys {
+ 0 -2.288673874353036 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LToeN unused unused unused
+animData {
+ keys {
+ 0 30.750201492503574 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LToeN unused unused unused
+animData {
+ keys {
+ 0 -6.387687253783835 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LToeN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LToeN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LToeN unused unused unused
+animData {
+ keys {
+ 0 1.0239876508712769 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RToeN unused unused unused
+animData {
+ keys {
+ 0 0.04588737338781357 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RToeN unused unused unused
+animData {
+ keys {
+ 0 0.6684144735336304 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RToeN unused unused unused
+animData {
+ keys {
+ 0 -1.3606163263320923 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RToeN unused unused unused
+animData {
+ keys {
+ 0 2.4705901999242132 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RToeN unused unused unused
+animData {
+ keys {
+ 0 1.4893865681013376 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RToeN unused unused unused
+animData {
+ keys {
+ 0 -0.05952104986194804 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RToeN unused unused unused
+animData {
+ keys {
+ 0 1.0343836545944214 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RToeN unused unused unused
+animData {
+ keys {
+ 0 1.0343835353851318 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RToeN unused unused unused
+animData {
+ keys {
+ 0 1.0343836545944214 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LShoulderJ unused unused unused
+animData {
+ keys {
+ 0 0.9350001811981201 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LShoulderJ unused unused unused
+animData {
+ keys {
+ 0 -0.009421844966709614 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LShoulderJ unused unused unused
+animData {
+ keys {
+ 0 -0.012014012783765793 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LShoulderJ unused unused unused
+animData {
+ keys {
+ 0 -9.577040244739882 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LShoulderJ unused unused unused
+animData {
+ keys {
+ 0 11.61989176888275 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LShoulderJ unused unused unused
+animData {
+ keys {
+ 0 -7.757838996100849 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LShoulderJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LShoulderJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LShoulderJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX HeadN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY HeadN unused unused unused
+animData {
+ keys {
+ 0 1.1235990524291992 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ HeadN unused unused unused
+animData {
+ keys {
+ 0 0.19551299512386322 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX HeadN unused unused unused
+animData {
+ keys {
+ 0 25.061000545983333 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY HeadN unused unused unused
+animData {
+ keys {
+ 0 -62.46199799749657 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ HeadN unused unused unused
+animData {
+ keys {
+ 0 -18.63600039565054 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX HeadN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY HeadN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ HeadN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RShoulderJ unused unused unused
+animData {
+ keys {
+ 0 -0.9349978566169739 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RShoulderJ unused unused unused
+animData {
+ keys {
+ 0 0.0094200000166893 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RShoulderJ unused unused unused
+animData {
+ keys {
+ 0 0.012013670988380909 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RShoulderJ unused unused unused
+animData {
+ keys {
+ 0 18.328059609373224 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RShoulderJ unused unused unused
+animData {
+ keys {
+ 0 4.609640883101892 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RShoulderJ unused unused unused
+animData {
+ keys {
+ 0 1.3940792823617434 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RShoulderJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RShoulderJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RShoulderJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LArmJ unused unused unused
+animData {
+ keys {
+ 0 1.7528259754180908 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LArmJ unused unused unused
+animData {
+ keys {
+ 0 0.0003198513004463166 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LArmJ unused unused unused
+animData {
+ keys {
+ 0 2.4915306084949407e-07 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LArmJ unused unused unused
+animData {
+ keys {
+ 0 32.90952481746809 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LArmJ unused unused unused
+animData {
+ keys {
+ 0 -55.17362949267561 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LArmJ unused unused unused
+animData {
+ keys {
+ 0 -70.99962517698579 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LArmJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LArmJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LArmJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX HatN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY HatN unused unused unused
+animData {
+ keys {
+ 0 2.93634033203125 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ HatN unused unused unused
+animData {
+ keys {
+ 0 0.4184400141239166 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX HatN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY HatN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ HatN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX HatN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY HatN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ HatN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LHigeN unused unused unused
+animData {
+ keys {
+ 0 -0.019430000334978104 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LHigeN unused unused unused
+animData {
+ keys {
+ 0 0.35373973846435547 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LHigeN unused unused unused
+animData {
+ keys {
+ 0 2.1175289154052734 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LHigeN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LHigeN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LHigeN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LHigeN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LHigeN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LHigeN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX MouthN unused unused unused
+animData {
+ keys {
+ 0 -0.021668000146746635 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY MouthN unused unused unused
+animData {
+ keys {
+ 0 0.3771750032901764 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ MouthN unused unused unused
+animData {
+ keys {
+ 0 0.154462993144989 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX MouthN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY MouthN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ MouthN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX MouthN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY MouthN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ MouthN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX NoseN unused unused unused
+animData {
+ keys {
+ 0 -0.04333699867129326 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY NoseN unused unused unused
+animData {
+ keys {
+ 0 0.7297897338867188 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ NoseN unused unused unused
+animData {
+ keys {
+ 0 2.025329113006592 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX NoseN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY NoseN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ NoseN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX NoseN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY NoseN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ NoseN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RHigeN unused unused unused
+animData {
+ keys {
+ 0 -0.03753500059247017 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RHigeN unused unused unused
+animData {
+ keys {
+ 0 0.31567955017089844 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RHigeN unused unused unused
+animData {
+ keys {
+ 0 2.113325834274292 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RHigeN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RHigeN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RHigeN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RHigeN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RHigeN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RHigeN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RArmJ unused unused unused
+animData {
+ keys {
+ 0 -1.7528300285339355 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RArmJ unused unused unused
+animData {
+ keys {
+ 0 -0.0003204345703125 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RArmJ unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RArmJ unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RArmJ unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RArmJ unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RArmJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RArmJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RArmJ unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LHandN unused unused unused
+animData {
+ keys {
+ 0 1.7235050201416016 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LHandN unused unused unused
+animData {
+ keys {
+ 0 -0.0005249999812804163 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LHandN unused unused unused
+animData {
+ keys {
+ 0 0.03007899969816208 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LHandN unused unused unused
+animData {
+ keys {
+ 0 1.6857457555593303 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LHandN unused unused unused
+animData {
+ keys {
+ 0 -8.479746448915238 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LHandN unused unused unused
+animData {
+ keys {
+ 0 -28.685933910218132 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LHandN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LHandN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LHandN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LHandNb unused unused unused
+animData {
+ keys {
+ 0 1.8334789276123047 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LHandNb unused unused unused
+animData {
+ keys {
+ 0 0.01207733154296875 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LHandNb unused unused unused
+animData {
+ keys {
+ 0 0.030866995453834534 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LHandNb unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LHandNb unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LHandNb unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LHandNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LHandNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LHandNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RHandN unused unused unused
+animData {
+ keys {
+ 0 -1.717084527015686 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RHandN unused unused unused
+animData {
+ keys {
+ 0 0.049676038324832916 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RHandN unused unused unused
+animData {
+ keys {
+ 0 -0.05872437357902527 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RHandN unused unused unused
+animData {
+ keys {
+ 0 -42.16905518090346 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RHandN unused unused unused
+animData {
+ keys {
+ 0 7.270371810131624 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RHandN unused unused unused
+animData {
+ keys {
+ 0 48.51160982531233 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RHandN unused unused unused
+animData {
+ keys {
+ 0 1.056906819343567 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RHandN unused unused unused
+animData {
+ keys {
+ 0 1.056906819343567 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RHandN unused unused unused
+animData {
+ keys {
+ 0 1.0569067001342773 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RHandNb unused unused unused
+animData {
+ keys {
+ 0 -1.7409567832946777 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RHandNb unused unused unused
+animData {
+ keys {
+ 0 -0.1095128208398819 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RHandNb unused unused unused
+animData {
+ keys {
+ 0 -0.11515328288078308 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RHandNb unused unused unused
+animData {
+ keys {
+ 0 -47.67512680294462 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RHandNb unused unused unused
+animData {
+ keys {
+ 0 -6.612115317079407 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RHandNb unused unused unused
+animData {
+ keys {
+ 0 17.2991377146877 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RHandNb unused unused unused
+animData {
+ keys {
+ 0 1.0439643859863281 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RHandNb unused unused unused
+animData {
+ keys {
+ 0 1.0439642667770386 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RHandNb unused unused unused
+animData {
+ keys {
+ 0 1.0439642667770386 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX L1stNa unused unused unused
+animData {
+ keys {
+ 0 1.5006625652313232 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY L1stNa unused unused unused
+animData {
+ keys {
+ 0 0.7416110038757324 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ L1stNa unused unused unused
+animData {
+ keys {
+ 0 0.5684608221054077 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX L1stNa unused unused unused
+animData {
+ keys {
+ 0 7.6560939369034005 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY L1stNa unused unused unused
+animData {
+ keys {
+ 0 -12.210884985875504 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ L1stNa unused unused unused
+animData {
+ keys {
+ 0 13.278093505953535 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX L1stNa unused unused unused
+animData {
+ keys {
+ 0 1.0328291654586792 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY L1stNa unused unused unused
+animData {
+ keys {
+ 0 1.0328292846679688 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ L1stNa unused unused unused
+animData {
+ keys {
+ 0 1.225752830505371 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX L2ndNa unused unused unused
+animData {
+ keys {
+ 0 1.8041934967041016 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY L2ndNa unused unused unused
+animData {
+ keys {
+ 0 0.565556526184082 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ L2ndNa unused unused unused
+animData {
+ keys {
+ 0 0.05386180430650711 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX L2ndNa unused unused unused
+animData {
+ keys {
+ 0 7.346017008963162 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY L2ndNa unused unused unused
+animData {
+ keys {
+ 0 -7.586785446074342 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ L2ndNa unused unused unused
+animData {
+ keys {
+ 0 -43.03054352582259 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX L2ndNa unused unused unused
+animData {
+ keys {
+ 0 1.253685474395752 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY L2ndNa unused unused unused
+animData {
+ keys {
+ 0 1.024816870689392 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ L2ndNa unused unused unused
+animData {
+ keys {
+ 0 1.1429702043533325 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX L3rdNa unused unused unused
+animData {
+ keys {
+ 0 1.614402413368225 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY L3rdNa unused unused unused
+animData {
+ keys {
+ 0 0.5532224178314209 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ L3rdNa unused unused unused
+animData {
+ keys {
+ 0 -0.21642351150512695 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX L3rdNa unused unused unused
+animData {
+ keys {
+ 0 -7.878202297202106 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY L3rdNa unused unused unused
+animData {
+ keys {
+ 0 14.72409321834307 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ L3rdNa unused unused unused
+animData {
+ keys {
+ 0 -29.309881936182553 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX L3rdNa unused unused unused
+animData {
+ keys {
+ 0 1.193178415298462 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY L3rdNa unused unused unused
+animData {
+ keys {
+ 0 1.1931782960891724 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ L3rdNa unused unused unused
+animData {
+ keys {
+ 0 1.1931785345077515 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX L4thNa unused unused unused
+animData {
+ keys {
+ 0 1.6302348375320435 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY L4thNa unused unused unused
+animData {
+ keys {
+ 0 0.3879493474960327 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ L4thNa unused unused unused
+animData {
+ keys {
+ 0 -0.7254557013511658 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX L4thNa unused unused unused
+animData {
+ keys {
+ 0 -15.440713250966223 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY L4thNa unused unused unused
+animData {
+ keys {
+ 0 37.55154335855678 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ L4thNa unused unused unused
+animData {
+ keys {
+ 0 -50.42616649118026 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX L4thNa unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY L4thNa unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ L4thNa unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LThumbNa unused unused unused
+animData {
+ keys {
+ 0 0.7821325063705444 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LThumbNa unused unused unused
+animData {
+ keys {
+ 0 -0.2669181227684021 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LThumbNa unused unused unused
+animData {
+ keys {
+ 0 1.2271028757095337 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LThumbNa unused unused unused
+animData {
+ keys {
+ 0 11.437905647315992 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LThumbNa unused unused unused
+animData {
+ keys {
+ 0 -19.208284870732985 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LThumbNa unused unused unused
+animData {
+ keys {
+ 0 -31.83654649508869 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LThumbNa unused unused unused
+animData {
+ keys {
+ 0 1.1166763305664062 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LThumbNa unused unused unused
+animData {
+ keys {
+ 0 1.1166763305664062 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LThumbNa unused unused unused
+animData {
+ keys {
+ 0 1.1166763305664062 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX R1stNa unused unused unused
+animData {
+ keys {
+ 0 -1.4793699979782104 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY R1stNa unused unused unused
+animData {
+ keys {
+ 0 -0.37559300661087036 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ R1stNa unused unused unused
+animData {
+ keys {
+ 0 -0.5434139966964722 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX R1stNa unused unused unused
+animData {
+ keys {
+ 0 16.67469108491387 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY R1stNa unused unused unused
+animData {
+ keys {
+ 0 -4.737537029084026 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ R1stNa unused unused unused
+animData {
+ keys {
+ 0 27.646474741190573 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX R1stNa unused unused unused
+animData {
+ keys {
+ 0 1.1323193311691284 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY R1stNa unused unused unused
+animData {
+ keys {
+ 0 1.1323192119598389 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ R1stNa unused unused unused
+animData {
+ keys {
+ 0 1.1323193311691284 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX R2ndNa unused unused unused
+animData {
+ keys {
+ 0 -1.656759262084961 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY R2ndNa unused unused unused
+animData {
+ keys {
+ 0 -0.5424849987030029 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ R2ndNa unused unused unused
+animData {
+ keys {
+ 0 -0.10301995277404785 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX R2ndNa unused unused unused
+animData {
+ keys {
+ 0 3.7756935684635526 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY R2ndNa unused unused unused
+animData {
+ keys {
+ 0 6.8037149299029585 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ R2ndNa unused unused unused
+animData {
+ keys {
+ 0 4.374019420417139 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX R2ndNa unused unused unused
+animData {
+ keys {
+ 0 1.1016417741775513 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY R2ndNa unused unused unused
+animData {
+ keys {
+ 0 1.1016416549682617 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ R2ndNa unused unused unused
+animData {
+ keys {
+ 0 1.1016416549682617 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX R3rdNa unused unused unused
+animData {
+ keys {
+ 0 -1.5636622905731201 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY R3rdNa unused unused unused
+animData {
+ keys {
+ 0 -0.4812075197696686 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ R3rdNa unused unused unused
+animData {
+ keys {
+ 0 0.3149363696575165 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX R3rdNa unused unused unused
+animData {
+ keys {
+ 0 -0.5545355348330776 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY R3rdNa unused unused unused
+animData {
+ keys {
+ 0 20.352292037838637 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ R3rdNa unused unused unused
+animData {
+ keys {
+ 0 -14.229510682805984 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX R3rdNa unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY R3rdNa unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ R3rdNa unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX R4thNa unused unused unused
+animData {
+ keys {
+ 0 -1.3856537342071533 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY R4thNa unused unused unused
+animData {
+ keys {
+ 0 -0.2584332823753357 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ R4thNa unused unused unused
+animData {
+ keys {
+ 0 0.7641751766204834 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX R4thNa unused unused unused
+animData {
+ keys {
+ 0 30.814999497159487 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY R4thNa unused unused unused
+animData {
+ keys {
+ 0 23.004999200140897 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ R4thNa unused unused unused
+animData {
+ keys {
+ 0 -8.732999618055556 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX R4thNa unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY R4thNa unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ R4thNa unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RHaveN unused unused unused
+animData {
+ keys {
+ 0 -1.48259699344635 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RHaveN unused unused unused
+animData {
+ keys {
+ 0 0.1591300070285797 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RHaveN unused unused unused
+animData {
+ keys {
+ 0 -0.024879999458789825 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RHaveN unused unused unused
+animData {
+ keys {
+ 0 -90.00000250447816 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RHaveN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RHaveN unused unused unused
+animData {
+ keys {
+ 0 90.00000250447816 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RHaveN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RHaveN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RHaveN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RThumbNa unused unused unused
+animData {
+ keys {
+ 0 -1.027782678604126 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RThumbNa unused unused unused
+animData {
+ keys {
+ 0 0.12483653426170349 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RThumbNa unused unused unused
+animData {
+ keys {
+ 0 -1.0634486675262451 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RThumbNa unused unused unused
+animData {
+ keys {
+ 0 -10.882206579085631 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RThumbNa unused unused unused
+animData {
+ keys {
+ 0 -42.36805957256095 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RThumbNa unused unused unused
+animData {
+ keys {
+ 0 -37.59532487113656 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RThumbNa unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RThumbNa unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RThumbNa unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX L1stNb unused unused unused
+animData {
+ keys {
+ 0 1.0201271772384644 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY L1stNb unused unused unused
+animData {
+ keys {
+ 0 0.052593499422073364 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ L1stNb unused unused unused
+animData {
+ keys {
+ 0 -0.023475170135498047 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX L1stNb unused unused unused
+animData {
+ keys {
+ 0 8.339358740714795 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY L1stNb unused unused unused
+animData {
+ keys {
+ 0 -9.22918810182124 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ L1stNb unused unused unused
+animData {
+ keys {
+ 0 -125.68782971025401 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX L1stNb unused unused unused
+animData {
+ keys {
+ 0 1.0000001192092896 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY L1stNb unused unused unused
+animData {
+ keys {
+ 0 1.356611728668213 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ L1stNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX L2ndNb unused unused unused
+animData {
+ keys {
+ 0 0.29004621505737305 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY L2ndNb unused unused unused
+animData {
+ keys {
+ 0 0.30712395906448364 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ L2ndNb unused unused unused
+animData {
+ keys {
+ 0 0.017031894996762276 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX L2ndNb unused unused unused
+animData {
+ keys {
+ 0 -7.34531349947865 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY L2ndNb unused unused unused
+animData {
+ keys {
+ 0 -6.238403224189452 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ L2ndNb unused unused unused
+animData {
+ keys {
+ 0 -84.74842714600628 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX L2ndNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY L2ndNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ L2ndNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX L3rdNb unused unused unused
+animData {
+ keys {
+ 0 0.7029172778129578 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY L3rdNb unused unused unused
+animData {
+ keys {
+ 0 0.07027990370988846 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ L3rdNb unused unused unused
+animData {
+ keys {
+ 0 -0.18936359882354736 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX L3rdNb unused unused unused
+animData {
+ keys {
+ 0 0.43187139379645173 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY L3rdNb unused unused unused
+animData {
+ keys {
+ 0 -9.511473843802344 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ L3rdNb unused unused unused
+animData {
+ keys {
+ 0 -118.87699729634906 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX L3rdNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY L3rdNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ L3rdNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX L4thNb unused unused unused
+animData {
+ keys {
+ 0 0.9759876132011414 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY L4thNb unused unused unused
+animData {
+ keys {
+ 0 -0.36235952377319336 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ L4thNb unused unused unused
+animData {
+ keys {
+ 0 0.210908442735672 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX L4thNb unused unused unused
+animData {
+ keys {
+ 0 -1.4844733142105713 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY L4thNb unused unused unused
+animData {
+ keys {
+ 0 -8.303036648482314 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ L4thNb unused unused unused
+animData {
+ keys {
+ 0 -121.52141431654623 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX L4thNb unused unused unused
+animData {
+ keys {
+ 0 1.2232635021209717 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY L4thNb unused unused unused
+animData {
+ keys {
+ 0 1.0437462329864502 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ L4thNb unused unused unused
+animData {
+ keys {
+ 0 1.1718690395355225 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX LThumbNb unused unused unused
+animData {
+ keys {
+ 0 0.5238963961601257 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY LThumbNb unused unused unused
+animData {
+ keys {
+ 0 -0.050492431968450546 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ LThumbNb unused unused unused
+animData {
+ keys {
+ 0 -0.012739422731101513 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX LThumbNb unused unused unused
+animData {
+ keys {
+ 0 -31.498899508563692 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY LThumbNb unused unused unused
+animData {
+ keys {
+ 0 50.6956311143156 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ LThumbNb unused unused unused
+animData {
+ keys {
+ 0 -25.334392527891435 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX LThumbNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY LThumbNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ LThumbNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX R1stNb unused unused unused
+animData {
+ keys {
+ 0 -0.5824699997901917 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY R1stNb unused unused unused
+animData {
+ keys {
+ 0 0.024873169139027596 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ R1stNb unused unused unused
+animData {
+ keys {
+ 0 -0.007376669440418482 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX R1stNb unused unused unused
+animData {
+ keys {
+ 0 6.127166336479801 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY R1stNb unused unused unused
+animData {
+ keys {
+ 0 -1.185325115829176 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ R1stNb unused unused unused
+animData {
+ keys {
+ 0 -47.55611417175173 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX R1stNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY R1stNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ R1stNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX R2ndNb unused unused unused
+animData {
+ keys {
+ 0 -0.5523599982261658 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY R2ndNb unused unused unused
+animData {
+ keys {
+ 0 0.06253799796104431 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ R2ndNb unused unused unused
+animData {
+ keys {
+ 0 -0.003358999965712428 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX R2ndNb unused unused unused
+animData {
+ keys {
+ 0 0.44848985769690103 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY R2ndNb unused unused unused
+animData {
+ keys {
+ 0 0.15262966168913958 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ R2ndNb unused unused unused
+animData {
+ keys {
+ 0 -48.78771339232092 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX R2ndNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY R2ndNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ R2ndNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX R3rdNb unused unused unused
+animData {
+ keys {
+ 0 -0.5660399794578552 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY R3rdNb unused unused unused
+animData {
+ keys {
+ 0 0.03833400085568428 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ R3rdNb unused unused unused
+animData {
+ keys {
+ 0 -0.0033229999244213104 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX R3rdNb unused unused unused
+animData {
+ keys {
+ 0 4.605963253120663 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY R3rdNb unused unused unused
+animData {
+ keys {
+ 0 4.620555098508749 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ R3rdNb unused unused unused
+animData {
+ keys {
+ 0 -43.18955032970048 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX R3rdNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY R3rdNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ R3rdNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX R4thNb unused unused unused
+animData {
+ keys {
+ 0 -0.5160099864006042 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY R4thNb unused unused unused
+animData {
+ keys {
+ 0 0.03919106349349022 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ R4thNb unused unused unused
+animData {
+ keys {
+ 0 -0.007752365432679653 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX R4thNb unused unused unused
+animData {
+ keys {
+ 0 -25.873974057227855 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY R4thNb unused unused unused
+animData {
+ keys {
+ 0 -24.159512905737323 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ R4thNb unused unused unused
+animData {
+ keys {
+ 0 -55.95288919017695 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX R4thNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY R4thNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ R4thNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX RThumbNb unused unused unused
+animData {
+ keys {
+ 0 -0.5182628631591797 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY RThumbNb unused unused unused
+animData {
+ keys {
+ 0 -0.0020944755524396896 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ RThumbNb unused unused unused
+animData {
+ keys {
+ 0 0.061583079397678375 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX RThumbNb unused unused unused
+animData {
+ keys {
+ 0 19.451791359927693 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY RThumbNb unused unused unused
+animData {
+ keys {
+ 0 9.628062611613522 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ RThumbNb unused unused unused
+animData {
+ keys {
+ 0 26.072626694143093 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX RThumbNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY RThumbNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ RThumbNb unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateX TopN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateY TopN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused translateZ TopN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateX TopN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateY TopN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused rotateZ TopN unused unused unused
+animData {
+ keys {
+ 0 0.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleX TopN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleY TopN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
+anim unused scaleZ TopN unused unused unused
+animData {
+ keys {
+ 0 1.0 fixed fixed 1 1 0 0.0 2 0.0 0;
+ }
+}
