@@ -1,0 +1,6 @@
+P+ 0298 used (001.wav): 39 (GlideStart), 1DE (SpecialSStart)
+
+P+ 0261 used (jump01.wav): 1E4 (SpecialHiStart), 1E8 (SpecialAirHiStart)
+
+Change 0298 to 02A2 (001.wav)
+Change 0261 to 02A3 (jump1.wav)
