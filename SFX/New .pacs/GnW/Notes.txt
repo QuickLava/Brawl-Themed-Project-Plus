@@ -1,0 +1,5 @@
+58 (Fsmash), 5D (Upsmash), 60 (Downsmash), 63 (Fair), 64 (Bair), 65 (Upair), 66 (Dair), 70 (CatchAttack), D7 (CliffAttackQuick), D8 (CliffClimbQuick), D9 (Cliff Escape Quick), DC (CliffAttackSlow), DD (CliffClimbSlow), DE (CliffEscapeSlow)
+
+
+
+Polygon 73, 76-88, 94, 97, 101, 105, 111

@@ -1,12 +1,13 @@
-Charizard (01X)
+Charizard (01C(?))
 Wario (017)
 Pikmin (018)
 Jiggs (022)
 ToonLink (023)
-GameandWatch (014)
-Ivy (01X)
-Squirtle (01X)
+Ivy (01E(?))
+Squirtle (01D(?))
 
+Working on:
+GameandWatch (014)
 
 Sawnd Made, Need New PSA maybe:
 
