@@ -23,7 +23,7 @@ Kirby (009)
 Snake (025)
 Sonic (026)
 
-Done: 
+Done (Need to check cuz 2.3.1): 
 Link (002)
 Marth (013)
 Samus (007)

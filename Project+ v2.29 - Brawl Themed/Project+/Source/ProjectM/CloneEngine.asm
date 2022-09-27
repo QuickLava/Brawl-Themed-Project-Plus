@@ -22,10 +22,12 @@ op cmpwi r4, 0x3A 				@ $80952F14
 ###################
 Result Names [ds22]
 ###################
-* 0459E03C 526F7900 # "Roy"
-* 04456528 4D657774 # "Mewtwo"
-* 0445652C 776F0000
-int 0 @ $80456530
+* 0459E03C 526F7900 #   "Roy"
+* 044564A4 4D657774 # \ "Mewtwo"
+* 044564A8 776F0000 # /
+int 0 @ $804564AC
+int 0 @ $804564B0
+int 0 @ $804564B4
 address $80456540 @ $80456624
 address $8059E060 @ $8045662C
 * 04456540 47696761 # \	"Giga Bowser"
@@ -100,7 +102,7 @@ HOOK @ $80AA95B8
   lis r3, 0x22
 loc_0xC:
   cmpwi r30, 0x26;  bne- %END%
-  lis r3, 0x8F
+  lis r3, 0x27
 }
 HOOK @ $80AA9D60
 {
@@ -201,20 +203,19 @@ Result Camera Fixes [ds22]
 #####################
 Cosmetic Stuff [ds22]
 #####################
-word 0x2039 @ $80455890 # PT Announcer Call SFX
+word 0x202A 		 	  @ $80455890
 byte[4] 0x27, 1, 0x32, -1 @ $80455918
-byte[4] 0x0E, 0, 0, 0 @ $8045591C
-word 0x201D @ $80455920
-byte[4] 0x23, 1, 0x33, -1 @ $804559A8
-byte[4] 0x07, 0, 0, 0 @ $804559AC
-word 0x202A @ $804559B0
+byte[4] 0xE, 0, 0, 0 	  @ $8045591C
+word 0x201D 		 	  @ $80455920
+byte[4] 0x7, 0, 0, 0 	  @ $804559AC
 
 ###############
 Clone CSS Slots
 ###############
 word[4] 0x32FF1D24, 9,      0x80548056, 0 @ $80585DD0
-word[4] 0x33FF1C2D, 0x19C0, 0x80547FF0, 0 @ $80585DE0
+word[4] 0x33FF1C1B, 0x19C0, 0x80547FF0, 0 @ $80585DE0
 word[4] 0x35FF222F, 0x19CF, 0x805480BC, 0 @ $80585E00
+byte 0x33 				  @ $8045588A
 
 
 Knuckles Fixes
