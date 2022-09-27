@@ -215,7 +215,6 @@ Clone CSS Slots
 word[4] 0x32FF1D24, 9,      0x80548056, 0 @ $80585DD0
 word[4] 0x33FF1C2D, 0x19C0, 0x80547FF0, 0 @ $80585DE0
 word[4] 0x35FF222F, 0x19CF, 0x805480BC, 0 @ $80585E00
-byte 0x33 				  @ $8045588A
 
 
 Knuckles Fixes
