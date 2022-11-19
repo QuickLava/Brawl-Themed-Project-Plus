@@ -1310,7 +1310,7 @@ TABLE_2:
 0x33, | # Jungle Japes
 0x19, | # Fourside
 0x25, | # Corneria
-0x3B, | # Rainbow Cruise
+0x24, | # Peach's Castle
 0x23, | # Dream Land
 0x26, | # Big Blue
 0x27, | # Planet Zebes
@@ -1320,7 +1320,7 @@ TABLE_3:
 	byte[18] |
 0x2D, | # Mario Circuit
 0x38, | # Mushroom Kingdom
-0x24, | # Peach's Castle
+0x3B, | # Rainbow Cruise
 0x21, | # Golden Temple
 0x1E, | # Sky Sanctuary Zone
 0x0A, | # Metroid Lab
