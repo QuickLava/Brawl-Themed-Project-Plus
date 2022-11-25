@@ -49,13 +49,13 @@ TABLE_1:
 0x01, | # Final Destination
 0x04, | # Metal Cavern
 0x23, | # Dream Land
-0x0A, | # Metroid Lab
-0x20, | # Yoshi's Story
 0x1C, | # Green Hill Zone
 0x1A, | # Smashville
 0x00, | # Battlefield
 0x28, | # Pokemon Stadium 2
 0x02, | # Delfino's Secret
+0x0A, | # Metroid Lab
+0x20, | # Yoshi's Story
 0x16  | # Distant Planet
 
 TABLE_2:
