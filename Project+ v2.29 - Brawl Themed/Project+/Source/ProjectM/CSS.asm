@@ -107,3 +107,5 @@ word[4] 0x11FF0E0F, 0x19B5, 0x80547660, 0			@ $80585E70
 byte[4] 0xF, 0x1, 0x10, 0x11 						@ $804557C8
 word 0xF 											@ $80AD836C
 word[4] 0x2C0C0B30, 0x19BD, 0x805474C8, 0x80000000	@ $80585E80
+
+.include Source/Extras/CSSRoster.asm
