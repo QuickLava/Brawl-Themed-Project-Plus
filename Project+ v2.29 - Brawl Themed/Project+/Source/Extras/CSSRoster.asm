@@ -31,8 +31,8 @@ byte[36] |
 ############################################
 [Project+] CSS Random Data [ds22, dantarion]
 ############################################
-op li r23, 34 @ $806857F0 	# Set the range random allows
-byte[34] |
+op li r23, 35 @ $806857F0 	# Set the range random allows
+byte[35] |
 0x00, 0x01, 0x02, 0x03, 0x06, 0x07, 0x08, | 
 0x11, 0x12, 0x09, 0x1A, 0x0E, 0x17, 0x16, |
 0x13, 0x1B, 0x21, 0x26, 0x0D, 0x05, 0x14, |
