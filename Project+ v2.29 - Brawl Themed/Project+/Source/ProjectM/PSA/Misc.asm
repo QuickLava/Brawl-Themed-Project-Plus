@@ -191,11 +191,11 @@ CODE @ $80545000
 	word 6; word 7
 	word 5; IC_Basic 1005
 	word 0; word 5
-	word 1; scalar 4.7 # med sfx kb value
+	word 1; scalar 5.7 # med sfx kb value
 	word 6; word 7
 	word 5; IC_Basic 1005
 	word 0; word 5
-	word 1; scalar 7.5 # high sfx kb value
+	word 1; scalar 7.7 # high sfx kb value
 	word 0; word 0x45
 	word 0; word 0x46
 	word 0; word 0x2A
@@ -206,7 +206,7 @@ CODE @ $80545000
 	word 1; scalar 90.0
 	word 1; scalar 90.0
 	word 1; scalar 0.0
-	word 1; scalar 1.7 # low sfx kb value
+	word 1; scalar 3.7 # low sfx kb value
 	
 	word 1; scalar 0.0
 	word 1; scalar 0.0
