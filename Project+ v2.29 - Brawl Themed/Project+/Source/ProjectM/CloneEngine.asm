@@ -86,21 +86,21 @@ HOOK @ $80853FA4
 }
 HOOK @ $80853F44
 {
-  %AFix()			// Yes, this is the same as the above outside of hookpoint
+  %AFix()            // Yes, this is the same as the above outside of hookpoint
 }
 HOOK @ $80853F7C
 {
-  %AFix()			// Likewise.
+  %AFix()            // Likewise.
 }
 op cmpwi r30, 5 @ $80AA95A8
 op beq- 0xC     @ $80AA95B4
 HOOK @ $80AA95B8
 {
   cmpwi r30, 0x21;  bne- loc_0xC
-  lis r3, 0x22
+  lis r3, 0x22    # Lucario Shadow Ball Effect ID
 loc_0xC:
   cmpwi r30, 0x26;  bne- %END%
-  lis r3, 0x8F
+  lis r3, 0x27    # Mewtwo Shadow Ball Effect ID
 }
 HOOK @ $80AA9D60
 {
