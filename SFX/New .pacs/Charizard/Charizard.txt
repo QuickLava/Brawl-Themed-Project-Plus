@@ -1,0 +1,15 @@
+Check TurnRun, GlideAttack, AttackAirHi 
+
+AttackDash uses Ottotto Voice Clip instead of Low Voice Clip??
+
+CliffRollQuick is way wrong 
+
+Change attackairn to be same voice clips as attackairfd
+
+GlideAttack is wrong
+
+All cliff options seem to have the same sound effect playing that's making it sound wrong
+
+Change Fsmash
+
+Check Charizard's sawnd
