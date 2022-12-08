@@ -10,8 +10,8 @@
 
 Art0
 4-8
-030 Par00D3 2
 034 Par00-0 1
+030 Par00D3 2
 
 Art1
 1-1
@@ -21,18 +21,18 @@ Par00
 Falcon Punch (paramFalconPunch__13ftCaptainNode)
 
 0x0
-No Description Available.
+If 0x0 value is the same as 0x4, the Falcon will break when punching in the air
 
 0x4
 No Description Available.
 
 0x8
-No Description Available.
+Unknown
 
-0xC Aerial Momentum 1
+0xC Air Momentum 1
 Momentum forward in air punch (Occur when RA-Bit[17] is True)
 
-0x10 Aerial Momentum 2
+0x10 Air Momentum 2
 Momentum and fall speed in air punch (Occur when RA-Bit[17]=True and RA-Basic[0]=1)
 
 *0x14
@@ -45,10 +45,10 @@ Raptor Boost (paramFalconKnuckle__13ftCaptainNode)
 Horizontal momentum after ground punch (If negative, move after action ends)
 
 0x4
-No Description Available.
+Unknown
 
 0x8
-No Description Available.
+Unknown
 
 0xC Landing Lag (No Punch)
 Landing lag (when not attack)
@@ -65,7 +65,7 @@ Falcon Dive (paramSpecialHi__13ftCaptainNode)
 0x0 Pre Jump Slide (Ground)
 How much slide on ground when pre jumping
 
-0x4 Pre Jump Slide (Aerial)
+0x4 Pre Jump Slide (Air)
 How much slide in air when pre jumping
 
 0x8 Jump Max H Speed
@@ -123,7 +123,7 @@ Par04
 Blue Falcon (paramBlueFalcon__13ftCaptainNode)
 
 0x0
-No Description Available.
+Unknown
 
 0x4 Random Angle 1
 Random direction in which a target gets launched. Launch at random angles from 0x4 to 0x8
@@ -137,8 +137,8 @@ No Description Available.
 Par05
 Blue Falcon Extra (Subspace)
 
-0x0
-No Description Available.
+0x0 Dispersion
+Dispersion of the place where the enemy who was thrown in the subspace downs
 
 0x4 Height
 Initial Height on Subspace
@@ -161,6 +161,12 @@ No Description Available.
 *0x1C
 No Description Available.
 
+Par00-0
+ExtraParams0
+
+*0x0
+No Description Available.
+
 Par00D3
 Data3
 
@@ -168,12 +174,6 @@ Data3
 No Description Available.
 
 *0x4
-No Description Available.
-
-Par00-0
-ExtraParams0
-
-*0x0
 No Description Available.
 
 Par01-0

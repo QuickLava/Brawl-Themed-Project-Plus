@@ -55,20 +55,20 @@ How long chain is out before reeling in (release B)
 *0x4
 something with hitbox refreshing?
 
-*0x8
+*0x8 Appearance Timing
 Frame chain comes out
 
 *0xC
-Frame you can move chain around (if less than or equal to 0x8 the chain will not come out)
+Frame that can move chain around (if less than or equal to 0x8 the chain will not come out)
 
-*0x10
+*0x10 Remove Timing
 Frame after releasing B chain reels in
 
-*0x14
-Frame chain disappears after releasing B
+*0x14 Remove Speed
+Frame it takes for the chain to remove
 
 0x18
- ?? (read all the time when you can move chain)
+ ?? (read all the time when can move chain)
 
 *0x1C
 No Description Available.
@@ -94,11 +94,11 @@ No Description Available.
 0x14 Sensitivity
 Joystick sensitivity. If over 1, can't change travel Angle.
 
-0x18
-Travel speed 1
+0x18 Travel Speed 1
+Travel speed
 
-0x1C
-Travel speed 2
+0x1C Travel Speed 2
+Travel speed
 
 0x20
 No Description Available.
@@ -106,7 +106,7 @@ No Description Available.
 *0x24
 Unknown
 
-0x28
+0x28 V momentum at End
 Vertical momentum out of second explosion
 
 0x2C
@@ -208,11 +208,11 @@ Liveliness
 0xC
 How far it will go into the Z axis?
 
-0x10
-Tether Length
+0x10 Tether Length
+Tether length
 
-0x14
-Tether Speed
+0x14 Tether Speed
+Tether speed
 
 Par03-0
 ExtraParams0

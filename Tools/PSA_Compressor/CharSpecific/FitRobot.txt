@@ -42,7 +42,7 @@ Turning speed when input upward or downward
 Angle return speed when not input upward or downward
 
 0x10
-No Description Available.
+Unknown
 
 0x14 Recharge Time
 Frames to recharge
@@ -50,98 +50,98 @@ Frames to recharge
 0x18 Supercharge Time
 Frames to supercharge
 
-0x1C X Offset (Ground)
+0x1C Ground Beam X Offset
 X offset grounded beam
 
-0x20 Y Offset (Ground)
+0x20 Ground Beam Y Offset
 Y offset grounded beam
 
-0x24 X Offset (Air)
+0x24 Air Beam X Offset
 X offset aerial beam
 
-0x28 Y Offset (Air)
+0x28 Air Beam Y Offset
 Y offset aerial beam
 
 *0x2C Beam Bone
-Beam Focus Bone
+Beam focus bone
 
 *0x30 Lamp Bone
-Lamp Focus Bone
+Lamp focus bone
 
-0x34
-No Description Available.
+0x34 Lamp X Offset
+Lamp X offset
 
-0x38
-No Description Available.
+0x38 Lamp Y Offset
+Lamp X offset
 
-0x3C
-No Description Available.
+0x3C Lamp Z Offset
+Lamp Z offset
 
 Par01
 Arm Rotor
 
 0x0
-Initial rotation speed?
+Related to arm rotation speed. If set low value, character will move, but it will not be possible to attack by turning the arm
 
 0x4
-No Description Available.
+Unknown
 
 0x8
-No Description Available.
+Unknown
 
 0xC
-No Description Available.
+Unknown
 
 0x10
-No Description Available.
+Unknown
 
 0x14
-No Description Available.
+Unknown
 
-0x18
-No Description Available.
+0x18 Air H Momentum
+Aerial initial horizontal momentum
 
-0x1C
-gravity
+0x1C Gravity
+Gravity multiplier
 
-*0x20
-No Description Available.
+*0x20 Change Gravity Time
+Time to enable gravity multiplier
 
-0x24
-No Description Available.
+0x24 Max Angle
+Maximum angle that can be tilted back and front
 
-0x28
-No Description Available.
+0x28 Angle Change Speed
+Angle change speed when can be tilted back and front
 
 0x2C
-No Description Available.
+Related to duration
 
 *0x30
-No Description Available.
+Probably, duration of enable to rotation speed deceleration by 0x2C value
 
-0x34
-No Description Available.
+0x34 Spin Speed Deceleration
+Spin speed deceleration
 
 0x38
-No Description Available.
+Unknown
 
-0x3C
-No Description Available.
+0x3C End Spin Speed
+Spin speed equal to or less than this to end move
 
-0x40
-No Description Available.
+0x40 Add Spin Speed per Tap B
+Spin speed added per B button press
 
-*0x44
-No Description Available.
+*0x44 Interval
+Minimum frames between button presses
 
-*0x48
-No Description Available.
+*0x48 Max Tap Count
+Maximum number of valid B button inputs
 
 0x4C
-No Description Available.
+Unknown
 
-0x50
-No Description Available.
+0x50 Max H Speed
+Maximum horizontal speed
 
 *0x54
 No Description Available.
@@ -158,50 +158,50 @@ Grounded initial vertical momentum
 0x8 Initial V Momentum (Air)
 Aerial initial vertical momentum
 
-0xC H Preservarion
-Horizontal momentum preservarion (higher = more, but can't over previous speed)
+0xC H Preservation
+Horizontal momentum preservation (higher = more, but can't over previous speed)
 
 0x10
-No Description Available.
+Unknown
 
-0x14
+0x14 Rise Acceleration
 Rising acceleration
 
 *0x18
-No Description Available.
+Unknown
 
-0x1C
-No Description Available.
+0x1C Max Rise Speed
+Maximum Rise Speed. Maximum vertical speed (0x30) cannot be exceeded, but initial vertical momentum can exceed these maximums.
 
 0x20
-No Description Available.
+Unknown
 
-0x24
-No Description Available.
+0x24 H Acceleration
+Horizontal acceleration
 
-0x28
-No Description Available.
+0x28 Max H Speed
+Maximum horizontal speed
 
-0x2C
-No Description Available.
+0x2C Gravity
+Gravity. Affected even during the rise.
 
-0x30
-No Description Available.
+0x30 Max V Speed
+Maximum vertical speed
 
 0x34
-No Description Available.
+Unknown
 
-0x38
-No Description Available.
+0x38 Refuel Rate
+Refuel rate
 
 0x3C
-No Description Available.
+Unknown
 
-0x40
-No Description Available.
+0x40 Drain Rate
+Fuel drain rate
 
 *0x44
-No Description Available.
+Unknown
 
 Par03
 Gyro
@@ -246,7 +246,7 @@ Attack pattern count. If set at 1, only 1 type of attack will occur.
 Frame interval at which the beam pattern changes
 
 Par13
-HitDataList13(Arm Rotor)
+HitDataList13 (Arm Rotor Reflect1)
 
 Offset
 No Description Available.
@@ -282,28 +282,28 @@ No Description Available.
 No Description Available.
 
 Par01-0
-Robo Beam Attribute
+Robo Beam Article
 
-0x0
-Bounce angle tolerance
+0x0 Tolerance
+Floor bounce angle tolerance
 
 0x4
-No Description Available.
+Unknown
 
-*0x8
-No Description Available.
+*0x8 Robo Beam Duration
+Normal Robo Beam duration
 
-0xC
-No Description Available.
+0xC Robo Beam Speed
+Normal Robo Beam speed
 
 *0x10
-No Description Available.
+Unknown
 
-*0x14
-No Description Available.
+*0x14 Super Beam Duration
+Super Robo Beam duration
 
-0x18
-No Description Available.
+0x18 Super Beam Speed
+Super Robo Beam speed
 
 0x1C
 No Description Available.
@@ -315,24 +315,24 @@ ExtraParams0
 No Description Available.
 
 EXD 2C-00x
-HitDataList13>Offset (Arm Rotor)
+HitDataList13>Offset (Arm Rotor Reflect2)
 
-0x0
+0x0 X Offset Start
 Reflection bubble X pos Start
 
-0x4
+0x4 Y Offset Start
 Reflection bubble Y pos Start
 
-0x8
+0x8 Z Offset Start
 Reflection bubble Z pos Start
 
-0xC
+0xC X Offset End
 Reflection bubble X pos End
 
-0x10
+0x10 Y Offset End
 Reflection bubble Y pos End
 
-0x14
+0x14 Z Offset End
 Reflection bubble Z pos End
 
 0x18 Size

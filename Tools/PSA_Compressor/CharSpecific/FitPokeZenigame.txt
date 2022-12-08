@@ -59,11 +59,11 @@ Max upward angle (degrees)
 0xC Max Downward Angle
 Max downward angle (degrees, higher is more angled down)
 
-0x10
-Turning speed
+0x10 Turning Speed
+Turning speed (also affects going back to center)
 
 0x14 Randomness
-Water spread randomness
+Water spread randomness (radians)
 
 0x18
  ?? (read on water gun)
@@ -162,7 +162,7 @@ Par03
 Waterfall
 
 0x0
-Joystick distance?
+Unknown
 
 0x4 Sensitivity
 Forward/backward sensitivity. If over 1, can't change jumping Angle.
@@ -185,8 +185,8 @@ Special Fall max horizontal speed multiplier
 Par04
 Waterfall Extra
 
-0x0 Air Preservarion pre-Jump
-Aerial horizontal momentum preservarion on startup (higher = more)
+0x0 Air H Preservation pre-Jump
+Aerial horizontal momentum preservation on startup (higher = more)
 
 0x4 Air Gravity pre-Jump
 Aerial gravity on startup
@@ -227,7 +227,7 @@ Water Gun Article
 0x0 Base Speed
 Base water momentum
 
-0x4
+0x4 Speed Growth
 Water momentum add when charged
 
 0x8 Gravity
@@ -239,12 +239,12 @@ Water spacing?
 *0x10 Duration
 How many frames water stays out
 
-0x14
-Random water gfx size 1
+0x14 Random GFX Size 1
+Random water GFX Size 1. Random size from 0x14 to 0x18. The higher value is the maximum size, and the lower value is the minimum size.
 
-0x18
-Random water gfx size 2
+0x18 Random GFX Size 2
+Random water GFX Size 2. Random size from 0x14 to 0x18
 
-*0x1C
+*0x1C Knockback Growth
 Water knockback add when charged
 

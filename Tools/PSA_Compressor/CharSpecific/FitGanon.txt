@@ -8,10 +8,10 @@
 
 Art0
 2-2
-030 Par00D3 17
 034 Par00-0 3
 038 Par00-1 5
 040 Par00-3 78
+030 Par00D3 17
 
 Art1
 0-1
@@ -20,18 +20,18 @@ Par00
 Warlock Punch (paramGanonPunch__11ftGanonNode)
 
 0x0
- ?? (read on punch)
+If 0x0 value is the same as 0x4, the Falcon will break when punching in the air
 
 0x4
- ?? (read on punch)
+No Description Available.
 
 0x8
- ?? (read on punch)
+Unknown
 
-0xC Aerial Momentum 1
+0xC Air Momentum 1
 Momentum forward in air punch (Occur when RA-Bit[17] is True)
 
-0x10 Aerial Momentum 2
+0x10 Air Momentum 2
 Momentum speed in air punch (Occur when RA-Bit[17]=True and RA-Basic[0]=1)
 
 *0x14
@@ -53,22 +53,22 @@ Max fall speed after aerial grab failed
 Landing lag (Frames)
 
 0x10 Grabbed Fall Speed 1
-First fall speed after grab successed (The smaller one is applied compared to 0x14)
+First fall speed after grab successed (The lower one is applied compared to 0x14)
 
 0x14 Grabbed Fall Speed 2
-First fall speed after grab successed (The smaller one is applied compared to 0x10)
+First fall speed after grab successed (The lower one is applied compared to 0x10)
 
 0x18 Grabbed Final Gravity
 Final Gravity after grab successed
 
-0x1C Grabbed Final Max fall speed
+0x1C Grabbed Final Max Fall Speed
 Final Max fall speed after grab successed
 
 Par02
 Dark Dive (paramGanonSpecialHi__11ftGanonNode)
 
 *0x0
-Unknown, but if set a negative value, the character will break at the start of the rise
+Unknown, but if set a negative value, the character will break at the start of the rise.
 
 0x4
 Horizontal movement at end of rise
@@ -94,7 +94,7 @@ Post-release gravity
 Par03
 Wizard's Foot (paramGanonKick__11ftGanonNode)
 
-0x0 Momentum multiplier on hit
+0x0 Momentum Multiplier on Hit
 Momentum multiplier on hit when on ground
 
 *0x4
@@ -112,78 +112,6 @@ Unknown, aerial-landing related
 0x14
 No Description Available.
 
-Par00D3
-Data3
-
-*0x0
-No Description Available.
-
-*0x4
-No Description Available.
-
-*0x8
-No Description Available.
-
-*0xC
-No Description Available.
-
-*0x10
-No Description Available.
-
-*0x14
-No Description Available.
-
-*0x18
-No Description Available.
-
-*0x1C
-No Description Available.
-
-*0x20
-No Description Available.
-
-*0x24
-No Description Available.
-
-*0x28
-No Description Available.
-
-*0x2C
-No Description Available.
-
-*0x30
-No Description Available.
-
-*0x34
-No Description Available.
-
-*0x38
-No Description Available.
-
-*0x3C
-No Description Available.
-
-*0x40
-No Description Available.
-
-*0x44
-No Description Available.
-
-*0x48
-No Description Available.
-
-*0x4C
-No Description Available.
-
-*0x50
-No Description Available.
-
-*0x54
-No Description Available.
-
-*0x58
-No Description Available.
-
 Par00-0
 Beast Ganon Params0
 
@@ -194,7 +122,7 @@ Camera Horizontal position
 Camera Vertical position
 
 0x8 Speed
-Speed
+Beast Ganon Speed
 
 Par00-1
 Beast Ganon Params1
@@ -575,5 +503,77 @@ HitData14-6
 No Description Available.
 
 Flags(HitData14-7)
+No Description Available.
+
+Par00D3
+Data3
+
+*0x0
+No Description Available.
+
+*0x4
+No Description Available.
+
+*0x8
+No Description Available.
+
+*0xC
+No Description Available.
+
+*0x10
+No Description Available.
+
+*0x14
+No Description Available.
+
+*0x18
+No Description Available.
+
+*0x1C
+No Description Available.
+
+*0x20
+No Description Available.
+
+*0x24
+No Description Available.
+
+*0x28
+No Description Available.
+
+*0x2C
+No Description Available.
+
+*0x30
+No Description Available.
+
+*0x34
+No Description Available.
+
+*0x38
+No Description Available.
+
+*0x3C
+No Description Available.
+
+*0x40
+No Description Available.
+
+*0x44
+No Description Available.
+
+*0x48
+No Description Available.
+
+*0x4C
+No Description Available.
+
+*0x50
+No Description Available.
+
+*0x54
+No Description Available.
+
+*0x58
 No Description Available.
 

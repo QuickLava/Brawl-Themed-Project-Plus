@@ -9,8 +9,8 @@
 
 Art0
 4-4
-030 Par00D3 3
 034 Par00-0 1
+030 Par00D3 3
 
 Par00
 Eruption (paramIkeSpecialN__9ftIkeNode)
@@ -103,7 +103,7 @@ unknown, read once on startup and jump
 unknown, read once on startup and jump
 
 *0xC Max Ledge Grab Count
-Maximum number of times you can grab the ledge before needing to land on stage
+Maximum number of times character can grab the ledge before needing to land on stage
 
 Par03
 Counter (paramIkeSpecialLw__9ftIkeNode)
@@ -126,7 +126,7 @@ Counter attack damage mltiplier
 0x14
 unknown, read on activation
 
-*0x18 Hitlag
+*0x18 Block Hitlag
 Freeze frames on hit
 
 0x1C Min Damage
@@ -147,7 +147,7 @@ Focus Bone
 0x4 X Offset
 Block bubble X offset (Normal = Depth place)
 
-0x8 X Offset
+0x8 Y Offset
 Block bubble Y Offset (Normal = Height place)
 
 0xC Z Offset
@@ -204,6 +204,12 @@ No Description Available.
 0x34
 No Description Available.
 
+Par00-0
+ExtraParams0
+
+0x0
+No Description Available.
+
 Par00D3
 Data3
 
@@ -214,11 +220,5 @@ No Description Available.
 No Description Available.
 
 *0x8
-No Description Available.
-
-Par00-0
-ExtraParams0
-
-0x0
 No Description Available.
 

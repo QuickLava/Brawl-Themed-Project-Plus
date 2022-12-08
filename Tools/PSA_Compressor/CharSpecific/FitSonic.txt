@@ -14,20 +14,20 @@ Art0
 
 Art1
 4-A
-030 Par01D3 1E
 034 Par01-0 C
 038 Par01-1 68
 040 Par01-3 6
+030 Par01D3 1E
 X02 26-13x
 
 Par00
 Homing Attack (paramSpecialN__11ftSonicNode)
 
-0x0 Grounded Initial V Momentum
-Grounded initial Vertical momentum on startup
+0x0 Ground Initial V Momentum
+Grounded initial vertical momentum on startup
 
-0x4 Aerial Initial V Momentum
-Aerial initial Vertical momentum on startup
+0x4 Air Initial V Momentum
+Aerial initial vertical momentum on startup
 
 0x8 Momentum Preservation
 Momentum preservation (Set to 2, it will multiply current momentum by 2. Set to 0.5, current momentum will be halved.)
@@ -39,13 +39,13 @@ Minimum hold frame on startup
 Maximum hold frame on startup
 
 0x14
-Related to curve. Lower number = smaller curves
+Related to curve. Lower = smaller curves
 
 0x18
-Homing Intensity. Lower number = better homing.
+Homing Intensity. Lower = better homing.
 
 0x1C
-Homing Dash Speed (Higher number = travel slower, and cancel before you reach your target if too high.)
+Homing Dash Speed (Higher number = travel slower, and cancel before reach target if too high)
 
 0x20
 Homing Dash Acceleration?
@@ -57,10 +57,10 @@ Homing Dash Deceleration?
  ??
 
 *0x2C
-Homing Dash Duration?
+Unknown
 
 0x30 Bounce H Momentum
-Floor-bounce horazontal momentum (Hit wall = backward)
+Floor-bounce horizontal momentum (Hit wall = backward)
 
 0x34 Bounce V Momentum 1
 Floor-bounce vertical momentum (Hit wall = downward)
@@ -75,10 +75,10 @@ Person-bounce aerial mobility
 Person-bounce vertical momentum
 
 0x44 Recoil Gravity
-Person-bounce Gravity
+Person-bounce gravity multiplier
 
 *0x48
-Person-bounce Height related
+Person-bounce height related
 
 0x4C No-Homing Angle
 No-homing dash angle (Degrees)
@@ -102,15 +102,15 @@ Spin Dash (paramSpecialS__11ftSonicNode)
 Minimum charge frame
 
 *0x4
-If 0x0 is larger than 0x4, can't dash
+If 0x0 is higher than 0x4, can't dash
 
 0x8
 Momentum during charge on ground
 
-0xC
+0xC Base Speed
 Base speed
 
-0x10
+0x10 Speed Growth
 Speed growth rate
 
 0x14
@@ -119,47 +119,47 @@ Angle of jump?
 0x18
  ?? (read on jump)
 
-0x1C
-Height of initial dash jump (Not affect jump without dash)
+0x1C Dash Jump V Momentum
+Initial dash jump vertical momentum (Not affect jump without dash)
 
-0x20
-Friction?
+0x20 Dash Deceleration
+Dash deceleration
 
-0x24
- ?? (read on jump, affects angle)
+0x24 Air Deceleration
+Aerial deceleration
 
-0x28
-Speed
+0x28 Dash Speed
+Dash speed
 
-0x2C
- ?? (read on jump, affects angle)
+0x2C Dash Jump H Momentum
+Initial dash jump horizontal momentum (Not affect jump without dash)
 
-*0x30
-How long you can move around (frames)
+*0x30 Dash Duration
+How many frames character roll around
 
-0x34
+0x34 Air H Acceleration
 Aerial horizontal acceleration
 
 0x38
  ?? (read on jump)
 
 0x3C
- ?? (read on jump)
+If dash speed is less than this value, it will move in parallel when over the edge at Side B, and will not fall off the edge at Down B (Can fall off the edge at the end).
 
 0x40
  ?? (read on turn/land on ground)
 
-0x44
-Damage multiplier after hitting ground
+0x44 Low Speed Damage
+The lower the speed, the closer to this damage. (Affect to side B and down B)
 
-0x48
-Damage multiplier before hitting ground
+0x48 High Speed Damage
+The higher the speed, the closer to this damage. (Affect to side B and down B)
 
-0x4C
-Skidding friction
+0x4C Ground Deceleration
+Grounded dash deceleration at End
 
-0x50
-Skidding friction?
+0x50 Air Deceleration
+Aerial dash deceleration at End
 
 0x54
 No Description Available.
@@ -173,11 +173,11 @@ No Description Available.
 0x60
 No Description Available.
 
-0x64
-No Description Available.
+0x64 Slope Up Speed
+Additional backward speed when going up a slope
 
-0x68
-No Description Available.
+0x68 Slope Down Speed
+Additional forward speed when going down a slope
 
 *0x6C
 No Description Available.
@@ -198,16 +198,16 @@ Par02
 Spring Jump (paramSpecialHi__11ftSonicNode)
 
 0x0 Jump Startup Time
-How much time before you jump (negative will make spring invisible)
+How much time before jump (negative = spring is invisible)
 
 0x4
  ??
 
 0x8 Ground V Momentum
-Grounded jump height
+Grounded jump vertical momentum
 
 0xC Air V Momentum
-Aerial Jump height ratio (relative to ground version)
+Aerial Jump vertical momentum ratio (relative to grounded)
 
 0x10 Gravity
 Gravity
@@ -215,11 +215,11 @@ Gravity
 0x14
 Gravity?
 
-0x18
-Maximum horizontal drift speed during fall after spring?
+0x18 Max H Speed 1
+Maximum horizontal speed during fall after spring jump. Enable to lower of 0x18 and 0x1C.
 
-0x1C
-Drift control during fall after spring?
+0x1C Max H Speed 2
+Maximum horizontal speed during fall after spring jump
 
 Par03
 Spin Charge (paramSpecialLw__11ftSonicNode)
@@ -228,34 +228,34 @@ Spin Charge (paramSpecialLw__11ftSonicNode)
 Required interval to button tap
 
 0x4
-Deceleration
+Unknown
 
-0x8
-Charge Speed (higher =slow)
+0x8 Charge Speed
+Charge speed (higher = slow)
 
-0xC
-No Description Available.
+0xC Charge Time
+Charge continue time. (less = long)
 
-0x10
+0x10 Charging Animation Speed
 Animation Speed on charging
 
-0x14
-No Description Available.
+0x14 Charging GFX Interval
+The occurrence interval of GFX during charge. Game crashes when value too high.
 
-0x18
-No Description Available.
+0x18 Initial Charge Duration
+Initial charge duration. If high, can't attack.
 
-0x1C
-No Description Available.
+0x1C Add Charge Time
+Additional charge time by button tap
 
 *0x20
-No Description Available.
+If high, it can't charge for a long time.
 
 0x24
 No Description Available.
 
-0x28
-No Description Available.
+0x28 Speed Growth
+Speed growth rate. If 5 or more, the maximum speed without charge.
 
 *0x2C
 No Description Available.
@@ -263,17 +263,17 @@ No Description Available.
 Par04
 paramSpinJump__11ftSonicNode
 
-0x0
-No Description Available.
+0x0 Jump V Momentum
+Vertical momentum when input a jump during side B or down B
 
-0x4
-No Description Available.
+0x4 Jump Deceleration
+Deceleration when input a jump during side B or down B (No affect to fall when no jump)
 
-0x8
-No Description Available.
+0x8 Jump Max H Speed 1
+Maximum horizontal speed when input a jump during side B or down B (Can over this maximum speed when jumping during a dash)
 
-0xC
-No Description Available.
+0xC Jump Max H Speed 2
+Maximum horizontal speed when input a jump during side B or down B (Can't over this maximum speed when jumping during a dash too)
 
 Par05
 paramDash__11ftSonicNode
@@ -320,99 +320,6 @@ Aerial spring spin speed when bounced
 *0x2C
 No Description Available.
 
-Par01D3
-Data3
-
-*0x0
-No Description Available.
-
-*0x4
-No Description Available.
-
-*0x8
-No Description Available.
-
-*0xC
-No Description Available.
-
-*0x10
-No Description Available.
-
-*0x14
-No Description Available.
-
-*0x18
-No Description Available.
-
-*0x1C
-No Description Available.
-
-*0x20
-No Description Available.
-
-*0x24
-No Description Available.
-
-*0x28
-No Description Available.
-
-*0x2C
-No Description Available.
-
-*0x30
-No Description Available.
-
-*0x34
-No Description Available.
-
-*0x38
-No Description Available.
-
-*0x3C
-No Description Available.
-
-*0x40
-No Description Available.
-
-*0x44
-No Description Available.
-
-*0x48
-No Description Available.
-
-*0x4C
-No Description Available.
-
-*0x50
-No Description Available.
-
-*0x54
-No Description Available.
-
-*0x58
-No Description Available.
-
-*0x5C
-No Description Available.
-
-*0x60
-No Description Available.
-
-*0x64
-No Description Available.
-
-*0x68
-No Description Available.
-
-*0x6C
-No Description Available.
-
-*0x70
-No Description Available.
-
-*0x74
-No Description Available.
-
 Par01-0
 Super Sonic Attribute
 
@@ -440,11 +347,11 @@ Relate to turn
 0x1C Fall Speed
 Fall Speed
 
-0x20
-No Description Available.
+0x20 Min High-Speed Attack
+The speed required to turn into a high-speed attack movement. If too high, can't change direction too.
 
 0x24
-No Description Available.
+If too high, can't change direction when moving.
 
 *0x28 Flashing Time
 The time when the character starts flashing, counting from the start time (frames)
@@ -786,6 +693,99 @@ No Description Available.
 No Description Available.
 
 *0x14
+No Description Available.
+
+Par01D3
+Data3
+
+*0x0
+No Description Available.
+
+*0x4
+No Description Available.
+
+*0x8
+No Description Available.
+
+*0xC
+No Description Available.
+
+*0x10
+No Description Available.
+
+*0x14
+No Description Available.
+
+*0x18
+No Description Available.
+
+*0x1C
+No Description Available.
+
+*0x20
+No Description Available.
+
+*0x24
+No Description Available.
+
+*0x28
+No Description Available.
+
+*0x2C
+No Description Available.
+
+*0x30
+No Description Available.
+
+*0x34
+No Description Available.
+
+*0x38
+No Description Available.
+
+*0x3C
+No Description Available.
+
+*0x40
+No Description Available.
+
+*0x44
+No Description Available.
+
+*0x48
+No Description Available.
+
+*0x4C
+No Description Available.
+
+*0x50
+No Description Available.
+
+*0x54
+No Description Available.
+
+*0x58
+No Description Available.
+
+*0x5C
+No Description Available.
+
+*0x60
+No Description Available.
+
+*0x64
+No Description Available.
+
+*0x68
+No Description Available.
+
+*0x6C
+No Description Available.
+
+*0x70
+No Description Available.
+
+*0x74
 No Description Available.
 
 EXD 26-13x

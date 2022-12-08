@@ -12,8 +12,8 @@ X3C 27-01iBone Index Replacement Data1
 
 Art0
 13-16
-030 Par00D3 4
 034 Par00-0 28
+030 Par00D3 4
 X1E 23-0E-00x
 
 Art1
@@ -39,7 +39,7 @@ No Description Available.
 Biting animation speed when attack button pressed
 
 0x14
-If value is small, can't change biting animation speed when attack button pressed
+If value is low, can't change biting animation speed when attack button pressed
 
 0x18
 No Description Available.
@@ -51,7 +51,7 @@ Damage taken when eat a bomb
 No Description Available.
 
 *0x24 Interval after Throw
-Frames before you can bite again after throwing
+Frame to can't bite after throwing
 
 Par01
 Wario Bike
@@ -75,7 +75,7 @@ Jumping off bike horizontal momentum
 Jumping off bike vertical momentum
 
 *0x18 Bike Generate Interval
-How long after bike is gone you have to wait to do Side B again (Frames)
+How long does it take to get the bike out again after it's gone (Frames)
 
 *0x1C
 No Description Available.
@@ -111,7 +111,7 @@ Par03
 Wario Waft
 
 *0x0 Full Charge Time
-Seconds to fully charge (SpecialLwFly) If only this value is small, it will suddenly reach fully charge
+Seconds to fully charge (SpecialLwFly) If only this value is low, it will suddenly reach fully charge
 
 *0x4 Level 2 Charge Time
 Seconds to reach charge level 2 (SpecialLwM)
@@ -212,6 +212,129 @@ No Description Available.
 *0x3C
 No Description Available.
 
+Par00-0
+Wario Bike Article
+
+0x0 Ground Initial Speed
+Grounded initial speed
+
+0x4 Air Initial Speed
+Aerial initial speed
+
+0x8 Air Inital V Momentum
+Aerial inital vertical momentum
+
+0xC Ground Top Speed
+Grounded maximum horizontal speed
+
+0x10 Ground Deceleration
+Grounded horizontal speed deceleration
+
+0x14 Ground Lowest Speed
+Grounded minimum horizontal speed
+
+0x18 Air Top Speed
+Aerial maximum horizontal speed
+
+0x1C Air Deceleration
+Aerial horizontal speed deceleration
+
+0x20 Air Lowest Speed
+Aerial minimum horizontal speed
+
+0x24 Gravity
+Gravity
+
+0x28 Max Fall Speed
+Aerial max fall speed
+
+*0x2C
+No Description Available.
+
+0x30 Damage Growth
+Damage Growth Constant (Equation is roughly something like Speed (in Units) x this = damage output. At fullspeed with this set to 100, the hitbox did 699%-744%)
+
+0x34 Min Attack Speed
+Minimum speed at which Hitbox occurs
+
+0x38
+Minimum speed to have a hitbox?
+
+0x3C
+No Description Available.
+
+0x40 Turn Speed 1
+Turning speed when high-speed (less = slow)
+
+0x44 Turn Speed 2
+Turning speed when low-speed (less = slow)
+
+0x48
+ ?? (read on grounded travel)
+
+0x4C Air Rotation Speed
+Aerial rotation speed
+
+0x50 Tilt Bounce Momentum
+Bounce (vertical) momentum when the bike is tilted and landing
+
+0x54 Ground Acceleration
+Grounded horizontal acceleration
+
+0x58
+No Description Available.
+
+0x5C Ground Max Rotation
+Max rotation on ground
+
+0x60 Ground Rotation Speed
+Rotation speed on ground
+
+0x64 Ground Rotation Return Speed
+Return rotation speed on ground
+
+0x68
+No Description Available.
+
+0x6C
+No Description Available.
+
+*0x70
+Something with how long character have to be at max rotation before falling off at slow speeds?
+
+*0x74
+Something with how long character have to be at max rotation before falling off at fast speeds?
+
+0x78 Turn Brake
+Brake when turning
+
+*0x7C Fall Ratio
+Falling chance on turn (high = hard to fall)
+
+*0x80 Max Turn Count
+Maximum number turn before falling off the bike
+
+0x84 Deceleration after Jump
+Deceleration of bike after jumping off while running on the ground
+
+0x88
+No Description Available.
+
+0x8C Down after Jump
+If the bike falls below this value after jumping off while running on the ground, it will fell down.
+
+0x90
+No Description Available.
+
+0x94
+No Description Available.
+
+0x98
+No Description Available.
+
+*0x9C
+No Description Available.
+
 Par00D3
 Data3
 
@@ -225,129 +348,6 @@ No Description Available.
 No Description Available.
 
 *0xC
-No Description Available.
-
-Par00-0
-Wario Bike Article
-
-0x0 Grounded Initial Speed
-Grounded initial speed
-
-0x4 Aerial Initial Speed
-Aerial initial speed
-
-0x8 Aerial Inital V Momentum
-Aerial inital vertical momentum
-
-0xC Grounded Top Speed
-Grounded maximum horizontal speed
-
-0x10 Grounded Deceleration
-Grounded horizontal speed deceleration
-
-0x14 Grounded Lowest Speed
-Grounded minimum horizontal speed
-
-0x18 Aerial Top Speed
-Aerial maximum horizontal speed
-
-0x1C Aerial Deceleration
-Aerial horizontal speed deceleration
-
-0x20 Aerial Lowest Speed
-Aerial minimum horizontal speed
-
-0x24 Gravity
-Gravity
-
-0x28 Max Fall Speed
-Aerial max fall speed
-
-*0x2C
-No Description Available.
-
-0x30
-Damage Growth Constant (Equation is roughly something like Speed (in Units) x this = damage output. At fullspeed with this set to 100, the hitbox did 699%-744%)
-
-0x34
-Something with hitbox offset?
-
-0x38
-Minimum speed to have a hitbox?
-
-0x3C
-No Description Available.
-
-0x40
-No Description Available.
-
-0x44
- ?? (read on grounded travel)
-
-0x48
- ?? (read on grounded travel)
-
-0x4C
-Aerial Rotation Speed
-
-0x50
-Air -> ground bounce height
-
-0x54
- ?? (read when landing from air -> ground)
-
-0x58
-No Description Available.
-
-0x5C
-Max rotation on ground
-
-0x60
-Something with rotating (at 0 you can't rotate)
-
-0x64
-Rotating down air friction? (at 0 you can't rotate)
-
-0x68
-No Description Available.
-
-0x6C
-No Description Available.
-
-*0x70
-Something with how long you have to be at max rotation before falling off at slow speeds?
-
-*0x74
-Something with how long you have to be at max rotation before falling off at fast speeds?
-
-0x78
- ?? (read when falling off bike)
-
-*0x7C
-Falling chance on turn (i.e. one in this chance)
-
-*0x80
-See above, but for higher speed?
-
-0x84
- ?? (read when falling off bike)
-
-0x88
-No Description Available.
-
-*0x8C
-No Description Available.
-
-0x90
-No Description Available.
-
-0x94
-No Description Available.
-
-0x98
-No Description Available.
-
-*0x9C
 No Description Available.
 
 Par01-0

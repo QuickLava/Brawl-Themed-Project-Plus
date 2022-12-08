@@ -138,19 +138,19 @@ No Description Available.
 Par05
 Critical Hit (paramMarthFinal__11ftMarthNode)
 
-0x0
+0x0 Travel Speed
 Travel Speed
 
-*0x4
-Travel Time
+*0x4 Travel Time
+Max travel time
 
-0x8
-Hit graphic move Speed
+0x8 GFX Speed
+Hit graphic move speed
 
-*0xC
-Hit graphic move Frames
+*0xC GFX Move Time
+Hit graphic move frames
 
-*0x10
+*0x10 GFX Duration
 Hit graphic duration
 
 *0x14

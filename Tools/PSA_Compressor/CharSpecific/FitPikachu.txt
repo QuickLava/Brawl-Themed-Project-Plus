@@ -63,11 +63,11 @@ Max charge time (frames)
 0xC
 Related to damage growth rate (less = more)
 
-0x10 Damage Rate
+0x10 Damage Growth Rate
 Damage growth rate
 
-0x14 Air H Preservarion on Startup
-Aerial horizontal momentum preservarion on startup (less = more)
+0x14 Air H Preservation on Startup
+Aerial horizontal momentum preservation on startup (less = more)
 
 0x18
  ?? (read on air startup)
@@ -78,7 +78,7 @@ Unknown
 0x20 Base H Momentum
 Base horizontal firing momentum
 
-0x24 H Momentum Rate
+0x24 H Momentum Growth Rate
 Horizontal momentum growth rate
 
 0x28 Upward Momentum
@@ -90,14 +90,14 @@ Launch downward momentum
 0x30
  ?? (read on firing)
 
-0x34 Ending Deceleration
-Ending deceleration to horizontal momentum preservation
+0x34 Ending Preservation
+Ending horizontal momentum preservation
 
 0x38
  ?? (read on aerial end)
 
-0x3C
- ?? (read on aerial end)
+0x3C Ending Gravity
+Ending gravity
 
 *0x40
 No Description Available.
@@ -147,29 +147,29 @@ Not read?
 0x30 Sensitivity
 Joystick sensitivity. If over 1, can't change travel Angle.
 
-0x34
-Starting momentum of each segment
+0x34 Travel Speed 1
+Travel speed 1. This value that affects only when direction is input. Affects only when the value is high.
 
-0x38
-Momentum of each segment
+0x38 Travel Speed 2
+Travel speed 2. This value affect more when direction is input.
 
-0x3C
-Second segment length multiplier
+0x3C 2nd Travel Speed
+Second travel speed multiplier
 
-0x40
-Horizontal momentum preservation
+0x40 Air Max H Speed at End
+Aerial maximum horizontal movement in the travel ending
 
 *0x44
-Minimum direction change (degrees) for grounded second segment
+Minimum direction change (degrees) for grounded second segment?
 
 0x48
-Horizontal momentum subtracted each frame after frame 5 of second segment
+Horizontal momentum subtracted each frame after frame 5 of second segment?
 
-*0x4C
-Minimum direction change (degrees) for second segment
+*0x4C Min change direction
+Minimum direction change (degrees) for second segment (If 0, can move to the same angle again)
 
-0x50
- ?? Read when landing from air -> ground
+0x50 Fall Max H Speed
+Special Fall max horizontal speed multiplier
 
 0x54 Landing Lag
 Landing lag
@@ -250,7 +250,7 @@ Par02-0
 Thunder Article
 
 0x0 Hit Width
-Area of effect for behing hit from your thunder
+Width where generated thunder hits Pikachu
 
 0x4 Speed
 Thunder Speed
@@ -264,32 +264,32 @@ No Description Available.
 Par04-0
 Volt Tackle Attribute
 
-0x0
-Damage growth rate
+0x0 Normal Damage Growth Rate
+Damage multiplier when hit under normal conditions. When faster speed, more damage.
 
-0x4
-Damage decrease
+0x4 Damage Decrease
+Damage decrease when hit under normal conditions
 
-0x8
-No Description Available.
+0x8 Normal Operation
+Auto vertical movement speed and ease of operation (Inertia deceleration)
 
-0xC
-No Description Available.
+0xC Normal Movement Speed
+Normal movement speed
 
-0x10
-No Description Available.
+0x10 Slow Operation
+Auto vertical movement speed and ease of operation before the end
 
-0x14
-No Description Available.
+0x14 Movement at Ending
+If the value is low, the movement before the end will be the same as normal.
 
-0x18
-No Description Available.
+0x18 Slow Movement Speed
+Slow movement speed
 
-0x1C
-No Description Available.
+0x1C Wiggling Range
+Range to move vertically automatically
 
-*0x20
-Discharge duration
+*0x20 Discharge Duration
+How long the post-attack action (Discharge)
 
 Par04-1
 ExtraParams1

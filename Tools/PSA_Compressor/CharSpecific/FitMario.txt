@@ -22,7 +22,7 @@ Art2
 034 Par02-0 5
 
 Art3
-3-7
+3-3
 034 Par03-0 8
 
 Art4
@@ -50,8 +50,8 @@ Unknown (read on upB)
 Par01
 Super Jump Punch Extra
 
-0x0 Air Preservarion pre-Jump
-Aerial horizontal momentum preservarion on startup (higher = more)
+0x0 Air H Preservation pre-Jump
+Aerial horizontal momentum preservation on startup (higher = more)
 
 0x4 Air Gravity pre-Jump
 Aerial gravity on startup
@@ -89,17 +89,17 @@ Frames to fully charge
 0x4
 Unknown (read on firing)
 
-*0x8
+*0x8 Max Back Timing
 Charge time until momentum backward is max (frames)
 
 0xC Backward Momentum
-Momentum backward when firing on ground
+Momentum backward when firing on ground. When set to 0, occur no backward momentum both grounded and aerial.
 
 *0x10 FLUDD Stay Time
-How many frames FLUDD stays out during after action end (If the value is too small, FLUDD stays out even in the during of fully charge firing)
+How many frames FLUDD stays out during after action end (If the value is too low, FLUDD stays out even in the during of fully charge firing)
 
 Par04
-Cape Reflect Data
+Cape Reflect
 
 *0x0 Bone
 Focus Bone
@@ -170,22 +170,22 @@ Max upward angle (degrees)
 0x8 Max Downward Angle
 Max downward angle (degrees) If 25, can change angle downward to 25
 
-0xC
+0xC Turning Speed
 Turning speed (also affects going back to center)
 
 0x10 V Randomness
 Water vertical offset randomness
 
 Par03-0
-FLUDD Article3
+FLUDD Article3 (Water)
 
 0x0 Base Speed
 Base water momentum
 
-0x4
-Water momentum added when charged
+0x4 Speed Growth
+Water momentum add when fully charged
 
-0x8
+0x8 Gravity
 Water gravity
 
 0xC
@@ -194,14 +194,14 @@ Unknown (read on firing)
 *0x10 Duration
 How many frames water stays out
 
-0x14
-Water gfx size 1
+0x14 Random GFX Size 1
+Random water GFX Size 1. Random size from 0x14 to 0x18. The higher value is the maximum size, and the lower value is the minimum size.
 
-0x18
-Water gfx size 2
+0x18 Random GFX Size 2
+Random water GFX Size 2. Random size from 0x14 to 0x18
 
-*0x1C
-Water pushback
+*0x1C Knockback Growth
+Water knockback add when fully charged
 
 Par04-0
 Mario Finale Article

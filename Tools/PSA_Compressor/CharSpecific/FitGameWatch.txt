@@ -154,37 +154,37 @@ Judge Extra
 Odds for getting a 1. Even if 1000, once it is issued, it will not be output twice thereafter. If 0, it will not come out, but if the number that can be put out is 2 or less, the character will freeze. Damage is controlled by Variable RA-Float[4] so there are no parameters.
 
 *0x4 Ratio of 2
-Odds for getting a 2
+Odds for getting a 2 (Detail: 0x0)
 
 *0x8 Ratio of 3
-Odds for getting a 3
+Odds for getting a 3 (Detail: 0x0)
 
 *0xC Ratio of 4
-Odds for getting a 4
+Odds for getting a 4 (Detail: 0x0)
 
 *0x10 Ratio of 5
-Odds for getting a 5
+Odds for getting a 5 (Detail: 0x0)
 
 *0x14 Ratio of 6
-Odds for getting a 6
+Odds for getting a 6 (Detail: 0x0)
 
 *0x18 Ratio of 7
-Odds for getting a 7
+Odds for getting a 7 (Detail: 0x0)
 
 *0x1C Ratio of 8
-Odds for getting a 8
+Odds for getting a 8 (Detail: 0x0)
 
 *0x20 Ratio of 9
-Odds for getting a 9
+Odds for getting a 9 (Detail: 0x0)
 
 Par15
 Octopus
 
-0x0
-No Description Available.
+0x0 Walk Acceleration A
+The speed of acceleration while walking (Slow grounded move).
 
-0x4
-No Description Available.
+0x4 Walk Acceleration B
+The speed of acceleration while walking (Slow grounded move).
 
 0x8 Max Walk Speed
 Max walk (Slow grounded move) speed
@@ -192,14 +192,14 @@ Max walk (Slow grounded move) speed
 0xC Ground Deceleration
 The speed which the character's horizontal velocity decreases on its own on the ground.
 
-0x10
-No Description Available.
+0x10 Dash & Run Initial Velocity
+The starting velocity obtained the moment the character starts a Run (Fast grounded move).
 
-0x14
-No Description Available.
+0x14 Dash & Run Acceleration A
+The speed at which the character accelerates during Run (Fast grounded move). Combines with 0x018.
 
-0x18
-No Description Available.
+0x18 Dash & Run Acceleration B
+The speed at which the character accelerates during Run (Fast grounded move). Combines with 0x014.
 
 0x1C Max Run Speed
 Max run (Fast grounded move) speed
@@ -217,7 +217,7 @@ No Description Available.
 No Description Available.
 
 *0x30
-No Description Available.
+Unknown
 
 0x34
 No Description Available.
@@ -228,17 +228,17 @@ The starting vertical velocity the character obtains when jumping.
 0x3C
 No Description Available.
 
-0x40
-No Description Available.
+0x40 Ground Jump H Additional Velocity
+The additional horizontal speed the character is able to obtain when ground jumping.
 
-0x44
-No Description Available.
+0x44 Hop V Initial Velocity
+The maximum vertical velocity the character obtains when hopping (short jump).
 
 0x48 V Air Jump Multiplier
 The velocity obtained from an air jump proportional to the Jump V Initial Velocity.
 
-0x4C
-No Description Available.
+0x4C Air Jump H Additional Velocity
+The additional horizontal speed the character is able to obtain when air jumping.
 
 0x50
 No Description Available.
@@ -253,7 +253,7 @@ No Description Available.
 No Description Available.
 
 *0x60
-No Description Available.
+Unknown
 
 0x64 Gravity
 The speed at which the character accelerates downward.
@@ -267,23 +267,23 @@ No Description Available.
 0x70
 No Description Available.
 
-0x74
-No Description Available.
+0x74 Air Mobility A
+The speed at which the character is able to maneuver in the air. Combines with 0x078. (Acceleration and deceleration when inputting left or right)
 
-0x78
-No Description Available.
+0x078 Air Mobility B
+The speed at which the character is able to maneuver in the air. Combines with 0x074. (Acceleration and deceleration when inputting left or right)
 
 0x7C Maximum H Air Velocity
 The maximum horizontal velocity the character is able to obtain in the air using air mobility.
 
-0x80
-No Description Available.
+0x80 H Air Deceleration
+The speed at which the character's horizontal velocity decreases on its own in the air. (Deceleration when not inputting left and right)
 
 0x84
-No Description Available.
+Unknown
 
-0x88
-No Description Available.
+0x88 Aerial Max H Speed
+The limit horizontal speed while in the air.
 
 *0x8C
 No Description Available.
@@ -781,16 +781,16 @@ ExtraParams0
 No Description Available.
 
 Par05-0
-ExtraParams0
+Octopus Extra
 
 0x0 Flashing Time
 The time when the character starts flashing, counting from the end time (frames)
 
-0x4 Duration
-FS Duration (frames)
+0x4 FS Duration
+Final Smash duration (seconds)
 
-0x8
-No Description Available.
+0x8 FS Shorten
+Frames that shortens Final Smash
 
 *0xC
 No Description Available.
@@ -858,79 +858,79 @@ No Description Available.
 EXD 25-0D-03x
 Chef Extra
 
-Data0-0
+Data0-0 Trajectory 1 H Velocity
 Trajectory 1 horizontal velocity
 
-Data0-1
+Data0-1 Trajectory 1 V Velocity
 Trajectory 1 initial vertical velocity
 
-Data0-2
+Data0-2 Trajectory 1 Gravity
 Trajectory 1 gravity
 
-Data0-3
-Trajectory 1 max vertical speed
+Data0-3 Trajectory 1 Max V Speed
+Trajectory 1 maximum vertical speed
 
-Data0-4
+Data0-4 Trajectory 1 Spin Speed
 Trajectory 1 spin speed
 
-Data1-0
+Data1-0 Trajectory 2 H Velocity
 Trajectory 2 horizontal velocity
 
-Data1-1
+Data1-1 Trajectory 2 V Velocity
 Trajectory 2 initial vertical velocity
 
-Data1-2
+Data1-2 Trajectory 2 Gravity
 Trajectory 2 gravity
 
-Data1-3
+Data1-3 Trajectory 2 Max V Speed
 Trajectory 2 max vertical speed
 
-Data1-4
+Data1-4 Trajectory 2 Spin Speed
 Trajectory 2 spin speed
 
-Data2-0
+Data2-0 Trajectory 3 H Velocity
 Trajectory 3 horizontal velocity
 
-Data2-1
+Data2-1 Trajectory 3 V Velocity
 Trajectory 3 initial vertical velocity
 
-Data2-2
+Data2-2 Trajectory 3 Gravity
 Trajectory 3 gravity
 
-Data2-3
+Data2-3 Trajectory 3 Max V Speed
 Trajectory 3 max vertical speed
 
-Data2-4
+Data2-4 Trajectory 3 Spin Speed
 Trajectory 3 spin speed
 
-Data3-0
+Data3-0 Trajectory 4 H Velocity
 Trajectory 4 horizontal velocity
 
-Data3-1
+Data3-1 Trajectory 4 V Velocity
 Trajectory 4 initial vertical velocity
 
-Data3-2
+Data3-2 Trajectory 4 Gravity
 Trajectory 4 gravity
 
-Data3-3
+Data3-3 Trajectory 4 Max V Speed
 Trajectory 4 max vertical speed
 
-Data3-4
+Data3-4 Trajectory 4 Spin Speed
 Trajectory 4 spin speed
 
-Data4-0
+Data4-0 Trajectory 5 H Velocity
 Trajectory 5 horizontal velocity
 
-Data4-1
+Data4-1 Trajectory 5 V Velocity
 Trajectory 5 initial vertical velocity
 
-Data4-2
+Data4-2 Trajectory 5 Gravity
 Trajectory 5 gravity
 
-Data4-3
+Data4-3 Trajectory 5 Max V Speed
 Trajectory 5 max vertical speed
 
-Data4-4
+Data4-4 Trajectory 5 Spin Speed
 Trajectory 5 spin speed
 
 EXD 2A-0E-00x

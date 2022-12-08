@@ -7,8 +7,8 @@
 
 Art0
 1-17
-030 Par00D3 1A
 034 Par00-0 1
+030 Par00D3 1A
 
 Par00
 Mach Tornado (paramSpecialN__16ftMetaknightNode)
@@ -16,22 +16,22 @@ Mach Tornado (paramSpecialN__16ftMetaknightNode)
 0x0 Initial V Momentum
 Initial vertical momentum (can't over Max Rise Speed)
 
-0x4 H Preservarion
-Horizontal momentum preservarion on startup (higher = more, but can't over previous speed)
+0x4 H Preservation
+Horizontal momentum preservation on startup (higher = more, but can't over previous speed)
 
 0x8 Initial Spin Speed
 Initial spin speed
 
-0xC Grounded H Acceleration
+0xC Ground H Acceleration
 Grounded horizontal acceleration
 
-0x10 Grounded Max H Speed
+0x10 Ground Max H Speed
 Grounded horizontal max speed
 
-0x14 Aerial H Acceleration
+0x14 Air H Acceleration
 Aerial horizontal acceleration
 
-0x18 Aerial Max H Speed
+0x18 Air Max H Speed
 Aerial horizontal max speed
 
 0x1C H Deceleration
@@ -47,7 +47,7 @@ Max fall speed
 Vertical velocity added per B button press
 
 *0x2C Interval
-Minimum frames between button presses (buffers if B is pressed before then)
+Frames interval at which the rise enable by B button press
 
 0x30 Max Rise Speed
 Max rise speed
@@ -76,8 +76,8 @@ No Description Available.
 Par01
 Drill Rush (paramSpecialS__16ftMetaknightNode)
 
-0x0 Startup H Preservarion
-Horizontal momentum preservarion on startup
+0x0 Startup H Preservation
+Horizontal momentum preservation on startup
 
 0x4 Startup V Momentum
 Vertical momentum on startup
@@ -88,8 +88,8 @@ Gravity on startup
 0xC Turning Speed
 Turning speed
 
-*0x10
-Something to do with direction after landing on platform and finishing
+*0x10 Landing Angle
+Angle at the end of landing
 
 *0x14
 No Description Available.
@@ -97,11 +97,11 @@ No Description Available.
 Par02
 Dimensional Cape (paramSpecialLw__16ftMetaknightNode)
 
-0x0 H Preservarion
-Horizontal momentum preservarion on startup
+0x0 H Preservation
+Horizontal momentum preservation on startup
 
-0x4 V Preservarion
-Vertical momentum preservarion on startup
+0x4 V Preservation
+Vertical momentum preservation on startup
 
 0x8 H Acceleration
 Horizontal acceleration
@@ -116,15 +116,15 @@ Vertical acceleration
 Max vertical speed
 
 Par03
-Galaxia Darkness paramFinal__16ftMetaknightNode
+Galaxia Darkness (paramFinal__16ftMetaknightNode)
 
-*0x0
+*0x0 Transition Time
 Frame it takes to darkness
 
-*0x4
+*0x4 Darkness Time
 Darkness frame
 
-*0x8
+*0x8 Attack Interval
 Attack Interval
 
 *0xC
@@ -134,6 +134,12 @@ No Description Available.
 No Description Available.
 
 *0x14
+No Description Available.
+
+Par00-0
+ExtraParams0
+
+*0x0
 No Description Available.
 
 Par00D3
@@ -215,11 +221,5 @@ No Description Available.
 No Description Available.
 
 *0x64
-No Description Available.
-
-Par00-0
-ExtraParams0
-
-*0x0
 No Description Available.
 

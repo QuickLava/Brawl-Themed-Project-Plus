@@ -92,11 +92,11 @@ No Description Available.
 0x18 Sensitivity
 Joystick sensitivity. If over 1, can't change travel angle.
 
-0x1C
-Travel speed 1
+0x1C Travel speed 1
+Travel speed
 
-0x20
-Travel speed 2
+0x20 Travel speed 2
+Travel speed
 
 0x24
 No Description Available.

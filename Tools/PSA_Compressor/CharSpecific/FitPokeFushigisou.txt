@@ -17,8 +17,8 @@ Art1
 
 Art2
 9-2
-030 Par02D3 8
 034 Par02-0 2
+030 Par02D3 8
 
 Par00
 Fatigue/Stamina
@@ -129,10 +129,10 @@ Random Launch Trajectory upon spawn
 No Description Available.
 
 0x18
-If value is small, what is launched on ground sometimes disappears in the middle
+If value is low, what is launched on ground sometimes disappears in the middle
 
 0x1C
-If value is small, what is launched on ground sometimes stops in the middle
+If value is low, what is launched on ground sometimes stops in the middle
 
 Par01-0
 Bullet Seed Article
@@ -142,6 +142,15 @@ Frame duration of article
 
 0x4
 Unknown
+
+Par02-0
+Vine Whip Article
+
+0x0 Tether Length
+Tether Length
+
+0x4 Tether Speed
+Tether Speed
 
 Par02D3
 Data3
@@ -169,13 +178,4 @@ No Description Available.
 
 *0x1C
 No Description Available.
-
-Par02-0
-Vine Whip Article
-
-0x0
-Tether Length
-
-0x4
-Tether Speed
 

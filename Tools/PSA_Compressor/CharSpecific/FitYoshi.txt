@@ -26,8 +26,8 @@ Art1
 
 Art2
 1-5
-030 Par02D3 A
 034 Par02-0 1
+030 Par02D3 A
 
 Art3
 1-1
@@ -40,14 +40,14 @@ Art4
 Par00
 Egg Roll
 
-*0x0 Max Egg Frame Count
-Max number of frames you can be in egg before exiting automatically
+*0x0 Max Duration
+Max duration before exiting automatically (frames)
 
-*0x4 Min Egg Frame Count
-Minimum number of frames to be in egg before exiting with B
+*0x4 Min Duration
+Frame until fastest end by press B
 
-*0x8
- ?? (Not read on sideB)
+*0x8 Hit Reduced
+When attack hit, the maximum duration is reduced by this value
 
 0xC
  ?? (Not read on sideB)
@@ -59,7 +59,7 @@ Unknown
 startup vertical momentum
 
 0x18
-Read on Rolling?
+Affect to rotation at start. Not affect to speed
 
 0x1C First Landing H Momentum
 Horizontal momentum when first landing
@@ -74,16 +74,16 @@ Gravity
 Bounciness when hitting ground
 
 0x2C
-base rolling momentum?
+Related to speed. If set low value, it will decrease a little, but there is almost no change even if it set to high.
 
 0x30
-rolling momentum multiplier?
+If set to 0, a little faster
 
-0x34
-Grounded max horizontal speed?
+0x34 Ground Max H Speed 1
+Grounded max horizontal speed. The lower of 0x34 and 0x38 is the actual maximum speed.
 
-0x38
-Grounded max horizontal speed?
+0x38 Ground Max H Speed 2
+Grounded max horizontal speed
 
 0x3C
 No Description Available.
@@ -94,7 +94,7 @@ No Description Available.
 0x44
 No Description Available.
 
-0x48
+0x48 Air Max H Speed
 Aerial max horizontal speed
 
 0x4C
@@ -121,8 +121,8 @@ No Description Available.
 0x68
 No Description Available.
 
-0x6C
-Bounce velocity multiplier?
+0x6C Bounce V momentum
+Bounce vertical momentum multiplier
 
 0x70
 No Description Available.
@@ -130,11 +130,11 @@ No Description Available.
 0x74
 No Description Available.
 
-0x78
+0x78 Bonus Damage
 Bonus damage: +3x to fast
 
 0x7C
-Related to damage
+Related to damage. (high = more damage)
 
 0x80
 No Description Available.
@@ -142,25 +142,25 @@ No Description Available.
 0x84
 No Description Available.
 
-0x88
-Aerial horizontal momentum at end
+0x88 H Preservation at end
+Horizontal momentum preservation at end
 
-0x8C
-Aerial vertical momentum at end
+0x8C V Preservation at end
+Vertical momentum preservation at end
 
-0x90
+0x90 Ground Roll Speed
 Grounded rolling speed
 
 *0x94
 No Description Available.
 
-0x98
+0x98 Air H Acceleration
 Aerial horizontal acceleration
 
 0x9C
 (45 degrees)
 
-0xA0
+0xA0 Landing Lag
 Landing lag
 
 *0xA4
@@ -169,17 +169,17 @@ No Description Available.
 Par01
 Egg Toss
 
-0x0 Upward Momentum
-Upward momentum of throwing
+0x0 V Momentum
+Vertical momentum when aerial throw (Yoshi)
 
 0x4 Gravity
-Gravity
+Gravity (Yoshi)
 
 0x8 Max Fall Speed
-Max Fall Speed
+Max fall speed (Yoshi)
 
-0xC Upward Momentum Multiplier
-Upward momentum multiplier after throwing 2+ times in air
+0xC Vertical Momentum Multiplier
+Vertical momentum multiplier after throwing 2+ times in air (Yoshi)
 
 0x10 Rise Count
 Number of times Yoshi hops from Egg Toss in the air until landing
@@ -187,32 +187,32 @@ Number of times Yoshi hops from Egg Toss in the air until landing
 0x14
 affects angle of thrown egg backward and forward? (radians)
 
-0x18
+0x18 Changeable Angle
 Affects to angle of thrown egg when input backward and forward (radians, normal = 32 degrees)
 
 0x1C
 affects angle of thrown egg backward and forward? (4 degrees)
 
-0x20
+0x20 Basic Angle
 angle of throwing (58 degrees affects all throws)
 
-0x24
-Vertical launch speed multiplier
+0x24 
+Horizontal egg momentum when side throw
 
 0x28
-Horizontal launch speed multiplier
+Horizontal egg momentum when side throw
 
-0x2C
+0x2C X Offset
 Egg X offset on toss
 
-0x30
+0x30 Y Offset
 Egg Y offset on toss
 
 0x34
-Egg air friction?
+Related to the rotation speed of thrown egg. If 0x34 and 0x38 are 0, the thrown egg will not rotate at all.
 
 0x38
-base egg spin?
+Related to the rotation speed of thrown egg
 
 Par02
 Ground Pound
@@ -221,10 +221,10 @@ Ground Pound
 Fall speed
 
 0x4 X Offset
-X offset of lunding (applies equally in both directions)
+X offset of landing star (applies equally in both directions)
 
 0x8 Y Offset
-Y offset of lunding
+Y offset of landing star
 
 Par03
 Super Dragon
@@ -247,77 +247,77 @@ Vertical acceleration
 0x14 Max V Speed
 Maximum vertical speed
 
-0x18
-No Description Available.
+0x18 V Deceleration
+Vertical deceleration
 
 0x1C
 No Description Available.
 
-0x20
-No Description Available.
+0x20 Max Auto Fall Speed
+Maximum descent speed by automatic descent
 
-0x24
-No Description Available.
+0x24 Rising Animation Speed
+Max Animation speed when rising
 
-0x28
-No Description Available.
+0x28 Descending Animation Speed
+Max Animation speed when descending
 
-0x2C
-No Description Available.
+0x2C Fire Breath Timing
+Frame until fire breath comes out when no attack input
 
-0x30
-No Description Available.
+0x30 Fire Breath Interval
+Frames interval until the flame reoccurs when during fire breath
 
-0x34
-No Description Available.
+0x34 Fire Breath Initial Angle
+Angle of the first shot of the fire breath
 
-0x38
-No Description Available.
+0x38 Fire Breath Max Angle
+Maximum changeable angle when during fire breath
 
-0x3C
-No Description Available.
+0x3C Fire Breath Randomness
+Flame spread angle randomness when during fire breath
 
-0x40
-No Description Available.
+0x40 Fire Breath X Offset
+Flame occur X Offset when during fire breath
 
-*0x44
-No Description Available.
+0x44 Fire Breath Y Offset
+Flame occur Y Offset when during fire breath
 
-0x48
-No Description Available.
+0x48 Fire Breath Duration
+Fire breath duration
 
-*0x4C
-No Description Available.
+0x4C Fireball Angle
+Flying angle of the fireball
 
-0x50
-No Description Available.
+0x50 Fireball X Offset
+Fireball X offset
 
-*0x54
-No Description Available.
+0x54 Fireball Y Offset
+Fireball Y offset
 
-0x58
-No Description Available.
+0x58 Fireball Interval
+Minimum interval until fire the fireball again
 
-0x5C
-FS Duration (Seconds?)
+0x5C FS Duration
+Final Smash Duration (Seconds?)
 
 0x60
-No Description Available.
+Unknown
 
 0x64
 No Description Available.
 
 Par04
-Flutter Jump?
+Flutter Jump
 
-*0x0
+*0x0 Turning Time
 Number of frames to turn around during Double Jump
 
-0x4
+0x4 Sensitivity
 Joystick sensitivity to turn around during Double Jump
 
-0x8
-Knockback resistance
+0x8 Knockback Armor
+The minimum knockback that will cause flinch during Double Jump
 
 *0xC
 No Description Available.
@@ -362,21 +362,21 @@ Offset
 Animation frame set. Upon successfully grabbing, the grab animation is set to this frame to show Yoshi pulling his foe in. The frame to switch to depends on the frame Yoshi grabbed his foe. By default, a successful grab on the first frame of the grab sets the animation frame to 26 (tongue just returning to Yoshi's mouth) and a successful grab on the last frame of the grab, where Yoshi's tongue is extended to its max distance, sets the animation to frame 20, where Yoshi's tongue is just starting to return to his mouth from max distance.
 
 Par00-0
-Ground Pound Star Article
+Ground Pound Landing Star Article
 
 0x0 Initial H Movement
 Initial horizontal movement of stars
 
-0x4
+0x4 H Deceleration
 Horizontal deceleration (It can also be acceleration)
 
-0x8
+0x8 Upward Movement
 Upward movement
 
 0xC
 Unknown
 
-0x10
+0x10 Downward Movement
 Downward movement
 
 Par01-0
@@ -388,14 +388,20 @@ How long until thrown egg explodes automatically (frames)
 *0x4
 How long explosion exists in frames? (at 0 it didn't have sfx on explode)
 
-0x8
-Spin Speed
+0x8 Spin Speed
+Spin Speed Multiplier
 
-0xC
-Egg vertical gravity
+0xC Gravity
+Egg gravity
 
-0x10
-Egg horizontal gravity
+0x10 Max V Speed
+Max vertical speed
+
+Par02-0
+ExtraParams0
+
+*0x0
+No Description Available.
 
 Par02D3
 Data3
@@ -428,12 +434,6 @@ No Description Available.
 No Description Available.
 
 *0x24
-No Description Available.
-
-Par02-0
-ExtraParams0
-
-*0x0
 No Description Available.
 
 Par03-0

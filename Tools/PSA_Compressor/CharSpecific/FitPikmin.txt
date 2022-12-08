@@ -40,10 +40,10 @@ X02 29-25x
 
 Art1
 5-8
-030 Par01D3 1
 034 Par01-0 C
 038 Par01-1 6
 040 Par01-3 8
+030 Par01D3 1
 
 Art2
 9-1
@@ -59,7 +59,7 @@ Basic floor ID (Note: OpenSA Name = Basic BrawlBox0.78 Name = Brick)
 Pluck speed on Basic floor. Basic floor settings apply even in the air.
 
 0x8 Red Pikmin Ratio on Basic Floor
-Red Pikmin ratio on Basic floor. Basic floor settings apply even in the air. If 0, it will not come out. No matter how large the value is set, the same thing will not appear continuously unless the probability of all other colors appearing is set to 0.
+Red Pikmin ratio on Basic floor. Basic floor settings apply even in the air. If 0, it will not come out. No matter how high the value is set, the same thing will not appear continuously unless the probability of all other colors appearing is set to 0.
 
 0xC Yellow Pikmin Ratio on Basic Floor
 Yellow Pikmin ratio on Basic floor (Detail: 0x8)
@@ -94,7 +94,7 @@ White Pikmin ratio on Rock floor (Detail: 0x8)
 0x34 Purple Pikmin Ratio on Rock Floor
 Purple Pikmin ratio on Rock floor (Detail: 0x8)
 
-*0x38
+*0x38 Grass Floor ID
 Grass floor ID
 
 0x3C Pluck Speed on Grass Floor
@@ -115,178 +115,178 @@ White Pikmin ratio on Grass floor (Detail: 0x8)
 0x50 Purple Pikmin Ratio on Grass Floor
 Purple Pikmin ratio on Grass floor (Detail: 0x8)
 
-*0x54
+*0x54 Soil Floor ID
 Soil floor ID
 
-0x58
+0x58 Pluck Speed on Soil Floor
 Pluck speed on Soil floor
 
-0x5C
+0x5C Red Pikmin Ratio on Soil Floor
 Red Pikmin ratio on Soil floor (Detail: 0x8)
 
-0x60
+0x60 Yellow Pikmin Ratio on Soil Floor
 Yellow Pikmin ratio on Soil floor (Detail: 0x8)
 
-0x64
+0x64 Blue Pikmin Ratio on Soil Floor
 Blue Pikmin ratio on Soil floor (Detail: 0x8)
 
-0x68
+0x68 White Pikmin Ratio on Soil Floor
 White Pikmin ratio on Soil floor (Detail: 0x8)
 
-0x6C
+0x6C Purple Pikmin Ratio on Soil Floor
 Purple Pikmin ratio on Soil floor (Detail: 0x8)
 
-*0x70
+*0x70 Wood Floor ID
 Wood floor ID
 
-0x74
+0x74 Pluck Speed on Wood Floor
 Pluck speed on Wood floor
 
-0x78
+0x78 Red Pikmin Ratio on Wood Floor
 Red Pikmin ratio on Wood floor (Detail: 0x8)
 
-0x7C
+0x7C Yellow Pikmin Ratio on Wood Floor
 Yellow Pikmin ratio on Wood floor (Detail: 0x8)
 
-0x80
+0x80 Blue Pikmin Ratio on Wood Floor
 Blue Pikmin ratio on Wood floor (Detail: 0x8)
 
-0x84
+0x84 White Pikmin Ratio on Wood Floor
 White Pikmin ratio on Wood floor (Detail: 0x8)
 
-0x88
+0x88 Purple Pikmin Ratio on Wood Floor
 Purple Pikmin ratio on Wood floor (Detail: 0x8)
 
-*0x8C
+*0x8C LightMetal Floor ID
 LightMetal (NibuIron) floor ID
 
-0x90
+0x90 Pluck Speed on LightMetal Floor
 Pluck speed on LightMetal (NibuIron) floor
 
-0x94
+0x94 Red Pikmin Ratio on LightMetal Floor
 Red Pikmin ratio on LightMetal (NibuIron) floor (Detail: 0x8)
 
-0x98
+0x98 Yellow Pikmin Ratio on LightMetal Floor
 Yellow Pikmin ratio on LightMetal (NibuIron) floor (Detail: 0x8)
 
-0x9C
+0x9C Blue Pikmin Ratio on LightMetal Floor
 Blue Pikmin ratio on LightMetal (NibuIron) floor (Detail: 0x8)
 
-0xA0
+0xA0 White Pikmin Ratio on LightMetal Floor
 White Pikmin ratio on LightMetal (NibuIron) floor (Detail: 0x8)
 
-0xA4
+0xA4 Purple Pikmin Ratio on LightMetal Floor
 Purple Pikmin ratio on LightMetal (NibuIron) floor (Detail: 0x8)
 
-*0xA8
+*0xA8 HeavyMetal Floor ID
 HeavyMetal (Iron) floor ID
 
-0xAC
+0xAC Pluck Speed on HeavyMetal Floor
 Pluck speed on HeavyMetal (Iron) floor
 
-0xB0
+0xB0 Red Pikmin Ratio on HeavyMetal Floor
 Red Pikmin ratio on HeavyMetal (Iron) floor (Detail: 0x8)
 
-0xB4
+0xB4 Yellow Pikmin Ratio on HeavyMetal Floor
 Yellow Pikmin ratio on HeavyMetal (Iron) floor (Detail: 0x8)
 
-0xB8
+0xB8 Blue Pikmin Ratio on HeavyMetal Floor
 Blue Pikmin ratio on HeavyMetal (Iron) floor (Detail: 0x8)
 
-0xBC
+0xBC White Pikmin Ratio on HeavyMetal Floor
 White Pikmin ratio on HeavyMetal (Iron) floor (Detail: 0x8)
 
-0xC0
+0xC0 Purple Pikmin Ratio on HeavyMetal Floor
 Purple Pikmin ratio on HeavyMetal (Iron) floor (Detail: 0x8)
 
-*0xC4
+*0xC4 Cloth Floor ID
 Cloth (Carpet) floor ID
 
-0xC8
+0xC8 Pluck Speed on Cloth Floor
 Pluck speed on Cloth (Carpet) floor
 
-0xCC
+0xCC Red Pikmin Ratio on Cloth Floor
 Red Pikmin ratio on Cloth (Carpet) floor (Detail: 0x8)
 
-0xD0
+0xD0 Yellow Pikmin Ratio on Cloth Floor
 Yellow Pikmin ratio on Cloth (Carpet) floor (Detail: 0x8)
 
-0xD4
+0xD4 Blue Pikmin Ratio on Cloth Floor
 Blue Pikmin ratio on Cloth (Carpet) floor (Detail: 0x8)
 
-0xD8
+0xD8 White Pikmin Ratio on Cloth Floor
 White Pikmin ratio on Cloth (Carpet) floor (Detail: 0x8)
 
-0xDC
+0xDC Purple Pikmin Ratio on Cloth Floor
 Purple Pikmin ratio on Cloth (Carpet) floor (Detail: 0x8)
 
-*0xE0
+*0xE0 Alien goop Floor ID
 Alien goop (Fence) floor ID
 
-0xE4
+0xE4 Pluck Speed on Alien goop Floor
 Pluck speed on Alien goop (Fence) floor
 
-0xE8
+0xE8 Red Pikmin Ratio on Alien goop Floor
 Red Pikmin ratio on Alien goop (Fence) floor (Detail: 0x8)
 
-0xEC
+0xEC Yellow Pikmin Ratio on Alien goop Floor
 Yellow Pikmin ratio on Alien goop (Fence) floor (Detail: 0x8)
 
-0xF0
+0xF0 Blue Pikmin Ratio on Alien goop Floor
 Blue Pikmin ratio on Alien goop (Fence) floor (Detail: 0x8)
 
-0xF4
+0xF4 White Pikmin Ratio on Alien goop Floor
 White Pikmin ratio on Alien goop (Fence) floor (Detail: 0x8)
 
-0xF8
+0xF8 Purple Pikmin Ratio on Alien goop Floor
 Purple Pikmin ratio on Alien goop (Fence) floor (Detail: 0x8)
 
-*0xFC
+*0xFC Creature Floor ID
 Creature floor ID
 
-0x100
+0x100 Pluck Speed on Creature Floor
 Pluck speed on Creature floor
 
-0x104
+0x104 Red Pikmin Ratio on Creature Floor
 Red Pikmin ratio on Creature floor (Detail: 0x8)
 
-0x108
+0x108 Yellow Pikmin Ratio on Creature Floor
 Yellow Pikmin ratio on Creature floor (Detail: 0x8)
 
-0x10C
+0x10C Blue Pikmin Ratio on Creature Floor
 Blue Pikmin ratio on Creature floor (Detail: 0x8)
 
-0x110
+0x110 White Pikmin Ratio on Creature Floor
 White Pikmin ratio on Creature floor (Detail: 0x8)
 
-0x114
+0x114 Purple Pikmin Ratio on Creature Floor
 Purple Pikmin ratio on Creature floor (Detail: 0x8)
 
-*0x118
+*0x118 Water Floor ID
 Water floor ID
 
-0x11C
+0x11C Pluck Speed on Water Floor
 Pluck speed on Water floor
 
-0x120
+0x120 Red Pikmin Ratio on Water Floor
 Red Pikmin ratio on Water floor (Detail: 0x8)
 
-0x124
+0x124 Yellow Pikmin Ratio on Water Floor
 Yellow Pikmin ratio on Water floor (Detail: 0x8)
 
-0x128
+0x128 Blue Pikmin Ratio on Water Floor
 Blue Pikmin ratio on Water floor (Detail: 0x8)
 
-0x12C
+0x12C White Pikmin Ratio on Water Floor
 White Pikmin ratio on Water floor (Detail: 0x8)
 
-0x130
+0x130 Purple Pikmin Ratio on Water Floor
 Purple Pikmin ratio on Water floor (Detail: 0x8)
 
 *0x134
 Rubber (Bubbles) floor ID
 
-0x138
+0x138 Pluck Speed on Rubber Floor
 Pluck speed on Rubber (Bubbles) floor
 
 0x13C
@@ -307,7 +307,7 @@ Purple Pikmin ratio on Rubber (Bubbles) floor (Detail: 0x8)
 *0x150
 Ice floor ID
 
-0x154
+0x154 Pluck Speed on Ice Floor
 Pluck speed on Ice floor
 
 0x158
@@ -325,52 +325,52 @@ White Pikmin ratio on Ice floor (Detail: 0x8)
 0x168
 Purple Pikmin ratio on Ice floor (Detail: 0x8)
 
-*0x16C
+*0x16C Snow Floor ID
 Snow floor ID
 
-0x170
+0x170 Pluck Speed on Snow Floor
 Pluck speed on Snow floor
 
-0x174
+0x174 Red Pikmin Ratio on Snow Floor
 Red Pikmin ratio on Snow floor (Detail: 0x8)
 
-0x178
+0x178 Yellow Pikmin Ratio on Snow Floor
 Yellow Pikmin ratio on Snow floor (Detail: 0x8)
 
-0x17C
+0x17C Blue Pikmin Ratio on Snow Floor
 Blue Pikmin ratio on Snow floor (Detail: 0x8)
 
-0x180
+0x180 White Pikmin Ratio on Snow Floor
 White Pikmin ratio on Snow floor (Detail: 0x8)
 
-0x184
+0x184 Purple Pikmin Ratio on Snow Floor
 Purple Pikmin ratio on Snow floor (Detail: 0x8)
 
-*0x188
+*0x188 SnowIce Floor ID
 Ice (SnowIce) floor ID
 
-0x18C
+0x18C Pluck Speed on SnowIce Floor
 Pluck speed on SnowIce floor
 
-0x190
+0x190 Red Pikmin Ratio on SnowIce Floor
 Red Pikmin ratio on SnowIce floor (Detail: 0x8)
 
-0x194
+0x194 Yellow Pikmin Ratio on SnowIce Floor
 Yellow Pikmin ratio on SnowIce floor (Detail: 0x8)
 
-0x198
+0x198 Blue Pikmin Ratio on SnowIce Floor
 Blue Pikmin ratio on SnowIce floor (Detail: 0x8)
 
-0x19C
+0x19C White Pikmin Ratio on SnowIce Floor
 White Pikmin ratio on SnowIce floor (Detail: 0x8)
 
-0x1A0
+0x1A0 Purple Pikmin Ratio on SnowIce Floor
 Purple Pikmin ratio on SnowIce floor (Detail: 0x8)
 
 *0x1A4
 GameWatch floor ID
 
-0x1A8
+0x1A8 Pluck Speed on GameWatch Floor
 Pluck speed on GameWatch floor
 
 0x1AC
@@ -391,7 +391,7 @@ Purple Pikmin ratio on GameWatch floor (Detail: 0x8)
 *0x1C0
 Ice2 floor ID
 
-0x1C4
+0x1C4 Pluck Speed on Ice2 Floor
 Pluck speed on Ice2 floor
 
 0x1C8
@@ -409,52 +409,52 @@ White Pikmin ratio on Ice2 floor (Detail: 0x8)
 0x1D8
 Purple Pikmin ratio on Ice2 floor (Detail: 0x8)
 
-*0x1DC
+*0x1DC Checkered Floor ID
 Checkered (Danbouru) floor ID
 
-0x1E0
+0x1E0 Pluck Speed on Checkered Floor
 Pluck speed on Checkered (Danbouru) floor
 
-0x1E4
+0x1E4 Red Pikmin Ratio on Checkered Floor
 Red Pikmin ratio on Checkered (Danbouru) floor (Detail: 0x8)
 
-0x1E8
+0x1E8 Yellow Pikmin Ratio on Checkered Floor
 Yellow Pikmin ratio on Checkered (Danbouru) floor (Detail: 0x8)
 
-0x1EC
+0x1EC Blue Pikmin Ratio on Checkered Floor
 Blue Pikmin ratio on Checkered (Danbouru) floor (Detail: 0x8)
 
-0x1F0
+0x1F0 White Pikmin Ratio on Checkered Floor
 White Pikmin ratio on Checkered (Danbouru) floor (Detail: 0x8)
 
-0x1F4
+0x1F4 Purple Pikmin Ratio on Checkered Floor
 Purple Pikmin ratio on Checkered (Danbouru) floor (Detail: 0x8)
 
-*0x1F8
+*0x1F8 Spikes Floor ID
 Spikes (Crash1) floor ID
 
-0x1FC
+0x1FC Pluck Speed on Spikes Floor
 Pluck speed on Spikes (Crash1) floor
 
-0x200
+0x200 Red Pikmin Ratio on Spikes Floor
 Red Pikmin ratio on Spikes (Crash1) floor (Detail: 0x8)
 
-0x204
+0x204 Yellow Pikmin Ratio on Spikes Floor
 Yellow Pikmin ratio on Spikes (Crash1) floor (Detail: 0x8)
 
-0x208
+0x208 Blue Pikmin Ratio on Spikes Floor
 Blue Pikmin ratio on Spikes (Crash1) floor (Detail: 0x8)
 
-0x20C
+0x20C White Pikmin Ratio on Spikes Floor
 White Pikmin ratio on Spikes (Crash1) floor (Detail: 0x8)
 
-0x210
+0x210 Purple Pikmin Ratio on Spikes Floor
 Purple Pikmin ratio on Spikes (Crash1) floor (Detail: 0x8)
 
 *0x214
 Lava (Crash2) floor ID
 
-0x218
+0x218 Pluck Speed on Lava Floor
 Pluck speed on Lava (Crash2) floor
 
 0x21C
@@ -475,7 +475,7 @@ Purple Pikmin ratio on Lava (Crash2) floor (Detail: 0x8)
 *0x230
 Frostbite (Crash3) floor ID
 
-0x234
+0x234 Pluck Speed on Frostbite Floor
 Pluck speed on Frostbite (Crash3) floor
 
 0x238
@@ -493,52 +493,52 @@ White Pikmin ratio on Frostbite (Crash3) floor (Detail: 0x8)
 0x248
 Purple Pikmin ratio on Frostbite (Crash3) floor (Detail: 0x8)
 
-*0x24C
+*0x24C Electroplankton Floor ID
 Electroplankton (LargeBubbles) floor ID
 
-0x250
+0x250 Pluck Speed on Electroplankton Floor
 Pluck speed on Electroplankton (LargeBubbles) floor
 
-0x254
+0x254 Red Pikmin Ratio on Electroplankton Floor
 Red Pikmin ratio on Electroplankton (LargeBubbles) floor (Detail: 0x8)
 
-0x258
+0x258 Yellow Pikmin Ratio on Electroplankton Floor
 Yellow Pikmin ratio on Electroplankton (LargeBubbles) floor (Detail: 0x8)
 
-0x25C
+0x25C Blue Pikmin Ratio on Electroplankton Floor
 Blue Pikmin ratio on Electroplankton (LargeBubbles) floor (Detail: 0x8)
 
-0x260
+0x260 White Pikmin Ratio on Electroplankton Floor
 White Pikmin ratio on Electroplankton (LargeBubbles) floor (Detail: 0x8)
 
-0x264
+0x264 Purple Pikmin Ratio on Electroplankton Floor
 Purple Pikmin ratio on Electroplankton (LargeBubbles) floor (Detail: 0x8)
 
-*0x268
+*0x268 Cloud Floor ID
 Cloud floor ID
 
-0x26C
+0x26C Pluck Speed on Cloud Floor
 Pluck speed on Cloud floor
 
-0x270
+0x270 Red Pikmin Ratio on Cloud Floor
 Red Pikmin ratio on Cloud floor (Detail: 0x8)
 
-0x274
+0x274 Yellow Pikmin Ratio on Cloud Floor
 Yellow Pikmin ratio on Cloud floor (Detail: 0x8)
 
-0x278
+0x278 Blue Pikmin Ratio on Cloud Floor
 Blue Pikmin ratio on Cloud floor (Detail: 0x8)
 
-0x27C
+0x27C White Pikmin Ratio on Cloud Floor
 White Pikmin ratio on Cloud floor (Detail: 0x8)
 
-0x280
+0x280 Purple Pikmin Ratio on Cloud Floor
 Purple Pikmin ratio on Cloud floor (Detail: 0x8)
 
 *0x284
 Subspace floor ID
 
-0x288
+0x288 Pluck Speed on Subspace Floor
 Pluck speed on Subspace floor
 
 0x28C
@@ -556,31 +556,31 @@ White Pikmin ratio on Subspace floor (Detail: 0x8)
 0x29C
 Purple Pikmin ratio on Subspace floor (Detail: 0x8)
 
-*0x2A0
+*0x2A0 Brick Floor ID
 Brick (Stone2) floor ID
 
-0x2A4
+0x2A4 Pluck Speed on Brick Floor
 Pluck speed on Brick (Stone2) floor
 
-0x2A8
+0x2A8 Red Pikmin Ratio on Brick Floor
 Red Pikmin ratio on Brick (Stone2) floor (Detail: 0x8)
 
-0x2AC
+0x2AC Yellow Pikmin Ratio on Brick Floor
 Yellow Pikmin ratio on Brick (Stone2) floor (Detail: 0x8)
 
-0x2B0
+0x2B0 Blue Pikmin Ratio on Brick Floor
 Blue Pikmin ratio on Brick (Stone2) floor (Detail: 0x8)
 
-0x2B4
+0x2B4 White Pikmin Ratio on Brick Floor
 White Pikmin ratio on Brick (Stone2) floor (Detail: 0x8)
 
-0x2B8
+0x2B8 Purple Pikmin Ratio on Brick Floor
 Purple Pikmin ratio on Brick (Stone2) floor (Detail: 0x8)
 
 *0x2BC
 Unknown2 floor ID
 
-0x2C0
+0x2C0 Pluck Speed on Unknown2 Floor
 Pluck speed on Unknown2 floor
 
 0x2C4
@@ -598,31 +598,31 @@ White Pikmin ratio on Unknown2 floor (Detail: 0x8)
 0x2D4
 Purple Pikmin ratio on Unknown2 floor (Detail: 0x8)
 
-*0x2D8
+*0x2D8 Mario Bros Floor ID
 Mario Bros (NES8Bit) floor ID
 
-0x2DC
+0x2DC Pluck Speed on Mario Bros Floor
 Pluck speed on Mario Bros (NES8Bit) floor
 
-0x2E0
+0x2E0 Red Pikmin Ratio on Mario Bros Floor
 Red Pikmin ratio on Mario Bros (NES8Bit) floor (Detail: 0x8)
 
-0x2E4
+0x2E4 Yellow Pikmin Ratio on Mario Bros Floor
 Yellow Pikmin ratio on Mario Bros (NES8Bit) floor (Detail: 0x8)
 
-0x2E8
+0x2E8 Blue Pikmin Ratio on Mario Bros Floor
 Blue Pikmin ratio on Mario Bros (NES8Bit) floor (Detail: 0x8)
 
-0x2EC
+0x2EC White Pikmin Ratio on Mario Bros Floor
 White Pikmin ratio on Mario Bros (NES8Bit) floor (Detail: 0x8)
 
-0x2F0
+0x2F0 Purple Pikmin Ratio on Mario Bros Floor
 Purple Pikmin ratio on Mario Bros (NES8Bit) floor (Detail: 0x8)
 
 *0x2F4
 Grate (Metal2) floor ID
 
-0x2F8
+0x2F8 Pluck Speed on Grate Floor
 Pluck speed on Grate (Metal2) floor
 
 0x2FC
@@ -640,46 +640,46 @@ White Pikmin ratio on Grate (Metal2) floor (Detail: 0x8)
 0x30C
 Purple Pikmin ratio on Grate (Metal2) floor (Detail: 0x8)
 
-*0x310
+*0x310 Sand Floor ID
 Sand floor ID
 
-0x314
+0x314 Pluck Speed on Sand Floor
 Pluck speed on Sand floor
 
-0x318
+0x318 Red Pikmin Ratio on Sand Floor
 Red Pikmin ratio on Sand floor (Detail: 0x8)
 
-0x31C
+0x31C Yellow Pikmin Ratio on Sand Floor
 Yellow Pikmin ratio on Sand floor (Detail: 0x8)
 
-0x320
+0x320 Blue Pikmin Ratio on Sand Floor
 Blue Pikmin ratio on Sand floor (Detail: 0x8)
 
-0x324
+0x324 White Pikmin Ratio on Sand Floor
 White Pikmin ratio on Sand floor (Detail: 0x8)
 
-0x328
+0x328 Purple Pikmin Ratio on Sand Floor
 Purple Pikmin ratio on Sand floor (Detail: 0x8)
 
-*0x32C
+*0x32C Homerun Floor ID
 Homerun floor ID
 
-0x330
+0x330 Pluck Speed on Homerun Floor
 Pluck speed on Homerun floor
 
-0x334
+0x334 Red Pikmin Ratio on Homerun Floor
 Red Pikmin ratio on Homerun floor (Detail: 0x8)
 
-0x338
+0x338 Yellow Pikmin Ratio on Homerun Floor
 Yellow Pikmin ratio on Homerun floor (Detail: 0x8)
 
-0x33C
+0x33C Blue Pikmin Ratio on Homerun Floor
 Blue Pikmin ratio on Homerun floor (Detail: 0x8)
 
-0x340
+0x340 White Pikmin Ratio on Homerun Floor
 White Pikmin ratio on Homerun floor (Detail: 0x8)
 
-0x344
+0x344 Purple Pikmin Ratio on Homerun Floor
 Purple Pikmin ratio on Homerun floor (Detail: 0x8)
 
 Par02
@@ -746,7 +746,7 @@ Par08
 End of Day (paramFinal__12ftPikminNode)
 
 0x0 Landing V Momentum
-Vertical momentum when Landing (Exploded)
+Vertical momentum when the spaceship explodeds
 
 Par09
 paramDamageFly__12ftPikminNode
@@ -800,25 +800,25 @@ No Description Available.
 No Description Available.
 
 Par00-1
-ExtraParams17
+Pikmin Article Params17
 
 0x0
-Pikmin 'Safespot' Olimar-Distance (How far the 'ideal' position for the Pikmin to stand is from olimar. Higher = farther)
+Unknown. Pikmin 'Safespot' Olimar-Distance? (How far the 'ideal' position for the Pikmin to stand is from olimar. Higher = farther)
 
 0x4
-Pikmin 'Safespot' Spacing (The distance between the pikmin's safespots)
+Unknown. Pikmin 'Safespot' Spacing? (The distance between the pikmin's safespots)
 
-0x8
-Pikmin Runspeed
+0x8 Safespot Distance 1
+Pikmin 'Safespot' Olimar-distance (The higher value of 0x8 and 0xC is applied. Higher = farther)
 
-0xC
-No Description Available.
+0xC Safespot Distance 2
+Pikmin 'Safespot' Olimar-distance
 
-0x10
-Effort (When set to 100, they just stand still whenever you idle and you can run away from them and through them and they won't care. Only if you whistle or do certain moves will they respond, and even then, only some of them do)
+0x10 Chase Distance
+If Pikmin and Olimar distance is more than this value, it will chase Olimar. (Except during Pikmin's attack)
 
 0x14
-How long pikmin continue to follow the previous aerial velocity
+Unknown. How long pikmin continue to follow the previous aerial velocity?
 
 *0x18 Desynch Death Time
 Desynch Death Time (How long a desynched Pikmin has to live in frames)
@@ -845,61 +845,61 @@ Backward momentum pikmin pluck
 Vertical momentum pikmin pluck
 
 0x38
-Horizontal momentum pikmin pluck
+Horizontal momentum pikmin pluck?
 
-*0x3C
-Olimar-Pikmin Interaction Box Size... Or something like that. Lets you remotely control solo pikmin
+*0x3C Pikmin Interaction Box Size
+Olimar-Pikmin Interaction Box Size... Or something like that. Can remotely control solo pikmin.
 
 0x40 Pikmin Teleport Box Size
-Pikmin Teleport Box Size (Lets you grab pikmin from across the stage for usage immediately with fair and dair and such.)
+Pikmin Teleport Box Size (Can grab pikmin from across the stage for usage immediately with fair and dair and such)
 
-0x44
-Something with fsmash velocity?
+0x44 F-Smash Max H Speed
+The max horizontal speed when F-smash (No affect Purple Pikmin)
 
 *0x48
 Something with fsmash velocity?
 
-0x4C
-Pikmin Fsmash Initial Velocity
+0x4C F-Smash H Momentum
+Horizontal momentum when F-smash (No affect Purple Pikmin)
 
 0x50
-Pikmin Fsmash Angle (Radians)
+Pikmin Fsmash Angle?
 
 0x54
  ?? (read on fsmash)
 
-0x58
- ?? (read on fsmash)
+0x58 F-Smash V Momentum
+Initial vertical momentum when F-smash
 
-0x5C
-Pikmin Fsmash Gravity
+0x5C F-Smash Gravity
+Gravity when F-smash
 
-0x60
-Pikmin Usmash Initial Momentum
+0x60 Up-Smash V Momentum
+Initial vertical momentum when Up-smash
 
-0x64
-Pikmin Usmash Gravity
+0x64 Up-Smash Gravity
+Gravity when Up-smash
 
 0x68
 No Description Available.
 
-0x6C
-No Description Available.
+0x6C Side Smash B H Momentum
+Horizontal momentum multiplier when smash input (Side B)
 
-*0x70
-No Description Available.
+*0x70 Latch Time 1
+Related to maximum latch frames for the thrown Pikmin (Side B) The real maximum frame is total of the 0x70 and 0x74 values. The more current damage the target has, the shorter the latch frames.
 
-*0x74
-No Description Available.
+*0x74 Latch Time 2
+Related to maximum latch frames for the thrown Pikmin (Side B) The real maximum frame is total of the 0x70 and 0x74 values. This latch frames is not affect current target damage.
 
-*0x78
-No Description Available.
+*0x78 Decrease Latch Time
+Latch Time decreases as the target moves
 
-0x7C
-SideB Throw Power?
+0x7C H Momentum after Latch End
+Horizontal Momentum after the latch end
 
-0x80
-Velocity Pikmin fly off opponnent after they're done Side-B beating him
+0x80 V Momentum after Latch End
+Vertical Momentum after the latch end
 
 *0x84
 No Description Available.
@@ -941,40 +941,40 @@ No Description Available.
 No Description Available.
 
 Par00-2
-ExtraParams18
+Pikmin Article Params18
 
-*0x0
-Pikmin HP (Red Pikmin)
+*0x0 Red Pikmin HP
+Red Pikmin HP
 
-0x4
+0x4 Red Run Acceleration
 Walk/Run Acceleration (Red Pikmin)
 
-0x8
+0x8 Red Max Run Speed
 Walk/Run Max Speed (Red Pikmin)
 
-0xC
-(read when Pikmin is by Olimar's side) (Red Pikmin)
+0xC Red Ground Deceleration
+Ground deceleration (Red Pikmin)
 
-0x10
-(read when Pikmin is by Olimar's side) (Red Pikmin)
+0x10 Red Chase Speed 1
+Chasing run speed after move, smash, grab (Red Pikmin)
 
-0x14
-(read when Pikmin is by Olimar's side) (Red Pikmin)
+0x14 Red Chase Speed 2
+Chasing run speed after sideB (Red Pikmin)
 
-0x18
-How long Pikmin stays on ground from sideB? (at 0 he walks a bit then jumps to Olimar) (Red Pikmin)
+0x18 Red Chase Speed 3
+Chasing run speed after sideB (Red Pikmin)
 
 0x1C
 (read when Pikmin walks back to Olimar from sideB) (Red Pikmin)
 
-0x20
-Something to do with jump timing of Pikmin coming back from sideB (Red Pikmin)
+0x20 Red Chase Speed 4
+Chasing run speed after sideB (Red Pikmin)
 
 0x24
 (read when Pikmin walks back to Olimar from sideB) (Red Pikmin)
 
-0x28
-Pikmin Speed/Response to TurnRun (Red Pikmin)
+0x28 TurnRun Initial Speed
+Pikmin Speed/Response to Turn Run (Red Pikmin)
 
 0x2C
 No Description Available.
@@ -982,40 +982,40 @@ No Description Available.
 0x30
 No Description Available.
 
-0x34
-No Description Available.
+0x34 Red Jump Momentum 1
+Ground jump momentum when Chasing (Red Pikmin)
 
-0x38
-No Description Available.
+0x38 Red Jump Momentum 2
+Aerial jump momentum when Chasing (Red Pikmin)
 
-0x3C
-No Description Available.
+0x3C Red Gravity
+Gravity to Red Pikmin when side B and chasing
 
-0x40
-No Description Available.
+0x40 Red Max Fall Speed
+Max fall speed (Red Pikmin)
 
-0x44
-No Description Available.
+0x44 Red Knockback Ratio
+Knockback Ratio (Red Pikmin)
 
 0x48
 No Description Available.
 
-*0x4C
-Swim time in frames? (implies Blues drown after 20 seconds; though this is way better than the Smashers can do) (Red Pikmin)
+*0x4C Red Swim Time
+Max time for Red Pikmin to swim
 
 0x50
 No Description Available.
 
-0x54
-Pikmin Toss throw velocity (Red Pikmin)
+0x54 Red H Momentum
+Horizontal velocity when Red Pikmin Toss
 
-0x58
-No Description Available.
+0x58 Red H Speed
+Max horizontal speed when Red Pikmin Toss
 
-0x5C
-No Description Available.
+0x5C Red V Momentum
+Initial vertical velocity when Red Pikmin Toss
 
-0x60
+0x60 Red Grab Length
 Has something to do with grab and dash grab length (Red Pikmin)
 
 0x64
@@ -1030,38 +1030,38 @@ No Description Available.
 0x70
 No Description Available.
 
-*0x74
-Pikmin HP (Yellow Pikmin)
+*0x74 Yellow Pikmin HP
+Yellow Pikmin HP
 
-0x78
+0x78 Yellow Run Acceleration
 Walk/Run Acceleration (Yellow Pikmin)
 
-0x7C
+0x7C Yellow Max Run Speed
 Walk/Run Max Speed (Yellow Pikmin)
 
-0x80
-(read when Pikmin is by Olimar's side) (Yellow Pikmin)
+0x80 Yellow Ground Deceleration
+Ground deceleration (Yellow Pikmin)
 
-0x84
-(read when Pikmin is by Olimar's side) (Yellow Pikmin)
+0x84 Yellow Chase Speed 1
+Chasing run speed after move, smash, grab (Yellow Pikmin)
 
-0x88
-(read when Pikmin is by Olimar's side) (Yellow Pikmin)
+0x88 Yellow Chase Speed 2
+Chasing run speed after sideB (Yellow Pikmin)
 
-0x8C
-How long Pikmin stays on ground from sideB? (at 0 he walks a bit then jumps to Olimar) (Yellow Pikmin)
+0x8C Yellow Chase Speed 3
+Chasing run speed after sideB (Yellow Pikmin)
 
 0x90
 (read when Pikmin walks back to Olimar from sideB) (Yellow Pikmin)
 
-0x94
-Something to do with jump timing of Pikmin coming back from sideB (Yellow Pikmin)
+0x94 Yellow Chase Speed 4
+Chasing run speed after sideB (Yellow Pikmin)
 
 0x98
 (read when Pikmin walks back to Olimar from sideB) (Yellow Pikmin)
 
-0x9C
-Pikmin Speed/Response to TurnRun (Yellow Pikmin)
+0x9C TurnRun Initial Speed
+Pikmin Speed/Response to Turn Run (Yellow Pikmin)
 
 0xA0
 No Description Available.
@@ -1069,40 +1069,40 @@ No Description Available.
 0xA4
 No Description Available.
 
-0xA8
-No Description Available.
+0xA8 Yellow Jump Momentum 1
+Ground jump momentum when Chasing (Yellow Pikmin)
 
-0xAC
-No Description Available.
+0xAC Yellow Jump Momentum 2
+Aerial jump momentum when Chasing (Yellow Pikmin)
 
-0xB0
-No Description Available.
+0xB0 Yellow Gravity
+Gravity to Yellow Pikmin when side B and chasing
 
-0xB4
-No Description Available.
+0xB4 Yellow Max Fall Speed
+Max fall speed (Yellow Pikmin)
 
-0xB8
-No Description Available.
+0xB8 Yellow Knockback Ratio
+Knockback Ratio (Yellow Pikmin)
 
 0xBC
 No Description Available.
 
-*0xC0
-Swim time in frames? (implies Blues drown after 20 seconds; though this is way better than the Smashers can do) (Yellow Pikmin)
+*0xC0 Yellow Swim Time
+Max time for Yellow Pikmin to swim
 
 0xC4
 No Description Available.
 
-0xC8
-Pikmin Toss throw velocity (Yellow Pikmin)
+0xC8 Yellow H Momentum
+Horizontal velocity when Yellow Pikmin Toss
 
-0xCC
-No Description Available.
+0xCC Yellow H Speed
+Max horizontal speed when Yellow Pikmin Toss
 
-0xD0
-No Description Available.
+0xD0 Yellow V Momentum
+Initial vertical velocity when Yellow Pikmin Toss
 
-0xD4
+0xD4 Yellow Grab Length
 Has something to do with grab and dash grab length (Yellow Pikmin)
 
 0xD8
@@ -1117,38 +1117,38 @@ No Description Available.
 0xE4
 No Description Available.
 
-*0xE8
-Pikmin HP (Blue Pikmin)
+*0xE8 Blue Pikmin HP
+Blue Pikmin HP
 
-0xEC
+0xEC Blue Run Acceleration
 Walk/Run Acceleration (Blue Pikmin)
 
-0xF0
+0xF0 Blue Max Run Speed
 Walk/Run Max Speed (Blue Pikmin)
 
-0xF4
-(read when Pikmin is by Olimar's side) (Blue Pikmin)
+0xF4 Blue Ground Deceleration
+Ground deceleration (Blue Pikmin)
 
-0xF8
-(read when Pikmin is by Olimar's side) (Blue Pikmin)
+0xF8 Blue Chase Speed 1
+Chasing run speed after move, smash, grab (Blue Pikmin)
 
-0xFC
-(read when Pikmin is by Olimar's side) (Blue Pikmin)
+0xFC Blue Chase Speed 2
+Chasing run speed after sideB (Blue Pikmin)
 
-0x100
-How long Pikmin stays on ground from sideB? (at 0 he walks a bit then jumps to Olimar) (Blue Pikmin)
+0x100 Blue Chase Speed 3
+Chasing run speed after sideB (Blue Pikmin)
 
 0x104
 (read when Pikmin walks back to Olimar from sideB) (Blue Pikmin)
 
-0x108
-Something to do with jump timing of Pikmin coming back from sideB (Blue Pikmin)
+0x108 Blue Chase Speed 4
+Chasing run speed after sideB (Blue Pikmin)
 
 0x10C
 (read when Pikmin walks back to Olimar from sideB) (Blue Pikmin)
 
-0x110
-Pikmin Speed/Response to TurnRun (Blue Pikmin)
+0x110 TurnRun Initial Speed
+Pikmin Speed/Response to Turn Run (Blue Pikmin)
 
 0x114
 No Description Available.
@@ -1156,40 +1156,40 @@ No Description Available.
 0x118
 No Description Available.
 
-0x11C
-No Description Available.
+0x11C Blue Jump Momentum 1
+Ground jump momentum when Chasing (Blue Pikmin)
 
-0x120
-No Description Available.
+0x120 Blue Jump Momentum 2
+Aerial jump momentum when Chasing (Blue Pikmin)
 
-0x124
-No Description Available.
+0x124 Blue Jump Momentum 2
+Aerial jump momentum when Chasing (Blue Pikmin)
 
-0x128
-No Description Available.
+0x128 Blue Max Fall Speed
+Max fall speed (Blue Pikmin)
 
-0x12C
-No Description Available.
+0x12C Blue Knockback Ratio
+Knockback Ratio (Blue Pikmin)
 
 0x130
 No Description Available.
 
 *0x134
-Swim time in frames? (implies Blues drown after 20 seconds; though this is way better than the Smashers can do) (Blue Pikmin)
+Max time for Blue Pikmin to swim? (Blue Pikmin don't drown)
 
 0x138
 No Description Available.
 
-0x13C
-Pikmin Toss throw velocity (Blue Pikmin)
+0x13C Blue H Momentum
+Horizontal velocity when Blue Pikmin Toss
 
-0x140
-No Description Available.
+0x140 Blue H Speed
+Max horizontal speed when Blue Pikmin Toss
 
-0x144
-No Description Available.
+0x144 Blue V Momentum
+Initial vertical velocity when Blue Pikmin Toss
 
-0x148
+0x148 Blue Grab Length
 Has something to do with grab and dash grab length (Blue Pikmin)
 
 0x14C
@@ -1204,37 +1204,37 @@ No Description Available.
 0x158
 No Description Available.
 
-*0x15C
-Pikmin HP (White Pikmin)
+*0x15C White Pikmin HP
+White Pikmin HP
 
-0x160
+0x160 White Run Acceleration
 Walk/Run Acceleration (White Pikmin)
 
-0x164
+0x164 White Max Run Speed
 Walk/Run Max Speed (White Pikmin)
 
-0x168
-(read when Pikmin is by Olimar's side) (White Pikmin)
+0x168 White Ground Deceleration
+Ground deceleration (White Pikmin)
 
-0x16C
-(read when Pikmin is by Olimar's side) (White Pikmin)
+0x16C White Chase Speed 1
+Chasing run speed after move, smash, grab (White Pikmin)
 
-0x170
-(read when Pikmin is by Olimar's side) (White Pikmin)
+0x170 White Chase Speed 2
+Chasing run speed after sideB (White Pikmin)
 
-0x174
-How long Pikmin stays on ground from sideB? (at 0 he walks a bit then jumps to Olimar) (White Pikmin)
+0x174 White Chase Speed 3
+Chasing run speed after sideB (White Pikmin)
 
 0x178
 (read when Pikmin walks back to Olimar from sideB) (White Pikmin)
 
-0x17C
-Something to do with jump timing of Pikmin coming back from sideB (White Pikmin)
+0x17C White Chase Speed 4
+Chasing run speed after sideB (White Pikmin)
 
 0x180
 (read when Pikmin walks back to Olimar from sideB) (White Pikmin)
 
-0x184
+0x184 TurnRun Initial Speed
 Pikmin Speed/Response to TurnRun (White Pikmin)
 
 0x188
@@ -1243,40 +1243,40 @@ No Description Available.
 0x18C
 No Description Available.
 
-0x190
-No Description Available.
+0x190 White Jump Momentum 1
+Ground jump momentum when Chasing (White Pikmin)
 
-0x194
-No Description Available.
+0x194 White Jump Momentum 2
+Aerial jump momentum when Chasing (White Pikmin)
 
-0x198
-No Description Available.
+0x198 White Gravity
+Gravity to White Pikmin when side B and chasing
 
-0x19C
-No Description Available.
+0x19C White Max Fall Speed
+Max fall speed (White Pikmin)
 
-0x1A0
-No Description Available.
+0x1A0 White Knockback Ratio
+Knockback Ratio (White Pikmin)
 
 0x1A4
 No Description Available.
 
-*0x1A8
-Swim time in frames? (implies Blues drown after 20 seconds; though this is way better than the Smashers can do) (White Pikmin)
+*0x1A8 White Swim Time
+Max time for White Pikmin to swim
 
 0x1AC
 No Description Available.
 
-0x1B0
-Pikmin Toss throw velocity (White Pikmin)
+0x1B0 White H Momentum
+Horizontal velocity when White Pikmin Toss
 
-0x1B4
-No Description Available.
+0x1B4 White H Speed
+Max horizontal speed when White Pikmin Toss
 
-0x1B8
-No Description Available.
+0x1B8 White V Momentum
+Initial vertical velocity when White Pikmin Toss
 
-0x1BC
+0x1BC White Grab Length
 Has something to do with grab and dash grab length (White Pikmin)
 
 0x1C0
@@ -1291,38 +1291,38 @@ No Description Available.
 0x1CC
 No Description Available.
 
-*0x1D0
-Pikmin HP (Purple Pikmin)
+*0x1D0 Purple Pikmin HP
+Purple Pikmin HP
 
-0x1D4
+0x1D4 Purple Run Acceleration
 Walk/Run Acceleration (Purple Pikmin)
 
-0x1D8
+0x1D8 Purple Max Run Speed
 Walk/Run Max Speed (Purple Pikmin)
 
-0x1DC
-(read when Pikmin is by Olimar's side) (Purple Pikmin)
+0x1DC Purple Ground Deceleration
+Ground deceleration (Purple Pikmin)
 
-0x1E0
-(read when Pikmin is by Olimar's side) (Purple Pikmin)
+0x1E0 Purple Chase Speed 1
+Chasing run speed after move, smash, grab (Purple Pikmin)
 
-0x1E4
-(read when Pikmin is by Olimar's side) (Purple Pikmin)
+0x1E4 Purple Chase Speed 2
+Chasing run speed after sideB (Purple Pikmin)
 
-0x1E8
-How long Pikmin stays on ground from sideB? (at 0 he walks a bit then jumps to Olimar) (Purple Pikmin)
+0x1E8 Purple Chase Speed 3
+Chasing run speed after sideB (Purple Pikmin)
 
 0x1EC
 (read when Pikmin walks back to Olimar from sideB) (Purple Pikmin)
 
-0x1F0
-Something to do with jump timing of Pikmin coming back from sideB (Purple Pikmin)
+0x1F0 Purple Chase Speed 4
+Chasing run speed after sideB (Purple Pikmin)
 
 0x1F4
 (read when Pikmin walks back to Olimar from sideB) (Purple Pikmin)
 
-0x1F8
-Pikmin Speed/Response to TurnRun (Purple Pikmin)
+0x1F8 TurnRun Initial Speed
+Pikmin Speed/Response to Turn Run (Purple Pikmin)
 
 0x1FC
 No Description Available.
@@ -1330,40 +1330,40 @@ No Description Available.
 0x200
 No Description Available.
 
-0x204
-No Description Available.
+0x204 Purple Jump Momentum 1
+Ground jump momentum when Chasing (Purple Pikmin)
 
-0x208
-No Description Available.
+0x208 Purple Jump Momentum 2
+Aerial jump momentum when Chasing (Purple Pikmin)
 
-0x20C
-No Description Available.
+0x20C Purple Gravity
+Gravity to Purple Pikmin when side B and chasing
 
-0x210
-No Description Available.
+0x210 Purple Max Fall Speed
+Max fall speed (Purple Pikmin)
 
-0x214
-No Description Available.
+0x214 Purple Knockback Ratio
+Knockback Ratio (Purple Pikmin)
 
 0x218
 No Description Available.
 
-*0x21C
-Swim time in frames? (implies Blues drown after 20 seconds; though this is way better than the Smashers can do) (Purple Pikmin)
+*0x21C Purple Swim Time
+Max time for Purple Pikmin to swim
 
 0x220
 No Description Available.
 
-0x224
-Pikmin Toss throw velocity (Purple Pikmin)
+0x224 Purple H Momentum
+Horizontal velocity when Purple Pikmin Toss
 
-0x228
-No Description Available.
+0x228 Purple H Speed
+Max horizontal speed when Purple Pikmin Toss
 
-0x22C
-No Description Available.
+0x22C Purple V Momentum
+Initial vertical velocity when Purple Pikmin Toss
 
-0x230
+0x230 Purple Grab Length
 Has something to do with grab and dash grab length (Purple Pikmin)
 
 0x234
@@ -1541,19 +1541,19 @@ No Description Available.
 No Description Available.
 
 Par00-4
-ExtraParams20
+Pikmin Article Params20
 
-0x0
-Body collision sensitivity
+0x0 Push out
+The distance that Pikmin is pushed out by Fighters and other Pikmin
 
-0x4
- ?? (read when pikmin go to olimar)
+0x4 Pikmin Order H Dispersion
+Horizontal dispersion that occurs when call by down B when multiple Pikmin are latching to the fighter
 
-0x8
-Body collision sensitivity to pikmin only?
+0x8 Z Position Movement
+The speed at which Pikmin moves to the front or back of the screen.
 
-0xC
-Z axis of movement
+0xC Max Z Position
+Maximum distance that Pikmin can move to the front or back of the screen.
 
 Par00-5
 hitDataPikmin__18wnPikminPikminNode
@@ -1606,12 +1606,6 @@ No Description Available.
 Flags(HitData1-7)
 No Description Available.
 
-Par01D3
-Data3
-
-*0x0
-No Description Available.
-
 Par01-0
 Spaceship Parameter0
 
@@ -1625,7 +1619,7 @@ Spaceship rising acceleration
 Spaceship max rising speed
 
 *0xC
-If the value is large, the damage will be delayed after starting to fly, and the rocket will not fall
+If the value is high, the damage will be delayed after starting to fly, and the rocket will not fall
 
 *0x10 Max Damaging Time
 Time until spaceship falls (Also, Max damaging frame excluding spaceship's damage)
@@ -1642,8 +1636,8 @@ No Description Available.
 0x20
 No Description Available.
 
-*0x24
-No Description Available.
+*0x24 Explosion Time
+If this time passes before landing, it will explode
 
 0x28
 No Description Available.
@@ -1652,22 +1646,22 @@ No Description Available.
 No Description Available.
 
 Par01-1
-ExtraParams1
+Spaceship Parameter1
 
-0x0
-No Description Available.
+0x0 Camera Size Top 1
+Camera position in above of the character (The higher value of 0x0 and 0xC is applied)
 
-0x4
-No Description Available.
+0x4 Camera Size Left
+Camera position in left of the character
 
-0x8
-No Description Available.
+0x8 Camera Size Right
+Camera position in right of the character
 
-0xC
-No Description Available.
+0xC Camera Size Top 2
+Camera position in above of the character
 
-0x10
-No Description Available.
+0x10 Camera Size Bottom
+Camera position in below of the character
 
 *0x14
 No Description Available.
@@ -1699,20 +1693,26 @@ No Description Available.
 Flags 0x1C
 No Description Available.
 
+Par01D3
+Data3
+
+*0x0
+No Description Available.
+
 Par02-0
-ExtraParams0
+Pikmin Chain
 
 0x0
 No Description Available.
 
-0x4
-No Description Available.
+0x4 Angle
+Pikmin Chain Angle
 
-0x8
-No Description Available.
+0x8 Length
+Pikmin Chain Length
 
-0xC
-No Description Available.
+0xC Tether Length
+Tether Length
 
 0x10
 No Description Available.

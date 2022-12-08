@@ -14,8 +14,8 @@ X08 26-00x
 
 Art0
 0-10
-030 Par00D3 4
 034 Par00-0 1
+030 Par00D3 4
 
 Art1
 3-3
@@ -36,13 +36,13 @@ Arrows
 0x0
  ??
 
-*0x4
+*0x4 Max Charge Time
 Max charge time
 
-0x8
+0x8 Backwards Sensitivity
 Joystick sensitivity backwards
 
-0xC
+0xC Upwards Sensitivity
 Joystick sensitivity upwards
 
 Par01
@@ -51,23 +51,23 @@ Angel Ring
 *0x0
 Something with how long it's out at startup?
 
-0x4
-Something with how long it stays out after startup?
+0x4 Initial Spin Speed
+Initial spin speed
 
-0x8
-Something with how long it stays out after startup? (less = more)
+0x8 Spin Speed Deceleration
+Spin speed deceleration
 
-0xC
-Something with how long it stays out after startup? (might affect button tapping)
+0xC Max Spin Speed
+Max spin speed
 
-0x10
-How many seconds you can hold angel ring
+0x10 Add Spin Speed per Tap B
+Spin speed added per B button press
 
 0x14
  ?? (read on button tap of ring hold)
 
-0x18
- ?? (read on startup)
+0x18 End Spin Speed
+Spin speed equal to or less than this to end move
 
 *0x1C
  ?? (read on startup)
@@ -75,56 +75,56 @@ How many seconds you can hold angel ring
 Par02
 Wings of Icarus
 
-0x0
-momentum preservation
+0x0 H Preservation (Air)
+Aerial horizontal momentum preservation on startup (higher = more)
 
-0x4
-initial vertical momentum
+0x4 V Preservation (Air)
+Aerial vertical momentum preservation on startup (higher = more)
 
-*0x8
-how many frames waiting above ground until landing
+*0x8 Fastest Landing Time
+How many frames waiting above ground until landing
 
-0xC
-momentum going right/left
+0xC H Acceleration
+Horizontal acceleration
 
-0x10
-momentum going down
+0x10 Max H Speed
+Max horizontal speed
 
-0x14
- ??
+0x14 H Deceleration
+Horizontal speed deceleration
 
-0x18
-Potency of Y-Axis control stick movement
+0x18 V Acceleration
+Vertical acceleration
 
-0x1C
-momentum going up
+0x1C Max V Speed
+Max vertical speed
 
-0x20
- ??
+0x20 V Deceleration
+Vertical speed deceleration
 
-0x24
-something to do with how high you can rise/how much gravity affects vertical gain
+0x24 Gravity
+Gravity multiplier
 
 0x28
-gravity?
+Unknown
 
 0x2C
- ??
+Unknown
 
-*0x30
-flying time (frames)
+*0x30 Max Flying Time
+Max flying frames
 
-0x34
+0x34 Upward Animation Speed
 Wing flap speed going up
 
-0x38
+0x38 Downward Animation Speed
 wing flap speed going down
 
-*0x3C
-No Description Available.
+0x3C Min Flying Time
+Min flying Time. If value is 2 or more, can always fly for the maximum time.
 
-0x40
-No Description Available.
+0x40 Recharge Rate
+Flying frame recovery speed (par frame)
 
 *0x44
 No Description Available.
@@ -132,29 +132,29 @@ No Description Available.
 Par03
 Mirror Shield
 
-0x0
-No Description Available.
+0x0 Max Angle
+Max upward angle
 
-*0x4
-amount of time it can be out (frames)
+*0x4 Max Continue Frame
+Maximum continue frame
 
-*0x8
-amount of time before you stand up
+*0x8 Min Continue Frame
+Minimum continue frame
 
 0xC
- ?? (higher than 1 you jitter when aiming and can possibly freeze)
+ ?? (higher than 1, jitter when aiming and can possibly freeze)
 
 0x10
-Something to do with reflection distance?
+Reflection and block distance
 
-*0x14
-Frame count for something?
+*0x14 Reverse Effect Time
+Effect frame to reverse on hit
 
-0x18
- ?? (read all the time)
+0x18 Shield Durability
+Shield maximum durability (HP). When the shield's durability reaches 0, it can't block against subsequeset attacks.
 
-0x1C
- ?? (read all the time)
+0x1C Recovery Speed
+Durability recovery speed (par frame)
 
 0x20
 No Description Available.
@@ -163,34 +163,34 @@ No Description Available.
 No Description Available.
 
 Par04
-HitDataList4
+HitDataList4 (Mirror Shield Block)
 
-0x0
-X Offset.
+0x0 X Offset Start
+Block bubble X pos Start
 
-0x4
-Y Offset.
+0x4 Y Offset Start
+Block bubble Y pos Start
 
-0x8
-Z Offset.
+0x8 Z Offset Start
+Block bubble Z pos Start
 
-0xC
-X Offset 2.
+0xC X Offset End
+Block bubble X pos End
 
-0x10
-Y Offset 2.
+0x10 Y Offset End
+Block bubble Y pos End
 
-0x14
-Z Offset 2.
+0x14 Z Offset End
+Block bubble Z pos End
 
-0x18
-Radius.
+0x18 Size
+Block bubble size
 
 Flags 0x1C
-No Description Available.
+Bone (Bit1-9) and Enable?
 
 Par07
-HitDataList7(Mirror Shield)
+HitDataList7 (Mirror Shield Reflect1)
 
 Offset
 No Description Available.
@@ -198,17 +198,17 @@ No Description Available.
 Offset>Count
 Count
 
-0x8
-Reflection damage multiplier
+0x8 Damage Multiplier
+Reflected damage multiplier
 
-0xC
-Reflection speed multiplier
+0xC Speed Multiplier
+Reflected speed multiplier
 
-0x10
-Break threshold
+0x10 Damage Threshold
+Damage threshold
 
-0x14
-No Description Available.
+0x14 Duration Multiplier
+Reflected duration multiplier
 
 0x18
 No Description Available.
@@ -219,34 +219,40 @@ No Description Available.
 Par08
 Angel Ring Reflect
 
-*0x0
-Bone
+*0x0 Bone
+Focus Bone
 
-0x4
-Break threshold
+0x4 Damage Threshold
+Damage threshold
 
-0x8
-Reflection bubble X pos?
+0x8 X Offset
+Reflection bubble X offset
 
-0xC
-Reflection bubble Y pos?
+0xC Y Offset
+Reflection bubble Y offset
 
-0x10
-Reflection bubble Z pos?
+0x10 Z Offset
+Reflection bubble Z offset
 
-0x14
+0x14 Size
 Reflection bubble size
 
-0x18
-Reflection damage multiplier
+0x18 Damage Multiplier
+Reflected damage multiplier
 
-0x1C
-Reflection speed multiplier
+0x1C Speed Multiplier
+Reflected speed multiplier
 
-0x20
-No Description Available.
+0x20 Duration Multiplier
+Reflected duration multiplier
 
 *0x24
+No Description Available.
+
+Par00-0
+ExtraParams0
+
+*0x0
 No Description Available.
 
 Par00D3
@@ -264,174 +270,168 @@ No Description Available.
 *0xC
 No Description Available.
 
-Par00-0
-ExtraParams0
-
-*0x0
-No Description Available.
-
 Par01-0
-Arrows Attribute
+Arrows Article
 
-*0x0
-angle at which side arrow initially shoots at
+0x0 Angle (Side)
+Angle at which side arrow initially shoots at
 
-0x4
-side arrow speed
+0x4 Speed (Side)
+Side arrow speed
 
-0x8
-angle at which the up arrow initially shoots at
+0x8 Angle (Up)
+Angle at which the up arrow initially shoots at
 
-0xC
-up arrow speed
+0xC Speed (Up)
+Up arrow speed
 
-0x10
-Arrow control radius
+0x10 Turning Speed
+Arrow turning speed
 
 *0x14
 No Description Available.
 
-0x18
+0x18 Base Damage
 Base damage
 
-0x1C
-Damage multiplier (extra damage per charging frame)
+0x1C Damage Growth Rate
+Damage growth rate (extra damage per charging frame)
 
-0x20
-No Description Available.
+0x20 Detection
+Landing detection (Vertical detection offset of floor and wall)
 
 *0x24
 No Description Available.
 
 Par02-0
-Centurion Soldiers
+Centurion Article
 
-*0x0
-Spawn Travel Duration (Frames). The time it takes the soldiers to travel from their spawn point to the stage.
+*0x0 Time to Come
+Frames it takes for centurion to come on stage
 
-0x4
-Unknown, spawning-related.
+0x4 H Position Random
+Randomness of the coming horizontal position (Value that the stage width as 1)
 
-0x8
-Unknown, spawning-related.
+0x8 V Position Random
+Randomness of the coming vertical position (Value that the stage height as 1)
 
-0xC
-Unknown, spawning-related.
+0xC Base V Position
+Base vertical position (Value that the stage height as 1)
 
-*0x10
-No Description Available.
+*0x10 Turning Time
+Frames it takes for centurion to change direction after come on stage
 
-*0x14
-Frames to wait before attacking.
+*0x14 Attack Start Time
+Frames it takes for centurion to start attack after changed direction
 
-0x18
-Travel Speed. The velocity the soldiers travel at.
+0x18 Speed
+Attack Speed
 
 0x1C
-Knockback Speed. The velocity added when attacked.
+Unknown
 
-0x20
-Rebound Speed. The velocity applied upon rebounding after a successful attack.
+0x20 Hit V Momentum
+Vertical Momentum when the attack hits
 
-0x24
-Gravity. The speed at which the soldier falls at upon rebounding or being struck.
+0x24 Hit Gravity
+Gravity when the attack hits
 
 0x28
-Unknown, related to rebound speed.
+Unknown
 
-0x2C
-No Description Available.
+0x2C Hit Z Momentum Random 1
+Randomness of Z-axis momentum when attack hits. Random momentum from 0x2C to 0x30. (positive = towards camera)
 
-0x30
-No Description Available.
+0x30 Hit Z Momentum Random 2
+Randomness of Z-axis momentum when attack hits. Random momentum from 0x2C to 0x30.
 
 0x34
-Health.
+No Description Available.
 
 Par02-1
-Centurion Soldier Hurtbox
+hitDataIkarus__15wnPitIkarusNode
 
 0x0
-X Offset
+No Description Available.
 
 0x4
-Y Offset
+No Description Available.
 
 0x8
-Z Offset
+No Description Available.
 
 0xC
-X Offset 2
+No Description Available.
 
 0x10
-Y Offset 2
+No Description Available.
 
 0x14
-Z Offset 2
+No Description Available.
 
 0x18
-Radius
+No Description Available.
 
 Flags 0x1C
-Hurtbox Flags.
+No Description Available.
 
 Par03-0
 Palutena's Army Attribute
 
 0x0
-No Description Available.
+Unknown
 
 *0x4
-No Description Available.
+Unknown
 
-*0x8
-Duration-Related (Frames).
+*0x8 Duration
+Appearance time of Palutena. If the value is low, it will start to disappear quickly, and if it disappears completely, Centurion will not appear.
 
 *0xC
-Duration-Related (Frames).
+If the value is low, Palutena disappears suddenly. No affect when appearing
 
 *0x10
-Duration-Related (Frames).
+Unknown
 
-*0x14
-No Description Available.
+*0x14 Interval 1
+Time from the appearance of the first Centurion to the appearance of the second Centurion
 
-0x18
-No Description Available.
+0x18 V Position Random
+Randomness of the vertical appearance position of Centurion (Value that the stage height as 1)
 
-0x1C
-How far away from the stage the soldiers spawn from.
+0x1C Distance
+The distance at which Centurion appears (higher = farther)
 
-*0x20
-Frames Between Soldier Spawns.
+*0x20 Interval 2
+Time interval when Centurion appears after the second Centurion
 
 *0x24
-Number of Soldiers Spawned.
+No Description Available.
 
 EXD 26-00x
-HitDataList7>Offset (Mirror Shield)
+HitDataList7>Offset (Mirror Shield Reflect2)
 
-0x0
-Reflection bubble X pos?
+0x0 X Offset Start
+Reflection bubble X pos Start
 
-0x4
-Reflection bubble Y pos?
+0x4 Y Offset Start
+Reflection bubble Y pos Start
 
-0x8
-Reflection bubble Z pos?
+0x8 Z Offset Start
+Reflection bubble Z pos Start
 
-0xC
-X Stretch?
+0xC X Offset End
+Reflection bubble X pos End
 
-0x10
-Y Stretch?
+0x10 Y Offset End
+Reflection bubble Y pos End
 
-0x14
-Z Stretch?
+0x14 Z Offset End
+Reflection bubble Z pos End
 
-0x18
-Radius(Reflection bubble size)
+0x18 Size
+Reflection bubble size
 
 Flags 0x1C
-No Description Available.
+Bone (Bit1-9) and Enable?
 

@@ -37,8 +37,8 @@ Unknown, not affect landing lag
 Par01
 Super Jump Punch Extra
 
-0x0 Air Preservarion pre-Jump
-Aerial horizontal momentum preservarion on startup (higher = more)
+0x0 Air H Preservation pre-Jump
+Aerial horizontal momentum preservation on startup (higher = more)
 
 0x4 Air Gravity pre-Jump
 Aerial gravity on startup
@@ -97,13 +97,13 @@ Unknown
 0x3C
 Unknown
 
-0x40
-Unknown
+0x40 H Deceleration
+Horizontal deceleration
 
-0x44
-Unknown
+0x44 Ending Gravity
+Ending gravity
 
-*0x48 Misfire ratio
+*0x48 Misfire Ratio
 Misfire ratio (i.e. 1 out of this chance of misfiring)
 
 0x4C Misfire H Momentum
@@ -131,13 +131,13 @@ Unknown (read on downB ground only)
 Grounded max horizontal speed
 
 0x8 H Acceleration (Ground)
-Grounded horizontal acceleration
+Grounded horizontal acceleration. When RA-Bit[17] becomes True, the acceleration is disable and the deceleration is enable.
 
-0xC
-Unknown (read on downB ground only)
+0xC Deceleration
+Deceleration of horizontal speed after RA-Bit[17] becomes True
 
 0x10 Tab B V Momentum
-Tapping B vertical momentum
+Vertical momentum added when tap B. Effective when RA-Bit[18] is True and LA-Bit[61] is False. LA-Bit[61] becomes False when on the ground.
 
 0x14 Max Rising Speed
 Max rising speed
@@ -149,7 +149,7 @@ Luigi Cyclone Extra
 Aerial max horizontal momentum
 
 0x4 H Acceleration (Air)
-Aerial horizontal acceleration
+Aerial horizontal acceleration. When RA-Bit[17] becomes True, the acceleration is disable and the deceleration is enable.
 
 Par05
 Negative Zone
@@ -161,7 +161,7 @@ Gravity
 Max fall speed
 
 Par00-0
-Fireball Attribute
+Fireball Article
 
 0x0 Gravity
 Fireball gravity

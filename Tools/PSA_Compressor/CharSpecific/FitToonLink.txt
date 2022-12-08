@@ -55,10 +55,10 @@ Par01
 Spin Attack (Ground)
 
 *0x0 Charge Time
-Time to fully charge (frames)
+Number of frames until the damage multiplier reaches the value of 0x4
 
-0x4 Charge Damage Multiplier
-Charge damage multiplier
+0x4 Charged Damage Multiplier
+Full charged damage multiplier
 
 Par02
 Spin Attack (Air)
@@ -93,20 +93,20 @@ Angle of upward/downward boomerang throw (radians)
 Par04
 Triforce Slash
 
-0x0
+0x0 V Range
 Vertical range
 
-0x4
+0x4 H Range
 Front range
 
-*0x8
+*0x8 Hit Lag
 Freeze frames after hit
 
-0xC
+0xC Speed
 travel speed
 
-*0x10
-travel frame
+*0x10 Frame
+Travel frame. If do not approach within the time, will be canceled.
 
 0x14
 No Description Available.
@@ -163,7 +163,7 @@ Flags 0x1C
 No Description Available.
 
 Par00-0
-Boomerang Attribute
+Boomerang Article
 
 0x0 Y offset
 Boomerang vertical offset -16=Higher, hits floor sooner than it should
@@ -208,7 +208,7 @@ Boomerang Homing. Higher value = better homing to link
 Homing time (frames)
 
 *0x38
- ?? (frames)
+ ??
 
 0x3C Catchable Range
 Catchable range
@@ -232,7 +232,7 @@ No Description Available.
 No Description Available.
 
 Par02-0
-Arrows Attribute
+Arrows Article
 
 0x0
  ??
@@ -267,20 +267,20 @@ No Description Available.
 Par03-0
 Clawshot Article
 
-0x0
+0x0 Speed
 Speed that the chain travels (Air/Ground)
 
-*0x4
+*0x4 Ground Length
 Length of grounded chain - Anything higher than 21 glitches.
 
-*0x8
+*0x8 Air Length
 Length of aerial chain - Anything higher than 21 glitches.
 
-0xC
-Tether Length
+0xC Tether Length
+Tether length
 
-0x10
-Tether Speed
+0x10 Tether Speed
+Tether speed
 
 *0x14
 No Description Available.

@@ -14,9 +14,9 @@ Art0
 
 Art1
 1-13
-030 Par01D3 1E
 034 Par01-0 1
 038 Par01-1 6
+030 Par01D3 1E
 
 Par00
 Pokemon Change?
@@ -236,6 +236,31 @@ No Description Available.
 *0x14
 No Description Available.
 
+Par01-0
+ExtraParams0
+*0x0
+No Description Available.
+
+Par01-1
+ExtraParams1
+0x0
+No Description Available.
+
+0x4
+No Description Available.
+
+0x8
+No Description Available.
+
+0xC
+No Description Available.
+
+0x10
+No Description Available.
+
+*0x14
+No Description Available.
+
 Par01D3
 Data3
 *0x0
@@ -328,27 +353,4 @@ No Description Available.
 *0x74
 No Description Available.
 
-Par01-0
-ExtraParams0
-*0x0
-No Description Available.
 
-Par01-1
-ExtraParams1
-0x0
-No Description Available.
-
-0x4
-No Description Available.
-
-0x8
-No Description Available.
-
-0xC
-No Description Available.
-
-0x10
-No Description Available.
-
-*0x14
-No Description Available.

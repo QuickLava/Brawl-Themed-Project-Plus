@@ -13,8 +13,8 @@
 
 Art0
 1-9
-030 Par00D3 4
 034 Par00-0 1
+030 Par00D3 4
 
 Art1
 1-2
@@ -216,6 +216,12 @@ No Description Available.
 Flags 0x1C
 No Description Available.
 
+Par00-0
+ExtraParams0
+
+*0x0
+No Description Available.
+
 Par00D3
 Data3
 
@@ -231,12 +237,6 @@ No Description Available.
 *0xC
 No Description Available.
 
-Par00-0
-ExtraParams0
-
-*0x0
-No Description Available.
-
 Par01-0
 Toad Article
 
@@ -244,10 +244,10 @@ Toad Article
 If edit it, it will freeze when hit toad
 
 0x4 X Offset
-X offset (Positive = Right)
+Spore X offset (Positive = Right)
 
 0x8 Y Offset
-Y offset
+Spore Y offset
 
 *0xC
 No Description Available.

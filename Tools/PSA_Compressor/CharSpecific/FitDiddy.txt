@@ -85,8 +85,8 @@ Launch arc curvature (higher number allows for steeper curves)
 *0x8
 Unknown
 
-0xC
-No Description Available.
+0xC Knockback Armor
+Knockback Armor Strength when charging
 
 0x10
 No Description Available.
@@ -164,25 +164,25 @@ Rising animation speed multiplier
 No Description Available.
 
 0x24
-No Description Available.
+Angle that changes when input horizontal. It also affects to horizontal movement.
 
 0x28
-No Description Available.
+Angle that changes when input horizontal.
 
 0x2C
 No Description Available.
 
 0x30
-No Description Available.
+Speed to change the direction of travel sideways
 
 0x34
 No Description Available.
 
-0x38
-No Description Available.
+0x38 H deceleration
+Horizontal deceleration
 
-0x3C
-No Description Available.
+0x3C Max H Speed
+The maximum horizontal velocity
 
 0x40
 No Description Available.
@@ -191,31 +191,31 @@ No Description Available.
 The speed at which the peanuts fly
 
 *0x48 FS Duration
-FS Duration
+Final Smash duration. (seconds) Counting starts after it becomes possible to attack.
 
-*0x4C
-No Description Available.
+*0x4C Flashing Time
+The frame when the character starts flashing, counting from the end time
 
-0x50
-No Description Available.
+0x50 Ending V Momentum
+Vertical momentum at the end
 
-0x54
-No Description Available.
+0x54 2nd X Offset
+X offset where the second bullet comes out
 
-0x58
-No Description Available.
+0x58 2nd Y Offset
+Y offset where the second bullet comes out
 
-0x5C
-No Description Available.
+0x5C 1st X Offset
+X offset where the first bullet comes out
 
-0x60
-No Description Available.
+0x60 1st Y Offset
+Y offset where the first bullet comes out
 
-*0x64
-No Description Available.
+0x64 H Explosion
+Horizontal explosion place at the end
 
-0x68
-No Description Available.
+0x68 V Explosion
+Vertical explosion place at the end
 
 *0x6C
 No Description Available.
@@ -242,19 +242,19 @@ Unknown, projectile rocket barrel reads every few frames
 Unknown, projectile rocket barrel reads frame, sometimes twice
 
 0x18
-Unknown, projectile rocket barrel reads frame, sometimes twice
+Maximum angle that changes between 1 frame
 
 0x1C
-Unknown, projectile rocket barrel reads frame, sometimes twice
+Maximum angle that changes between 1 frame
 
 0x20
-Unknown, projectile rocket barrel reads frame, sometimes more
+Ease of flying to the down
 
-0x24
-No Description Available.
+0x24 Max Fall Speed
+Max Fall Speed
 
 0x28
-No Description Available.
+Value related to damage (Close to 0 = higher damage)
 
 0x2C
 No Description Available.

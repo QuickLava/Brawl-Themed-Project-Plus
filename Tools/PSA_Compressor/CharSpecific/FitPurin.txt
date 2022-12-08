@@ -7,7 +7,7 @@ Par00
 Rollout (paramPurinSpecialN__11ftPurinNode)
 
 *0x0 Roll Around Duration
-How many frames you roll around
+How many frames character roll around
 
 *0x4
  ?? (frame count for something?)
@@ -24,16 +24,16 @@ Unknown
 0x14
 Unknown
 
-0x18
-Max Horizontal Speed?
+0x18 Ground Max H Speed 1
+Ground Max Horizontal Speed. The lower of 0x18 and 0x1C is the actual maximum speed.
 
-0x1C
-Max Horizontal Speed?
+0x1C Ground Max H Speed 2
+Ground Max Horizontal Speed
 
 0x20
  ?? (read in air)
 
-0x24
+0x24 Air H Acceleration
 Aerial horizontal acceleration (read in air, negative = forward, positive = backward)
 
 0x28 Min Air H Speed
@@ -81,7 +81,7 @@ Horizontal ending slide speed
 0x60
 No Description Available.
 
-0x64 Max Rolling Animation speed
+0x64 Max Roll Animation speed
 Max rolling animation speed
 
 *0x68
@@ -102,13 +102,13 @@ Initial charge animation speed
 0x7C
 No Description Available.
 
-0x80
-Increasing it cuts short distance traveled (Friction related)
+0x80 Deceleration 1
+Increasing it cuts short distance traveled (Deceleration related)
 
-0x84 Friction
-Friction (Subtracted from roll speed)
+0x84 Deceleration 2
+Deceleration (Subtracted from roll speed)
 
-0x88 Aerial Rolling Animation Speed
+0x88 Aerial Roll Animation Speed
 Aerial rolling animation speed
 
 0x8C
@@ -117,17 +117,17 @@ Affects roll speed. Affects aerial speed more.
 0x90 Pivot Acceleration
 Pivot (Reverse direction) acceleration
 
-0x94
-Degree of influce slopes have on speed
+0x94 Slope Deceleration
+Deceleration speed when climb a slope. No affect to speed when going down a alope.
 
-0x98
-Minimum speed required for sparkle graphics
+0x98 Min Attack Speed
+Minimum speed required for sparkle graphics and attack
 
 0x9C
 No Description Available.
 
-0xA0
-Rebound speed multiplier
+0xA0 Wall Bounce H Multiplier
+Wall bounce horizontal momentum multiplier
 
 0xA4 Landing Lag
 Landing lag (post-recoil)
@@ -150,10 +150,10 @@ Unknown, it does not seems affect gravity
 0x10
 No Description Available.
 
-0x14 Aerial Momentum 1
+0x14 Air Momentum 1
 Momentum forward in air punch (Occur when RA-Bit[17] is True)
 
-0x18 Aerial Momentum 2
+0x18 Air Momentum 2
 Momentum and fall speed in air punch (Occur when RA-Bit[17] and RA-Bit[18] are True, and RA-Basic[0] is 1)
 
 *0x1C

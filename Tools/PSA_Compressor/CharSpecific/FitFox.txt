@@ -14,8 +14,8 @@
 
 Art0
 1-3
-030 Par00D3 2
 034 Par00-0 1
+030 Par00D3 2
 
 Art1
 2-2
@@ -27,9 +27,9 @@ Art2
 
 Art3
 A-B
-030 Par03D3 3
 034 Par03-0 32
 038 Par03-1 3F
+030 Par03D3 3
 X10 2A-0F-00x
 X14 2A-10-00x
 X14 2A-10-01x
@@ -77,19 +77,19 @@ Horizontal momentum preservation on startup (higher = less. If 0, character will
 0x8 Startup H Deceleration
 Aerial deceleration to horizontal preservation on startup
 
-0xC
-Fall speed on startup
+0xC Startup Gravity
+Gravity on startup
 
-0x10 Grounded H Preservation at End
+0x10 Ground H Preservation at End
 Grounded momentum preservation at end (higher = more)
 
-0x14 Grounded H Deceleration at End
+0x14 Ground H Deceleration at End
 Grounded deceleration to horizontal preservation at end
 
-0x18 Aerial H Preservation at End
+0x18 Air H Preservation at End
 Aerial momentum preservation at end (higher = more)
 
-0x1C Aerial H Deceleration at End
+0x1C Air H Deceleration at End
 Aerial deceleration to horizontal preservation at end
 
 *0x20 Fall Timing at End
@@ -98,8 +98,8 @@ Fall start timing at end (Invalid when shortened)
 0x24 Gravity at End
 Gravity at End
 
-0x28
-Special Fall max horizontal speed
+0x28 Special Fall Max H Speed
+Special Fall maximum horizontal velocity multiplier
 
 *0x2C Landing Lag
 Landing lag (frames)
@@ -110,46 +110,46 @@ Firefox
 *0x0 Startup Fall Timing
 Fall start timing on startup
 
-0x4
-Momentum preservation on startup (less = more)
+0x4 Startup H Preservation
+Horizontal preservation on startup (less = more)
 
-0x8
+0x8 Startup H Deceleration
 Aerial deceleration to horizontal preservation on startup
 
-0xC
+0xC Startup Fall speed
 Fall speed on startup
 
 0x10
 Unknown
 
-0x14
-Joystick Sensitivity (If over 1, character cannot move directly below and side)
+0x14 Sensitivity
+Joystick sensitivity (If over 1, character cannot move directly below and side)
 
-*0x18
-How many frames before you stop traveling (does not affect distance past a certain point)
+*0x18 Stop Timing
+How many frames before character stop traveling (does not affect distance past a certain point)
 
 *0x1C
-No Description Available.
+Unknown
 
-*0x20
+*0x20 Deceleration Timing
 Frames before decaying speed
 
 0x24 Travel Speed
 Speed of travel
 
 0x28 Travel Deceleration
-Deceleration on travel
+Momentum deceleration on travel
 
 0x2C
 No Description Available.
 
-0x30
-Something to do with angle when hitting ground?
+0x30 Min Bounce Angle
+Angle required when hitting stage to bounce
 
-0x34
-How far you go when hitting ground angled
+0x34 Bounce H Momentum
+Horizontal velocity when hitting ground angled
 
-0x38
+0x38 Special Fall Max H Speed
 Special Fall max horizontal speed multiplier
 
 *0x3C Landing Lag
@@ -171,43 +171,43 @@ Horizontal momentum preservation (lower = more)
 Gravity
 
 Par04
-Landmaster (Start up)
+Landmaster (Startup)
 
 0x0 Rising Speed
 Rising speed
 
 *0x4 Appearance Timing
-How many frames after rising you fall with landmaster (0 makes you never come back down)
+How many frames after rising Fox fall with Landmaster (0 makes Fox never come back down)
 
 Par05
 Reflector Extra
 
-*0x0
-Bone
+*0x0 Bone
+Focus Bone
 
-0x4
-Break threshold
+0x4 Damage Threshold
+Damage threshold
 
-0x8
-Reflection bubble X pos?
+0x8 X Offset
+Reflection bubble X offset
 
-0xC
-Reflection bubble Y pos?
+0xC Y Offset
+Reflection bubble Y offset
 
-0x10
-Reflection bubble Z pos?
+0x10 Z Offset
+Reflection bubble Z offset
 
-0x14
+0x14 Size
 Reflection bubble size
 
-0x18
-Reflected projectile damage multiplier
+0x18 Damage Multiplier
+Reflected damage multiplier
 
-0x1C
-Reflected projectile speed multiplier
+0x1C Speed Multiplier
+Reflected speed multiplier
 
-0x20
-No Description Available.
+0x20 Duration Multiplier
+Reflected duration multiplier
 
 *0x24
 Apparently a list of the five above-ground 45-degree angles.
@@ -227,6 +227,12 @@ Reflector degrees? nr 4
 0xC
 Reflector degrees? nr 5
 
+Par00-0
+ExtraParams0
+
+*0x0
+No Description Available.
+
 Par00D3
 Data3
 
@@ -236,44 +242,26 @@ No Description Available.
 *0x4
 No Description Available.
 
-Par00-0
-ExtraParams0
-
-*0x0
-No Description Available.
-
 Par01-0
 Laser Article
 
 *0x0 Duration
 Laser duration (frames)
 
-0x4
+0x4 Length
 Laser graphic length
 
-0x8
+0x8 Growth Speed
 Laser graphic growth speed (higher = slower)
 
 Par02-0
-ExtraParams0
+Fox Illusion Article
 
-*0x0
-How many frames illusion gfx stays out
+*0x0 Duration 1
+Frames until the afterimage with hitbox disappears
 
-*0x4
-How many frames before illusion gfx slow down
-
-Par03D3
-Data3
-
-*0x0
-No Description Available.
-
-*0x4
-No Description Available.
-
-*0x8
-No Description Available.
+*0x4 Duration 2
+Frames until the afterimage without hitbox disappears
 
 Par03-0
 Landmaster Attribute
@@ -285,7 +273,7 @@ Ground acceleration
 Ground max speed
 
 0x8 Ground Deceleration
-Grounded deceleration
+Grounded momentum deceleration
 
 0xC Normal Fall H Acceleration
 Horizontal acceleration on normal fall
@@ -305,32 +293,32 @@ Max fall speed on normal fall
 *0x20 Turn Timing
 Input backward time required to change direction on the ground
 
-0x24
-Minimum driving speed at which offensive collision occurs
+0x24 Run Attack Min Speed
+Minimum driving speed at which hitbox occurs
 
-0x28
+0x28 Run Damage Growth Rate
 Damage growth rate when driving
 
-0x2C
-Minimum falling speed at which offensive collision occurs
+0x2C Fall Attack Min Speed
+Minimum falling speed at which hitbox occurs
 
 *0x30
 No Description Available.
 
-0x34
+0x34 Laser Speed
 Laser speed
 
-0x38
-No Description Available.
+0x38 FS Duration
+Landmaster duration
 
-0x3C
-No Description Available.
+0x3C FS Shorten
+A value that shortens Landmaster duration
 
-0x40
-No Description Available.
+0x40 FS Shorten by Damage
+Multiplier of Landmaster duration that decreases when damage taken
 
 0x44
-No Description Available.
+Fall angle when over floor edge
 
 0x48
 No Description Available.
@@ -338,20 +326,20 @@ No Description Available.
 0x4C
 No Description Available.
 
-*0x50
-No Description Available.
+*0x50 Flashing Time
+Flashing time before the end
 
 *0x54
 No Description Available.
 
-0x58
-Health? (looks like a pretty nice value for it)
+0x58 Max Fuel
+Max fuel of rising time
 
-0x5C
-Health? (looks like a pretty nice value for it)
+0x5C Ground Rise V Momentum
+Vertical momentum as it rises from the ground
 
-0x60
-No Description Available.
+0x60 Air Initial V Momentum
+Vertical momentum as it rises from in air
 
 0x64
 No Description Available.
@@ -359,41 +347,41 @@ No Description Available.
 0x68
 No Description Available.
 
-0x6C
-No Description Available.
+0x6C Hovering V Acceleration
+Hovering vertical acceleration
 
-*0x70
-No Description Available.
+*0x70 Hovering Min Duration
+Minimum duration for hovering. Hovering ends even if the fuel runs out.
 
-0x74
-No Description Available.
+0x74 Hovering Max V Speed
+Maximum rise speed when hovering
 
 0x78
-No Description Available.
+Rise speed related. (high = soaring)
 
 0x7C
 No Description Available.
 
-0x80
-No Description Available.
+0x80 Hovering Max H Speed
+Maximum horizontal speed during hovering
 
-0x84
-No Description Available.
+0x84 Hovering Gravity
+Gravity during hovering
 
-0x88
-No Description Available.
+0x88 Hovering Max Fall Speed
+Max fall speed after hovering
 
 0x8C
 No Description Available.
 
-0x90
-No Description Available.
+0x90 Refuel Rate
+Fuel charge rate
 
 0x94
 No Description Available.
 
-0x98
-No Description Available.
+0x98 Fuel Drain Rate
+Fuel drain rate
 
 0x9C
 No Description Available.
@@ -402,31 +390,31 @@ No Description Available.
 No Description Available.
 
 0xA4
-No Description Available.
+Vertical shaking of the body of the Landmaster when moving on ground
 
 0xA8
-No Description Available.
+Maximum vertical spacing between the body and wheels of the Landmaster when moving on ground
 
 0xAC
-No Description Available.
+Maximum horizontal spacing between the body and wheels of the Landmaster when moving on ground
 
 0xB0
-No Description Available.
+The speed at which the body that moved due to the inertia at the start of running returns to running
 
 0xB4
-No Description Available.
+If the value is low, the body will not move back and forth due to inertia when running and stopping.
 
 0xB8
-No Description Available.
+Maximum angle of the body
 
-0xBC
-No Description Available.
+0xBC Landing lag
+Landing lag
 
 0xC0
-No Description Available.
+Vertical range of the body that sways when landing
 
 0xC4
-No Description Available.
+Z-axis range and speed of the body that rotates when landing
 
 Par03-1
 Bone Floats
@@ -618,6 +606,18 @@ Data8 Float4
 No Description Available.
 
 Data8 Float5
+No Description Available.
+
+Par03D3
+Data3
+
+*0x0
+No Description Available.
+
+*0x4
+No Description Available.
+
+*0x8
 No Description Available.
 
 Par04-0

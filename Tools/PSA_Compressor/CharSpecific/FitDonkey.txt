@@ -35,7 +35,7 @@ Par01
 Headbutt
 
 0x0 Startup H Peservation
-Startup Horizontal momentum preservation (lower = more)
+Startup horizontal momentum preservation (lower = more)
 
 0x4 Startup H Deceleration
 Startup horizontal speed deceleration
@@ -71,7 +71,7 @@ Acceleration on ground
 Horizontal acceleration in air
 
 0x1C Landing Lag
-Landing Lag without Interrupt
+Landing lag without interrupt
 
 Par03
 Hand Slap
@@ -107,7 +107,7 @@ No Description Available.
 No Description Available.
 
 *0x14 Interval
-Interval of appearance of sound waves
+Interval of appearance of sound waves (frames)
 
 0x18 Damage Multiplier
 Strong sound wave damage multiplier (Multiplied over time from appearance)
@@ -154,8 +154,8 @@ No Description Available.
 *0x50
 No Description Available.
 
-*0x54
-No Description Available.
+*0x54 FS Duration
+Final Smash duration (frames)
 
 Par07
 ExtraParams7
@@ -299,22 +299,22 @@ ExtraParams0
 No Description Available.
 
 Par01-0
-Sound Wave Article
+Konga Beat (Sound Wave Article)
 
 *0x0 Duration
 Duration (frames)
 
 0x4 Weak Wave Speed
-Speed of Weak sound wave
+Speed of weak sound wave
 
 0x8 Strong Wave Speed
-Speed of Strong sound wave
+Speed of strong sound wave
 
 0xC Sound Wave Size 1
-Sound wave size. (High = small)
+Sound wave size. (higher = small)
 
-0x10 Sound Wave Size 1
-Sound wave size. (High = Large)
+0x10 Sound Wave Size 2
+Sound wave size. (higher = large)
 
 *0x14
 No Description Available.

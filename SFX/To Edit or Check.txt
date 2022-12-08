@@ -7,26 +7,19 @@ Ivy (01E(?))
 Squirtle (01D(?))
 
 Working on:
-GameandWatch (014)
-
-Sawnd Made, Need New PSA maybe:
-
-
-PSA Mostly made:
+Luigi
+Diddy
 
 
-Need PSAs Checked:
-Mario (001)
-Bowser (00F)
-Zelda/Sheik (011)
-Kirby (009)
-Snake (025)
-Sonic (026)
-
-Done (Need to check cuz 2.3.1): 
-Link (002)
-Marth (013)
-Samus (007)
-Pit (003)
-"select" (027)
-ZSS (047)
+Done (need to revert Ottoto Sub Actions to pm:
+Donkey Kong
+Fox
+GnW
+Ike
+Kirby
+Link
+Mario
+Marth
+Pikachu
+Samus
+Snake

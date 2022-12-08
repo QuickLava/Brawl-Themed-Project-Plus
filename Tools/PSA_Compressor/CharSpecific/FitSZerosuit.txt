@@ -12,8 +12,8 @@
 
 Art0
 1-14
-030 Par00D3 4
 034 Par00-0 1
+030 Par00D3 4
 
 Art1
 2-2
@@ -210,6 +210,12 @@ No Description Available.
 *0x7C
 No Description Available.
 
+Par00-0
+ExtraParams0
+
+*0x0
+No Description Available.
+
 Par00D3
 Data3
 
@@ -225,14 +231,8 @@ No Description Available.
 *0xC
 No Description Available.
 
-Par00-0
-ExtraParams0
-
-*0x0
-No Description Available.
-
 Par01-0
-Paralyzer Attribute
+Paralyzer Article
 
 0x0
 No Description Available.
@@ -259,12 +259,12 @@ Uncharged duration
 Charged duration
 
 Par02-0
-Plasma Whip / Plasma Wire
+Plasma Whip / Plasma Wire Article
 
-0x0
+0x0 Tether Length
 Tether length
 
-0x4
+0x4 Tether Speed
 Tether speed
 
 0x8

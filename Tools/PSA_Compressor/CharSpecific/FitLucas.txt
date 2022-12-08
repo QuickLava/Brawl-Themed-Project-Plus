@@ -41,7 +41,7 @@ Art5
 Par00
 PK Freeze
 
-*0x0
+*0x0 Fall Timing
 Number of frames to halt vert momentum before using 0xC as gravity
 
 *0x4 Fastest Ignite Time
@@ -54,7 +54,7 @@ Maximum frames it takes to ignite or disappear after PK Freeze appears
 Gravity after initial vertical halt
 
 0x10 Landing Lag
-Landing lag (frames)
+Landing lag after Special Fall (frames)
 
 *0x14
 Unknown
@@ -93,16 +93,16 @@ Unknown
 Minimum hold action frames
 
 *0x8 Min Hold Time 2
-Minimum hold action time
+Minimum hold action frames after PK Thunder disappeared (Note: The hold lasts until the number of frames for both the 0x4 and 0x8 values has passed)
 
-*0xC
+*0xC Fall Timing
 Number of frames to halt vert momentum before using 0x14 as gravity
 
 0x10 Air H Preservation
 Aerial horizontal momentum preservation on startup (less = more)
 
 0x14 Gravity
-Gravity after initial vertical halt
+Gravity after initial vertical halt (It also affects PKT2)
 
 0x18 PKT2 Momentum
 PK Thunder 2 initial momentum
@@ -120,7 +120,7 @@ PK Thunder 2 angle tolerance on ground
 PK Thunder 2 angle tolerance when landing
 
 0x2C Landing Lag
-Landing lag (frames)
+Landing lag after Special Fall (frames)
 
 Par03
 PSI Magnet
@@ -128,7 +128,7 @@ PSI Magnet
 *0x0 Min Hold Time
 Minimum hold action frames
 
-*0x4
+*0x4 Fall Timing
 Number of frames to halt vert momentum before using 0x10 as gravity
 
 0x8
@@ -194,19 +194,19 @@ Unknown
 Par06
 Reflect Data (Stick swing)
 
-*0x0
+*0x0 Bone
 Focus Bone
 
 0x4 Damage Threshold
 Damage threshold
 
-0x8
+0x8 X Offset
 Reflection bubble X offset
 
-0xC
+0xC Y Offset
 Reflection bubble Y offset
 
-0x10
+0x10 Z Offset
 Reflection bubble Z offset
 
 0x14 Size
@@ -234,16 +234,16 @@ Frames to fully charge
 Starting size
 
 0x8 Max Charged Size
-Full charge size (If this parameter is smaller than 0x4 (Initial Size), article size will be gradually smaller.)
+Full charge size (If this parameter is lower than 0x4 (Initial Size), article size will be gradually lower.)
 
 0xC Angle
-Initial firing angle
+Initial flying angle
 
 0x10 Initial Speed
-Initial speed
+Initial flying speed
 
 0x14 Acceleration
-Acceleration
+Horizontal acceleration
 
 0x18 Gravity
 Gravity
@@ -272,8 +272,8 @@ Spark Duration
 *0x4 Pillar Duration
 Pillar duration
 
-0x8 Pillar V Momentum
-Pillar vertical momentum on first hit
+0x8 Pillar Y Offset
+Pillar start Y offset
 
 0xC Pillar Gravity
 Pillar gravity
@@ -315,31 +315,31 @@ ExtraParams0
 No Description Available.
 
 Par04-0
-PK Starstorm Attribute
+PK Starstorm Article
 
-0x0
-No Description Available.
+0x0 Initial Speed
+Initial fall speed
 
-0x4
-No Description Available.
+0x4 Acceleration
+Fall Acceleration
 
 *0x8
-No Description Available.
+Unknown (Not affect to duration)
 
 *0xC
 No Description Available.
 
 Par05-0
-ExtraParams0
+Rope Snake Article
 
-0x0
-No Description Available.
+0x0 Tether Length
+Tether Length
 
-0x4
-No Description Available.
+0x4 Tether Speed
+Tether Speed
 
-0x8
-No Description Available.
+0x8 Grab Pull Speed
+Speed to pull the grabbed character
 
 *0xC
 No Description Available.

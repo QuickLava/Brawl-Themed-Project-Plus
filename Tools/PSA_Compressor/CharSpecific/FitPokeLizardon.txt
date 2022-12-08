@@ -75,7 +75,7 @@ Turning speed
 Rotation of head in relation to 0x10
 
 *0x18 Min Continue Frame
-How many frames you continue firing for after releasing B
+Minimum hold continue frame
 
 0x1C Max Speed Charge
 Max speed charge (Affect to speed of decline)
@@ -105,7 +105,7 @@ Size charge refuel rate (per frame)
 Unknown
 
 *0x40 Flames Interval
-Frame interval of flames
+Frames interval until the flame reoccurs
 
 0x44 X offset
 X offset
@@ -117,7 +117,7 @@ Y offset
 Unknown
 
 Par02
-Rock Smash
+Rock Smash?
 
 0x0
 No Description Available.
@@ -126,7 +126,7 @@ Par03
 Fly
 
 0x0
- ?? (read on upB)
+Unknown
 
 0x4 Sensitivity
 Forward/backward sensitivity. If over 1, can't change jumping Angle.
@@ -138,13 +138,13 @@ Changeable Angle (Degrees) Example: If 30, shift 30 degrees forward when forward
 Special Fall max horizontal speed multiplier
 
 0x10
- ?? (read on upB)
+Unknown
 
 Par04
 Fly Extra
 
-0x0 Air Preservarion pre-Fly
-Aerial horizontal momentum preservarion on startup (higher = more)
+0x0 Air H Preservation pre-Fly
+Aerial horizontal momentum preservation on startup (higher = more)
 
 0x4 Air Gravity pre-Fly
 Aerial gravity on startup
@@ -155,7 +155,7 @@ Aerial fly height
 Par00-0
 FlameThrower Article
 
-0x0
+0x0 Landing Detection
 Landing detection
 
 *0x4 Duration
@@ -164,11 +164,11 @@ Flame Duration (Frames)
 *0x8 Hitbox Duration
 Flame hitbox duration
 
-0xC
-Flame momentum randomness 1
+0xC Momentum Randomness 1
+Flame momentum randomness. Random momentum from 0xC to 0x10. The higher value is the maximum momentum, and the lower value is the minimum momentum.
 
-0x10
-Flame momentum randomness 2
+0x10 Momentum Randomness 2
+Flame momentum randomness. Random momentum from 0xC to 0x10.
 
 *0x14
 No Description Available.
@@ -194,7 +194,7 @@ Frame interval of appears rock piece
 0x14 Speed
 Rock piece speed
 
-*0x18
+*0x18 Stop Frame
 The frame it takes for rock piece to lose momentum
 
 *0x1C

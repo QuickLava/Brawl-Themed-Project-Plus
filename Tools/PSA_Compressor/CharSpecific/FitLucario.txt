@@ -36,14 +36,14 @@ No Description Available.
 *0x10 Level up Frame
 Frames between change in charge level
 
-0x14
+0x14 Aura Sphere Damage Multiplier
 Aura Sphere Damage Multiplier
 
-0x18
-Aura Sphere size 1
+0x18 Aura Sphere Size 1
+Base Aura Sphere size
 
-0x1C
-Aura Sphere size 2
+0x1C Aura Sphere Size 2
+Related to Aura Sphere size. If set high value, the size will not change even if it is charged.
 
 Par01
 ExtraParams1
@@ -111,37 +111,37 @@ Aerial Y offset
 Par04
 Extreme Speed
 
-0x0
+0x0 Startup H Preservation
 Horizontal momentum preservation on startup (higher = more)
 
-0x4
+0x4 Startup H Deceleration
 Momentum deceleration to horizontal preservation on startup
 
-0x8
+0x8 Startup Gravity
 Gravity on aerial startup
 
 0xC
  ?? (read on travel)
 
-0x10
-Joystick Sensitivity (If over 1, character cannot move directly below and side)
+0x10 Sensitivity
+Joystick sensitivity (If over 1, character cannot move directly below and side)
 
-0x14
+0x14 Speed
 Speed of travel
 
-0x18
+0x18 Turning Speed
 Turning speed of travel
 
-0x1C
+0x1C Tolerance
 Bounce angle tolerance
 
 *0x20
 Frame to disable 0x24
 
-0x24
+0x24 Travel Speed Multiplier
 Travel -> Ending velocity multiplier
 
-0x28
+0x28 Ending Deceleration
 Ending deceleration
 
 0x2C
@@ -153,7 +153,7 @@ Ending deceleration
 *0x34
  ?? (read on end)
 
-0x38
+0x38 Slope Bounce H Momentum
 Horizontal momentum on slope landing when travel
 
 *0x3C
@@ -162,7 +162,7 @@ No Description Available.
 Par05
 Double Team
 
-0x0
+0x0 Startup H Preservation
 Aerial horizontal momentum preservation on startup
 
 0x4
@@ -171,16 +171,16 @@ Aerial horizontal momentum preservation on startup
 0x8
 No Description Available.
 
-*0xC
-Frames duration for dodge before hitbox action occurs
+*0xC Attack Lag
+Frames duration for dodge before attack action occurs
 
-0x10
+0x10 Distance
 How far away from start attack occurs (in units)
 
 0x14
 No Description Available.
 
-*0x18
+*0x18 Duration
 Attack kick duration
 
 *0x1C
@@ -229,7 +229,7 @@ No Description Available.
 No Description Available.
 
 Par00-0
-Aura Sphere Attribute
+Aura Sphere Article
 
 *0x0 Duration
 Aura sphere duration
@@ -243,20 +243,20 @@ Uncharged speed (Closer to fully charged speed when more charged)
 0xC Charged Speed
 Fully charged speed (also added on to slightly charged)
 
-*0x10
+*0x10 Wiggling
 Frames between wiggling (Uncharged)
 
-0x14
+0x14 Randomness
 Movement added to a random direction each wiggle (Uncharged)
 
-0x18
-Uncharged Aura Sphere Wiggle intensity
+0x18 Wiggle Intensity
+Uncharged Aura Sphere wiggle intensity
 
-0x1C
-Charged Aura Sphere Wiggle intensity multiplier
+0x1C Charged Wiggle Multiplier
+Charged Aura Sphere wiggle intensity multiplier
 
-0x20
-Aura Sphere base growth size (smaller = bigger)
+0x20 Base Size
+Aura Sphere base growth size (lower = bigger)
 
 0x24 Level 1 Size
 Aura Sphere size when charge level is 1
@@ -279,8 +279,8 @@ Aura Sphere size when charge level is 6
 0x3C Level 7 Size
 Aura Sphere size when charge level is 7
 
-0x40 Level 8 Size
-Aura Sphere size when charge level is 8
+0x40 Level MAX Size
+Aura Sphere size when charge max level
 
 0x44
 Unknown. Probably has something to do with aura sphere damage/stock growth
