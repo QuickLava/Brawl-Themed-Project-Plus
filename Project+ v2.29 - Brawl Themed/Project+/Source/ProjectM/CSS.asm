@@ -14,6 +14,13 @@ HOOK @ $8068DBCC
 }
 op beq- 0x3C @ $8068DBD0
 
+
+########################################################
+CSS Fixes for Samus/ZSS and Zelda/Shiek v2.2 [spunit262]
+########################################################
+op li r4, 0x4	@ $80693D50	# ZSS return cursor fix
+op li r0, 0x0	@ $80684EE0	# Allows selecting the same Costume ID
+
 #############################################
 CSS Fixes for Giga and Company v2 [spunit262]
 #############################################
@@ -50,6 +57,7 @@ CODE @ $806900D8
   beq- 0x168
 }
 * 02680DE0 0022FFFF
+
 
 #######
 CSS ASM
@@ -91,6 +99,7 @@ CODE @ $80685824
 	lbz r3, 0xE80(r3)	# /
 }
 
+
 #############################
 Independent Pokemon CSS Slots
 #############################
@@ -107,5 +116,3 @@ word[4] 0x11FF0E0F, 0x19B5, 0x80547660, 0			@ $80585E70
 byte[4] 0xF, 0x1, 0x10, 0x11 						@ $804557C8
 word 0xF 											@ $80AD836C
 word[4] 0x2C0C0B30, 0x19BD, 0x805474C8, 0x80000000	@ $80585E80
-
-.include Source/Extras/CSSRoster.asm
