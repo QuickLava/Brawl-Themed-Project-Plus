@@ -285,7 +285,7 @@ Set menus based on Code Menu Stagelist setting [Bird]
 * 24523400 00000000 # If 80523400 is greater to 0
 string "/menu2/sc_menumain.pac"         @ $806FB248
 string "sc_menumain_en.pac"             @ $817F62BC
-string "/menu2/sc_selcharacter2.pac"    @ $806FF308
+string "/menu2/br_selcharacter2.pac"    @ $806FF308
 string "br_selcharacter2_en.pac"        @ $817F634D
 string "/menu2/br_selmap.pac"           @ $806FF3F0
 string "br_selmap_en.pac"               @ $817F637C
