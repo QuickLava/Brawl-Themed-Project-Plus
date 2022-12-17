@@ -1,4 +1,3 @@
-Charizard (01C(?))
 Wario (017)
 Pikmin (018)
 Jiggs (022)
@@ -7,8 +6,8 @@ Ivy (01E(?))
 Squirtle (01D(?))
 
 Working on:
-Luigi
-Diddy
+Zelda
+Sheik
 
 
 Done (need to revert Ottoto Sub Actions to pm:
@@ -23,3 +22,8 @@ Marth
 Pikachu
 Samus
 Snake
+
+Done:
+Luigi
+Diddy
+Charizard
