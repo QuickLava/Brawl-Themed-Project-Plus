@@ -1,0 +1,121 @@
+0X0Y00Za
+
+X is the level (so 04 is Skyworld)
+Y is the level Sequence (after a cutscene)
+Z is the level segment (going in a door)
+a is a bonus zone
+
+01 = Midair Stadium (Mario vs Kirby)
+03 = Midair Stadium (enemies)
+0301 = Midair Stadium (boss)
+
+04 = Skyworld
+
+05 = Sea of Clouds
+
+06 = Jungle
+
+07 = Plain
+
+08 = The Lake (Rayquaza)
+080101 = The Lake
+080105 = The Lake (Raft)
+080301 = The Lake (Vs. False Bowser)
+
+090001 = The Ruined Zoo (Porky Statue)
+090101 = Vs. Porky
+
+10 = Battlefield Fortress
+1001 = Battlefield Fortress (Vs. Enemies)
+
+12 = The Forest
+
+14 = The Research Facility 1
+
+16 = The Lake Shore
+
+18 = The Path to the Ruins
+
+20 = The Cave
+
+22 = The Ruins
+2201 = The Ruins (vs. Charizard)
+
+24 = The Wilds 1
+2401 = Vs. Galleom (outside)
+
+25 = Vs. Galleom (inside)
+
+26 = The Wilds 2
+
+27 = The Swamp
+2701 = Vs. Giant Diddy
+
+28 = The Research Facility 2
+2801 = Vs. 2 False Samus
+2803 = Vs. Ridley
+
+29 = Outside the Ancient Ruins
+
+30 = Smash Skiff
+
+31 = Glacial Peak
+
+32 = The Canyon
+
+33 = Halberd Interior
+3302 = Vs. False Princess
+
+34 = Halberd Exterior
+
+35 = Vs. Duon
+
+36 = Subspace Bomb Factory 1
+
+37 = Subspace Bomb Factory 2
+3701 = Subspace Bomb Factory 2 (Vs. Enemies)
+3702 = Subspace Bomb Factory 2 (Escape)
+3703 = Vs. Meta Ridley
+
+39 = Entrance to Subspace
+
+40 = Subspace 1
+4001 = Subspace 1 (Vs. Bowser)
+
+41 = Subspace 2
+
+------------
+-GREAT MAZE-
+------------
+Here instead the letters are the segments, the last two digits are the sequences.
+
+420001 = Save point
+420002 = Map point???
+420003 = Midair stadium
+420005 = Skyworld
+420007 = Forest
+420009 = Ruined Zoo
+420011 = Halberd (outside)
+420013 = Halberd (inside)
+420015 = Path to the Ruins
+420017 = Jungle
+420019 = Battlefield Fortress
+420021 = Laboratory
+420023 = Cave
+420025 = Swamp
+420027 = Canyon
+420029 = Lake
+420031 = Ruins
+420033 = Outside the Ancient Ruins
+420035 = Glacial Peak
+420037 = Tabuu Entrance
+420042 = Vs. False Porky
+420043 = Vs. False Duon
+420044 = Vs. False Ridley
+420045 = Vs. False Meta Ridley
+420046 = Vs. False Galleom
+420047 = Vs. False Rayquaza
+
+From 420051 to 420081 are all Clone Battle Stages
+
+420101 = Vs. Tabuu
