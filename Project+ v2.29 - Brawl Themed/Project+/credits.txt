@@ -24,6 +24,10 @@ PSA -
 
 All Brawl characters SFX -> Brawl by ilikepizza107
 
+Roy Brawl inspired SFX by ilikepizza107
+
+Mewtwo Brawl inspired SFX by ilikepizza107
+
 
 Motion/Etc -
 
@@ -48,133 +52,121 @@ Characters + Skins + Portraits:
 All renders and cosmetic assets were created by
 
 MARIO
-Pose by davidvkimball, model polish by tryptech, Xenthos, and MarioDox, rendered by CSProject Backroom, SJ
+vBrawl mario Recreation by Mach7 [https://gamebanana.com/mods/341987]
 
 DONKEY KONG
-Pose by davidvkimball, model polish by tryptech, and MarioDox, rendered by CSProject Backroom
 
 LINK
-Pose by davidvkimball, model polish by tryptech, and Layell, rendered by CSProject Backroom
+Brawl Link Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/400455]
 
 SAMUS
-Poses by tryptech, rendered by tryptech, SJS, Xenthos, and Motobug
+Samus Brawl Pose Revised Cosmetic Pack by VirtualBeef [https://forums.kc-mm.com/Gallery/BrawlView.php?Number=220570]
 
 YOSHI
-Pose by davidvkimball, model polish by tryptech, MetalLegacy, and Layell, rendered by CSProject Backroom
+Yoshi Brawl Pose CSProject by PMHD team [https://gamebanana.com/mods/353632]
 
 KIRBY
-Pose by davidvkimball, model polish by tryptech, SJS, and MetalLegacy, HD eyes by MetalLegacy, rendered by CSProject Backroom
+Kirby Brawl CSProject by RedipsTheCooler [http://forums.kc-mm.com/Gallery/BrawlView.php?Number=220947]
 
 FOX
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
+Brawl Fox Pose Cosmetic Pack by PMHD Team [https://gamebanana.com/mods/397170]
 
 PIKACHU
-Pose by davidvkimball, model polish by tryptech, MarioDox, Layell, and Spigel, rendered by CSProject Backroom
+Brawl Pikachu CSProject by tyleto [https://forums.kc-mm.com/Gallery/BrawlView.php?Number=220118]
 
 LUIGI
-Pose by davidvkimball, model polish by tryptech, and Xenthos, rendered by CSProject Backroom
+Brawl Luigi Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/387952]
 
 CAPTAIN FALCON
-Pose by Nanobuds, model polish by tryptech, rendered by CSProject Backroom
+Brawl Captain Falcon Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/387947]
 
 NESS
-Pose by Sylv, model polish by tryptech, rendered by CSProject Backroom
 
 BOWSER / KOOPA
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
+vBrawl Bowser Template [https://app.box.com/s/g1lmnk9guh1lhlpf00kpm68wd8lxwyyh]
 
 PEACH
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
+Brawl Peach Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/387961]
 
 ZELDA
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
+Brawl Zelda Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/400438]
 
 SHEIK
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
+Sheik Brawl Pose CSProject by VirtualBeef [https://forums.kc-mm.com/Gallery/BrawlView.php?Number=220124]
 
 ICE CLIMBERS / POPO
-Pose by davidvkimball, model polish by tryptech, and Sub, rendered by CSProject Backroom
 
 MARTH
-Pose by Kuro Kairaku, model polish by tryptech, rendered by CSProject Backroom
+Brawl Marth Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/387958]
 
 MR. GAME & WATCH / GAMEWATCH
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
+Mr. Game & Watch Brawl CSProject by RedipsTheCooler [https://forums.kc-mm.com/Gallery/BrawlView.php?Number=220828]
 
 FALCO
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
 
 GANONDORF
-Pose by Kuro Kairaku, model polish by tryptech, rendered by CSProject Backroom
+Brawl Ganondorf Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/400914]
 
 META KNIGHT
-Pose by davidvkimball, model polish by tryptech, Spigel, and Layell, rendered by CSProject Backroom
+Brawl Meta Knight Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/400901]
 
 PIT
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
+Pit Brawl Pose CSProject by VirtualBeef [https://forums.kc-mm.com/Gallery/BrawlView.php?Number=219591]
 
 ZERO SUIT SAMUS
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
+Brawl ZSS CSProject by tyleto [https://gamebanana.com/mods/287833]
 
 OLIMAR / PIKMIN 
-Pose by Nanobuds, with edits by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
 
 LUCAS
-Pose by davidvkimball, model polish by tryptech, Spigel, SJS, and Layell, rendered by CSProject Backroom
+Brawl Lucas Pose CSProject by tyleto [https://gamebanana.com/mods/284402]
 
 DIDDY KONG
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
 
 MEWTWO
 Tail revamps by Xenthos
-Pose by Nanobuds, modified by davidvkimball, model polish by tryptech, and Layell, rendered by CSProject Backroom
+Mewtwo PM Pose CSProject by VirtualBeef [https://forums.kc-mm.com/Gallery/BrawlView.php?Number=219364]
 
 CHARIZARD / LIZARDON
-Pose by davidvkimball, model polish + fire element by tryptech, rendered by CSProject Backroom
 
 SQUIRTLE / ZENIGAME
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
 
 IVYSAUR / FUSHIGISOU
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
 
 DEDEDE
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
 
 LUCARIO
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
+Brawl Lucario CSProject by tyleto [https://forums.kc-mm.com/Gallery/BrawlView.php?Number=220119]
 
 IKE
-Pose by Xenthos, model polish by tryptech, and Layell, rendered by CSProject Backroom
+Ike Brawl Pose Cosmetic Pack by VirtualBeef [https://gamebanana.com/mods/298056]
 
 R.O.B. / ROBOT
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
 
 JIGGLYPUFF / PURIN
-Pose by davidvkimball, model polish by tryptech, Spigel, and Layell, HD eyes by MetalLegacy, rendered by CSProject Backroom
 
 WARIO
-Pose by davidvkimball, model polish by tryptech and SJS, rendered by CSProject Backroom and SJS
+Brawl Biker Wario Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/400449]
+Brawl Plumber Wario Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/400451]
 
 ROY 
-Pose by Nanobuds, model polish by tryptech, rendered by CSProject Backroom
+PM Roy Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/387995]
 
 TOON LINK
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom and Xenthos 
+Brawl Toon Link Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/387969]
 
 WOLF
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
 
 SNAKE
-Pose and model polish by tryptech and Spigel, rendered by CSProject Backroom
+Brawl Snake Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/387965]
 
 SONIC
-Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
+Brawl Sonic Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/389540]
 
 WARIO MAN 
 Pose by MetalLegacy, model polish by MetalLegacy, rendered by CSProject Backroom
 
-GIGA BOWSER 
+GIGA BOWSER
 Pose by davidvkimball, model polish by tryptech, rendered by CSProject Backroom
 
 KNUCKLES
@@ -352,7 +344,7 @@ Menus/UI/HUD
 ########################################
 
 New SSS previews, titles and images by ilikepizza107
-Full size Random Stage Select previews by mawwwk, Motobug
+Full size Random Stage Select previews by 
 Transparent "Ready to Fight" menu modification by MetalLegacy, Motobug
 Polished Top-Level menu buttons by Kirbeast, davidvkimball, Yohan1044
 Brawl-Styled Code Menu button by ilikepizza107, with credit to Yohan1044
@@ -361,15 +353,14 @@ Custom Special Mode icons by Puzzled
 "Turbo Mode" & "All Star" Special Mode button icons by davidvkimball
 "Bomb Rain" & "Wild" Special Mode button icons by Motobug
 Team Glow button icon by mawwwk
-Special Versus Mario portraits by MetalLegacy and mawwwk
 Results screen "Ready for the next battle" color edits by SmashFighter64, implemented by Kirbeast
 
 ########################################
 Dolphin Files
 ########################################
 
-HD textures for Brawl, Project M, Legacy TE, and Project+ are thanks to Yami 2b, tryptech, davidvkimball, MetalLegacy, Layell, EggTimer, Xenthos, Psycho, Yohan1044, Puzzled, mawwwk, Kirbeast, Motobug, and Bird
-Insta-launcher .elf file created by Glitch.
+HD textures for Brawl and Brawl Themed Project+ are thanks to Yami 2b, ilikepizza107, and Efisio
+Insta-launcher .dol file created by Kirbeast(?).
 Music Off - Netplay Safe Patch by Eon
 
 ########################################
