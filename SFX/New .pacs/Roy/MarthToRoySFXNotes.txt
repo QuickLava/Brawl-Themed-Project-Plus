@@ -1,0 +1,21 @@
+EX soundbank ID = 332
+110E = 003 for Marth (Soundbyte 103B) = 40DC
+1124 = dash start = 410A
+112D = jump01 = 4113
+112E = jump02 = 4114
+112F = Landing 1 = 4115
+1130 = Landing 2 = 4116 
+1155 = hidarim = 413B
+1157 = migim = 413D
+
+Voice lines:
+
+40A5
+40A7
+40A8
+40A9
+40AA
+40AE
+40BA
+40BB
+40AF
