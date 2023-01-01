@@ -36,6 +36,8 @@ op blt- 0x34	   @ $8018CFC8
 .include Source/Project+/Moonwalk.asm
 .include Source/Project+/AirDodge.asm
 .include Source/Project+/Items.asm
+.include Source/Project+/Pause.asm
+.include Source/Project+/Collision.asm
 
 .include Source/Extras/RandomStagelist.asm
 .include Source/Extras/Subspace.asm

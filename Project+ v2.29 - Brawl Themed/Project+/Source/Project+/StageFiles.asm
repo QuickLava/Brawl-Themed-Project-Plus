@@ -650,6 +650,7 @@ If No Song Titles Are Found, Obtain Them From The TLST File [DukeItOut]
 .alias tlstSongSize = 0x10		# Data block size for each available song
 # 
 op b -0x158 @ $800DE81C # Go to below
+op li r5, -2 @ $800DE6D4
 # Force it to read for a title, even if the title section isn't present in the info pac file
 HOOK @ $800DE6C4
 {
@@ -673,7 +674,7 @@ HOOK @ $800DE6C4
 forceRead:
 	lwz r3, 0x164(r30)
 	li r4, 0
-	li r5, -1
+	li r5, -2
 	lis r12, 0x800D
 	ori r12, r12, 0xE6D8
 	mtctr r12
@@ -687,24 +688,8 @@ wasFound:
 HOOK @ $800B91F0 
 {
 	li r3, 0		# Normally tells it that it is false
-	lwz r12, 0(r1)	# \
-	lwz r12, 0(r12)	# | Try to determine the code that called this.
-	lwz r12, 0(r12) # |
-	lwz r12, 4(r12) # /
-	lis r5, 0x8095			# \
-	ori r5, r5, 0x1214		# | Check if this is a 1-P battle starting
-	cmpw r12, r5			# |
-	beq+ enteringBattle		# /
-	lis r5, 0x8095			# \
-	ori r5, r5, 0x11D8		# | Check if a countdown is starting
-	cmpw r12, r5			# |
-	beq+ enteringBattle		# /
-	lwz r12, 0(r1)			# \ 
-	lwz r12, 4(r12)			# / Check again.
-	lis r5, 0x8117			# \
-	ori r5, r5, 0xF428		# | Check if this is My Music
-	cmpw r12, r5			# |
-	bne+ %END%				# /
+	cmpwi r5, -2	# Check if this is a custom tracklist title request
+	bne+ %END%		# 
 entertingMyMusic:
 enteringBattle:
 
@@ -808,7 +793,7 @@ HOOK @ $8117F418
 	lis r4, 0x8054				# \ Place the song ID
 	stw r5, -0x102C(r4)			# /	
 	li r4, 0					#
-	li r5, -1					# Activate behavior acknowledging no title file
+	li r5, -2					# Activate behavior acknowledging no title file
 }
 
 # Redirect the title information to the TLST
@@ -1252,11 +1237,8 @@ CODE @ $800B91C8
 	mr r30, r5
 	mr r29, r3
 	cmpwi cr2, r5, -1
-	beq- cr2, 0x14		
+	ble- cr2, 0x14		
 }
-
-.include Source/Stagelists/Brawl.asm
-.include Source/Stagelists/Project+.asm
 
 op lis r4, 0x8049 		@ $800AF58C
 op lwz r4, 0x5D00(r4)	@ $800AF594
@@ -1268,3 +1250,7 @@ op lis r4, 0x8049		@ $800AF6A0
 op lwz r4, 0x5D00(r4)	@ $800AF6A8
 op lis r4, 0x8049		@ $800AF6D8
 op lwz r4, 0x5D00(r4)	@ $800AF6E0
+
+.include Source/Project+/StageTable.asm
+
+
