@@ -344,7 +344,7 @@ Menus/UI/HUD
 ########################################
 
 New SSS previews, titles and images by ilikepizza107
-Full size Random Stage Select previews by 
+Full size Random Stage Select previews by
 Transparent "Ready to Fight" menu modification by MetalLegacy, Motobug
 Polished Top-Level menu buttons by Kirbeast, davidvkimball, Yohan1044
 Brawl-Styled Code Menu button by ilikepizza107, with credit to Yohan1044
@@ -368,3 +368,8 @@ Wii Files
 ########################################
 
 Launcher by Glitch, Kirbeast, and DiXaR with credit to ShortFuse, and the USB Loader GX Team
+
+#################
+Special Thanks
+#################
+Yorch, Tatsuya, and Pnut for stage help
