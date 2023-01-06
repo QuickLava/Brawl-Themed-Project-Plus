@@ -1,0 +1,10 @@
+Menu stuff in Texture Data 11 needs edited
+
+Texture Data 14
+
+Model Data 120 is where special mode stuff starts
+
+MenMainSpecial0023_TopN is where the "status" stuff is (like the snowflakes and bunny hood)
+
+MenMainIcon0102_TopN is special mode icon
+Animation is 102_TopN_4
