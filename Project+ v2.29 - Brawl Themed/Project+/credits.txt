@@ -16,6 +16,13 @@ Brawl P+ Dev
 #################
 -ilikepizza107
 
+################
+Brawl P+ Testers
+################
+RosiYY
+SparkSwordKirby
+
+
 ########################################
 PSA + Motion + Fighter Modules:
 ########################################
@@ -32,6 +39,7 @@ Knuckles Brawl inspired SFX by ilikepizza107
 Motion/Etc -
 
 
+
 PSA and Motion -
 
 
@@ -41,7 +49,7 @@ Kapedani for his incredible work to make Roy, Mewtwo, Knuckles, Giga Bowser, and
 
 Codes - 
 
-QuickLava for porting his CSS Roster Switch code to P+, to allow for different Melee Randoms per toggle, different Hold Shield for Special Fighter per toggle, and for Zelda/Sheik and Samus/ZSS' slots to work porperly when switched
+QuickLava for porting his CSS Roster Switch code to P+, to allow for different Melee Randoms per toggle, different Hold Shield for Special Fighter per toggle, and for Zelda/Sheik and Samus/ZSS' slots to work porperly when switched; and for the 50CC for SSS code
 
 Spigel for his help with moving Mewtwo and Wario-Man to a different Cosmetic ID, and for the Hold Shield for Special Fighter toggle code for the Brawl CSS Roster
 
@@ -50,8 +58,6 @@ KingJigglypuff for making SammiHusky's FilePatchRedux code work for P+
 ########################################
 Characters + Skins + Portraits:
 ########################################
-
-All renders and cosmetic assets were created by
 
 MARIO
 vBrawl mario Recreation by Mach7 [https://gamebanana.com/mods/341987]
