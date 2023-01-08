@@ -88,8 +88,8 @@ byte[4] 0x30, 0x34, 0x64, 0 @ $806A17D8
 # Stage Select Stock Icons 50CC Fix
 HOOK @ $806b2ffc
 {
-  	cmpwi r25, 0x36;   bne+ notWarioman
- 	li r3, 9000; b %END%
+  	cmpwi r25, 0x36;   bne+ notWarioman		# 0x36 isn't a mistake.
+ 	li r3, 9000; b %END%					# Not sure why it's not 0x35 like in the above codes.
 notWarioman:
  	mulli r3, r3, 50
 }
@@ -97,7 +97,7 @@ notWarioman:
 HOOK @ $806b2fdc
 {
 	lis r12, 0x40C1				# \
-	ori r12, r12, 0x9E80		# | Write first word worth of 9021 into memory
+	ori r12, r12, 0xAD80		# | Write first word worth of 9051 into memory
 	stw r12, 0x08(r1)			# | Store it at 0x08(r1)
 	li r12, 0x00				# | Zero out r12
 	stw r12, 0x0C(r1)			# | Store it at 0x0C(r1)
@@ -108,7 +108,7 @@ HOOK @ $806b2fdc
 HOOK @ $806b2fe8
 {
 	lis r12, 0x40C1				# \
-	ori r12, r12, 0xA080		# | Write first word worth of 9025 into memory
+	ori r12, r12, 0xAF80		# | Write first word worth of 9055 into memory
 	stw r12, 0x08(r1)			# | Store it at 0x08(r1)
 	li r12, 0x00				# | Zero out r12
 	stw r12, 0x0C(r1)			# | Store it at 0x0C(r1)
