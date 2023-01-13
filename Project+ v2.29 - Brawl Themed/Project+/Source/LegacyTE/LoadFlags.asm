@@ -6,7 +6,7 @@ string[4] |
 "/fighter/%s%s%02d%s", |
 "AltR",                |
 "00"                 |		# Setting this to "00", and pointing both the AltR and AltZ cases to this.
-@ $80546FB0					# Forces Alt Costumes to load the default Etc. file instead! - QuickLava
+@ $80546FB0                 # Forces Alt Costumes to load the default Etc. file instead! - QuickLava
 
 op NOP @ $8084D2A4
 HOOK @ $8084D104
