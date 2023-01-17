@@ -8,3 +8,5 @@ MenMainSpecial0023_TopN is where the "status" stuff is (like the snowflakes and 
 
 MenMainIcon0102_TopN is special mode icon
 Animation is 102_TopN_4
+
+https://discord.com/channels/507298435347775514/508644998229655553/1064817447187779614
