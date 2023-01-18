@@ -1,0 +1,5 @@
+Roy = 52
+m2 = 61
+Knux = 63
+WMan = 69 (nice)
+GB = 64
