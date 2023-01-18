@@ -97,7 +97,7 @@ Here instead the letters are the segments, the last two digits are the sequences
 420009 = Ruined Zoo
 420011 = Halberd (outside)
 420013 = Halberd (inside)
-420015 = Path to the Ruins
+420015 = Outside the Ancient Ruins
 420017 = Jungle
 420019 = Battlefield Fortress
 420021 = Laboratory
@@ -106,7 +106,7 @@ Here instead the letters are the segments, the last two digits are the sequences
 420027 = Canyon
 420029 = Lake
 420031 = Ruins
-420033 = Outside the Ancient Ruins
+420033 = Path to the Ruins
 420035 = Glacial Peak
 420037 = Tabuu Entrance
 420042 = Vs. False Porky
@@ -117,5 +117,6 @@ Here instead the letters are the segments, the last two digits are the sequences
 420047 = Vs. False Rayquaza
 
 From 420051 to 420081 are all Clone Battle Stages
+420077 = Vs. Wario
 
 420101 = Vs. Tabuu
