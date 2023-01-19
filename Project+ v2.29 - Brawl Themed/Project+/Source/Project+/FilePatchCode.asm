@@ -663,6 +663,8 @@ op  blr  @ $8001eb94
 ##############################################################################################################################
 [Project+] RSBE v1.30 (/Project+/pf/sfx, can load soundbank clones for stages) (requires CSSLE) [InternetExplorer, DukeItOut]
 ##############################################################################################################################
+.include Source/Project+/FilePatchCodeSawndHeader.asm
+
 * 80000000 80406920
 * 80000001 805A7D18
 address $805A7D18 @ $805A7D00
@@ -768,9 +770,9 @@ gotSawnd:
   lis r3, 0x805A
   ori r3, r3, 0x7D00
   lwz r4, -0x170(r1)
-  stw r4, -0x30(r3)
+  stw r4, -0x30(r3)		# Store address of loaded sawnd
   mr r4, r27
-  subi r4, r4, 0x3
+  subi r4, r4, 0x3		# Shift r4 address back by 3 to load whole words from sawnd
   lis r6, 0x5257		# \
   ori r6, r6, 0x5344	# /  "RWSD"
 
@@ -778,69 +780,92 @@ findRWSD:
   addi r4, r4, 0x4
   lwz r9, 0(r4)
   cmpw r9, r6
-  bne+ findRWSD
-  sub r4, r4, r27
-  stw r4, -0x40(r3)
+  bne+ findRWSD			# At this point, r4 points to first RWSD in SAWND
+  sub r4, r4, r27		# Calculate Sawnd Header length, store in r4?
+  stw r4, -0x40(r3)		# Store header length
   lis r9, 0x90E6
   ori r9, r9, 0xF10
-  lwz r9, 0(r9)
+  lwz r9, 0(r9)			# Load pointer to BRSAR INFO Section?
   mr r4, r9
   mr r6, r4
   addi r6, r6, 0x8
-  lwz r5, 0x2C(r4)
-  add r4, r4, r5
-  addi r4, r4, 0x8
+  lwz r5, 0x2C(r4)		# Get offset of Groups Section Ref Vector
+  add r4, r4, r5		# Add that to r4 to get address of Ref Vec
+  addi r4, r4, 0x8		# (also add 8 afterwards to account for tag and size in header)
   lis r7, 0x805A
   ori r7, r7, 0x7D00
-  lwz r11, -0x20(r7)
+  lwz r11, -0x20(r7)	# Probably string ID of group (as opposed to info id)
 
 loc_0x24C:
-  addi r4, r4, 0x8
-  lwz r5, 0(r4)
-  add r5, r5, r6
-  lwz r7, 0(r5)
-  cmpw r7, r11
+  addi r4, r4, 0x8		# Iterate through the group header references
+  lwz r5, 0(r4)			# Store offset in r5...
+  add r5, r5, r6		# ... then add it to r6 (8 past INFO start, offset base)...
+  lwz r7, 0(r5)			# ... landing at the group's header, first word of which is ID
+  cmpw r7, r11			# If that ID is the one we're looking for, continue.
   bne+ loc_0x24C
-  mr r4, r9
-  lwz r6, 0x24(r5)
-  add r5, r4, r6
-  addi r5, r5, 0x8
-  lwz r7, 0(r5)
-  addi r5, r5, 0x8
+  mr r4, r9				# Set r4 back to INFO section start
+  lwz r6, 0x24(r5)		# Get the offset to this group's entry list
+  add r5, r4, r6		# Add this together with INFO section address...
+  addi r5, r5, 0x8		# then add 8 to account for tag and size in INFO header...
+  lwz r7, 0(r5)			# To land at entry list. First word is count.
+  addi r5, r5, 0x8		# Skip forward another 8 for address of first group entry
+							# New Stuff Indented Like This
+  lwz r8, -0x40(r3)			# Grab Sawnd Header Length again before we change r3
   mr r3, r27
-  addi r3, r3, 0x9
-
+  addi r3, r3, 0x9		# Move r3 forward to File Info Triplets
+  add r8, r8, r27			# Add r27 to r8, r8 is now first RWSD addr
+  li r9, 0x00				# Initialize Header Offset Accumulator to 0x00
+  
 loc_0x284:
-  lwz r6, 0(r5)
-  add r6, r4, r6
-  subi r7, r7, 0x1
-  lwz r10, 0(r3)
-  stw r10, 8(r6)
-  lwz r10, 4(r3)
-  stw r10, 20(r6)
-  lwz r10, 8(r3)
-  stw r10, 24(r6)
-  addi r3, r3, 0xC
-  addi r5, r5, 0x8
-  cmpwi r7, 0x0
+  lwz r11, 0x24(r4)			# Get offset of File Header Reference Vec
+  add r11, r11, r4			# Add r4 to it to get address of Ref Vec
+  addi r11, r11, 0x8		# (also add 8 to account for tag and size in header)
+  addi r11, r11, 0x4		# (then also add 4 to account for vec length)
+  
+  lwz r6, 0(r5)			# Get offset of first group entry (these list included files)
+  add r6, r4, r6		# Add r4 to it to get proper address (we add 8 on store below)
+  subi r7, r7, 0x1		# Subtract 1 from file count
+  lwz r10, 0(r3)		# Load File ID from Sawnd,
+  stw r10, 8(r6)		# Write it over File ID for our group entry
+  
+  mulli r10, r10, 0x08		# Multiply File ID by 0x08 to index into File Ref Vec
+  add r11, r11, r10			# Add that to r11 so r11 points to File Header offset
+  lwz r11, 0x04(r11)		# Grab the File Header Address
+  add r11, r11, r4			# Add r4 to r11 to turn it into an Address
+  addi r11, r11, 0x08		# Account for INFO tag and size, r11 is now Header Addr 
+  
+  stw r9, 0xC(r6)			# Write Accumulated Header Offset to group entry
+  lwz r10, 0x08(r8)			# Load RWSD Length from Sawnd
+  stw r10, 0x10(r6)			# Write it over Header Length for our group entry
+  stw r10, 0x00(r11)		# Write it over Header Length for File Header
+  add r9, r9, r10			# Add loaded RWSD Length to Offset Accumulator
+  add r8, r8, r10			# Advance RWSD Address to next RWSD
+  lwz r10, 4(r3)		# Load File's data offset from Sawnd, 
+  stw r10, 20(r6)		# Write it over data offset for our group entry
+  lwz r10, 8(r3)		# Load File's data length from Sawnd,
+  stw r10, 24(r6)		# Write it over data length for our group entry
+  stw r10, 0x04(r11)		# Write it over Data Length for File Header
+  addi r3, r3, 0xC		# Move forward in Sawnd to next File Info Triplet
+  addi r5, r5, 0x8		# Move our reference iterator forward to next ref
+  cmpwi r7, 0x0			# Continue while there are still files to process.
   bgt+ loc_0x284
   lis r3, 0x805A
-  ori r3, r3, 0x7D00
-  lwz r4, -48(r3)
-  lwz r5, -64(r3)
-  sub r4, r4, r5
-  mr r6, r27
-  add r7, r6, r5
+  ori r3, r3, 0x7D00	# I don't know what this location is, but it's important.
+  lwz r4, -48(r3)		# Total file length I believe
+  lwz r5, -64(r3)		# Retrieve header length we stashed earlier
+  sub r4, r4, r5		# Store length of sawnd body (everything post header)
+  mr r6, r27			# Set r6 back to address of Sawnd
+  add r7, r6, r5		# Set r7 to beginning of sawnd body
 
 loc_0x2D4:
-  lbz r8, 0(r7)
-  stb r8, 0(r6)
+  lbz r8, 0(r7)			# Get first byte from Sawnd body?
+  stb r8, 0(r6)			# Store byte at beginning of Sawnd region?
   addi r6, r6, 0x1
   addi r7, r7, 0x1
   subi r4, r4, 0x1
-  cmpwi r4, 0x0
-  bgt+ loc_0x2D4
-  li r3, 0x0
+  cmpwi r4, 0x0			# Ahhh, this is a loop to copy sawnd body backwards
+  bgt+ loc_0x2D4		# such that it starts where the sawnd used to
+  li r3, 0x0			# And here, we set r3 to zero to skip the below section?
 
 noSawnd:
   cmpwi r3, 0x0			# if r3 is zero, skip loading later
