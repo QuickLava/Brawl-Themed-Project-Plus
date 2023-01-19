@@ -36,13 +36,21 @@ Roy Brawl inspired SFX by ilikepizza107
 
 Knuckles Brawl inspired SFX by ilikepizza107
 
+Captain Falcon Win 1 -> Brawl by ilikepizza107
 
-Motion/Etc -
+Charizard Win 3 -> Brawl by ilikepizza107
 
+Diddy Kong Win 3 -> Brawl by ilikepizza107
 
+Ike Neutral Special GFX -> Brawl by ilikepizza107
 
+Kirby Ike Copy Neutral Special GFX -> Brawl by ilikepizza107
 
-PSA and Motion -
+Samus Win1 -> Brawl by ilikepizza107
+
+Sheik Entry -> Brawl by ilikepizza107
+
+Zelda/Sheik Down Special GFX -> Brawl by ilikepizza107
 
 Module - 
 
@@ -359,14 +367,14 @@ Menus/UI/HUD
 ########################################
 
 New SSS previews, titles and images by ilikepizza107
-Full size Random Stage Select previews by
 Brawl-Styled Code Menu button by ilikepizza107, with credit to Yohan1044
 Custom HD GameCube buttons created by Puzzled, and Bangs
 Custom Special Mode icons by Puzzled
 "Turbo Mode" & "All Star" Special Mode button icons by davidvkimball
 "Bomb Rain" & "Wild" Special Mode button icons by Motobug
+Mewtwo, Roy, and Knuckles Brawl nameplates for CSS and battle HUD by ilikepizza107
 Team Glow button icon by mawwwk
-Results screen "Ready for the next battle" color edits by SmashFighter64, implemented by Kirbeast
+Brawl shields by ilikepizza107
 
 ########################################
 Dolphin Files
