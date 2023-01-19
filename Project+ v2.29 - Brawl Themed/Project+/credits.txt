@@ -49,20 +49,19 @@ Kapedani for his incredible work to make Roy, Mewtwo, Knuckles, Giga Bowser, and
 
 Codes - 
 
-QuickLava for porting his CSS Roster Switch code to P+, to allow for different Melee Randoms per toggle, different Hold Shield for Special Fighter per toggle, and for Zelda/Sheik and Samus/ZSS' slots to work porperly when switched; and for the 50CC for SSS code
+QuickLava for porting his CSS Roster Switch code to P+, to allow for different Melee Randoms per toggle, different Hold Shield for Special Fighter per toggle, and for Zelda/Sheik and Samus/ZSS' slots to work porperly when switched; for the 50CC for SSS code; and for helping get Brawl's "boom" sound effect for Classic mode
 
 Spigel for his help with moving Mewtwo and Wario-Man to a different Cosmetic ID, and for the Hold Shield for Special Fighter toggle code for the Brawl CSS Roster
-
-KingJigglypuff for making SammiHusky's FilePatchRedux code work for P+
 
 ########################################
 Characters + Skins + Portraits:
 ########################################
 
 MARIO
-vBrawl mario Recreation by Mach7 [https://gamebanana.com/mods/341987]
+vBrawl Mario Recreation by Mach7 [https://gamebanana.com/mods/341987]
 
 DONKEY KONG
+Donkey Kong Brawl pose CSProject by VirtualBeef [https://forums.kc-mm.com/Gallery/BrawlView.php?Number=218326]
 
 LINK
 Brawl Link Pose Cosmetic Pack by PMHD team [https://gamebanana.com/mods/400455]
