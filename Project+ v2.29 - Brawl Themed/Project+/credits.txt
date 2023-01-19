@@ -19,9 +19,10 @@ Brawl P+ Dev
 ################
 Brawl P+ Testers
 ################
+SoulOfficer
+FingerStripes
 RosiYY
 SparkSwordKirby
-
 
 ########################################
 PSA + Motion + Fighter Modules:
