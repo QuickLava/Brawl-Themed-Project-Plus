@@ -40,7 +40,7 @@ TABLE_1:
 0x15, | # Wario Land
 0x16, | # Distant Planet
 0x1A, | # Smashville
-0x22, | # Onett
+0x19, | # Fourside
 0x12, | # Infinite Glacier
 0x17, | # Skyworld
 0x06, | # Kongo Jungle
@@ -56,7 +56,7 @@ TABLE_2:
 0x1F, | # Temple
 0x31, | # Dinosaur Land
 0x33, | # Jungle Japes
-0x19, | # Fourside
+0x22, | # Onett
 0x25, | # Corneria
 0x24, | # Peach's Castle
 0x23, | # Dream Land
