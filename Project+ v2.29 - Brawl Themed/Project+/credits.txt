@@ -19,9 +19,9 @@ Brawl P+ Dev
 ################
 Brawl P+ Testers
 ################
-SoulOfficer
 FingerStripes
 RosiYY
+SoulOfficer
 SparkSwordKirby
 
 ########################################
