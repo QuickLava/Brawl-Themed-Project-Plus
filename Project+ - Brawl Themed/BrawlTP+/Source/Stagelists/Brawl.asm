@@ -21,11 +21,11 @@ TABLE_1:
 	byte[31] |
 0x00, | # Battlefield
 0x01, | # Final Destination
-0x02, | # Delfino's Secret
+0x02, | # Delfino Plaza
 0x03, | # Luigi's Mansion
 0x04, | # Metal Cavern
-0x05, | # Bowser's Castle
-0x09, | # Hyrule Castle
+0x05, | # Mario Circuit
+0x09, | # Bridge of Eldin
 0x07, | # Rumble Falls
 0x08, | # Pirate Ship
 0x35, | # Norfair
@@ -33,18 +33,18 @@ TABLE_1:
 0x0C, | # Yoshi's Island
 0x0D, | # Halberd
 0x0E, | # Lylat Cruise
-0x28, | # Pokemon Stadium 2
+0x0F, | # Pokemon Stadium 2
 0x10, | # Spear Pillar
 0x11, | # Port Town Aero Dive
 0x14, | # Castle Siege
 0x15, | # Wario Land
 0x16, | # Distant Planet
 0x1A, | # Smashville
-0x19, | # Fourside
-0x12, | # Infinite Glacier
+0x19, | # New Pork City
+0x12, | # Summit
 0x17, | # Skyworld
 0x06, | # Kongo Jungle
-0x18, | # Fountain of Dreams
+0x18, | # Mario Bros
 0x13, | # Flat Zone 2
 0x1D, | # PictoChat
 0x2F, | # Hanenbow
@@ -54,7 +54,7 @@ TABLE_1:
 TABLE_2:
 	byte[10] |
 0x1F, | # Temple
-0x31, | # Dinosaur Land
+0x20, | # Dinosaur Land
 0x33, | # Jungle Japes
 0x22, | # Onett
 0x25, | # Corneria
@@ -62,28 +62,7 @@ TABLE_2:
 0x23, | # Dream Land
 0x26, | # Big Blue
 0x27, | # Planet Zebes
-0x0F  | # Saffron City
-
-TABLE_3:
-	byte[18] |
-0x2D, | # Mario Circuit
-0x38, | # Mushroom Kingdom
-0x3B, | # Rainbow Cruise
-0x21, | # Golden Temple
-0x1E, | # Sky Sanctuary Zone
-0x0A, | # Metroid Lab
-0x20, | # Yoshi's Story
-0x2B, | # Training Room
-0x32, | # Oil Drum Alley
-0x2E, | # Clock Town
-0x36, | # Cookie Country
-0x39, | # WarioWare, Inc.
-0x3C, | # Poke Floats
-0x34, | # Bell Tower
-0x37, | # Venus Lighthouse
-0x2C, | # Dracula's Castle
-0x30, | # Dead Line
-0x3A  | # Subspace
+0x28  | # Pokemon Stadium
 
 TABLE_4:	# Unused
 TABLE_5:	# Unused
@@ -116,8 +95,8 @@ SkipStageTables:
 * 20523400 00000000 # If 80523400 is equal to 0
 byte 31 @ $806B929C # Page 1
 byte 10 @ $806B92A4 # Page 2
-byte 18 @ $80496002 # Page 3
+byte 00 @ $80496002 # Page 3
 byte 00 @ $80496003 # Page 4 (Unused)
 byte 00 @ $80496004 # Page 5 (Unused)
-byte 59 @ $800AF673 # Stage Count
+byte 41 @ $800AF673 # Stage Count
 * E0000000 80008000
