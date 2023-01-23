@@ -2,7 +2,7 @@
 02 - Final Destination
 03 - Delfino Plaza
 04 - Luigi's Mansion
-05 - Mushroomy Kingdom
+05 - Mario Bros. [had to be in this slot]
 06 - Mario Circuit
 07 - 75 m
 08 - Rumble Falls
@@ -21,7 +21,6 @@
 1C - WarioWare
 1D - Distant Planet
 1E - Skyworld
-1F - Mario Bros.
 20 - New Pork City
 21 - Smashville
 22 - Shadow Moses Island (written as Shadow Moses)
@@ -47,3 +46,4 @@
 37 - Training Room (written as Training)
 38 - Break the Targets (Break the Targets Stages)
 39 - Staff Roll (Credits roll background used in the Solo Modes)
+4C - Mushroomy Kingdom [had to be in this slot]
