@@ -20,7 +20,6 @@ Brawl P+ Dev
 Brawl P+ Testers
 ################
 FingerStripes
-RosiYY
 SoulOfficer
 SparkSwordKirby
 
@@ -373,15 +372,15 @@ Custom Special Mode icons by Puzzled
 "Turbo Mode" & "All Star" Special Mode button icons by davidvkimball
 "Bomb Rain" & "Wild" Special Mode button icons by Motobug
 Mewtwo, Roy, and Knuckles Brawl nameplates for CSS and battle HUD by ilikepizza107
-Team Glow button icon by mawwwk
+Team Glow button icon by ilikepizza107
 Brawl shields by ilikepizza107
 
 ########################################
 Dolphin Files
 ########################################
 
-HD textures for Brawl and Brawl Themed Project+ are thanks to Yami 2b, ilikepizza107, and Efisio
-Insta-launcher .dol file created by Kirbeast(?).
+HD textures for Brawl and Brawl Themed Project+ are thanks to Yami 2b and the BrawlHD team, ilikepizza107, and Efisio
+Insta-launcher .dol file created by Kirbeast, with edits by ilikepizza107
 Music Off - Netplay Safe Patch by Eon
 
 ########################################
@@ -394,3 +393,5 @@ Launcher by Glitch, Kirbeast, and DiXaR with credit to ShortFuse, and the USB Lo
 Special Thanks
 #################
 Yorch, Tatsuya, and Pnut for stage help
+MaybeGreg for the Project+ CSS order and input on Mewtwo, Roy, and Knuckles' SSE levels
+Kapedani for input on Mewtwo, Roy, and Knuckles' SSE levels
