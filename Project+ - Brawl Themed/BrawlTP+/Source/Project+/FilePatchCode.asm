@@ -660,9 +660,10 @@ op  blr  @ $8001eb94
 
 .RESET
 
-##############################################################################################################################
-[Project+] RSBE v1.30 (/Project+/pf/sfx, can load soundbank clones for stages) (requires CSSLE) [InternetExplorer, DukeItOut]
-##############################################################################################################################
+#####################################################################################################################
+[Project+] RSBE v1.30-QL (SAWND Files Properly Report Their Sizes to the Game) [InternetExplorer, DukeItOut, QuickLava]
+# Note: Requires "FilePatchCodeSawndHeader.asm" as well to work properly.
+#####################################################################################################################
 .include Source/Project+/FilePatchCodeSawndHeader.asm
 
 * 80000000 80406920

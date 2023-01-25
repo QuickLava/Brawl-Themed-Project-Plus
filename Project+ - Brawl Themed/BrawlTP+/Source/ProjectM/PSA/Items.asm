@@ -75,10 +75,6 @@ CODE @ $80FAB8D4
 	word 0x000B0200; word PSA_Off+0x08
 }
 
-Disable item pickup from a dash attack [Shanus]
-* 06FB240C 00000008
-* 00020000 00000000
-
 Trophy Throws are Smash Throws [Standardtoaster]
 * 04FB8980 00000105
 * 04FB8990 0000010E
