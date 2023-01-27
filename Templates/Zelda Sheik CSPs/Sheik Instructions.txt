@@ -1,2 +1,2 @@
 Rotate -11.65
-Scale height to 450
+Scale height to 450, HD scale to 1350, Gaussian Blur 5

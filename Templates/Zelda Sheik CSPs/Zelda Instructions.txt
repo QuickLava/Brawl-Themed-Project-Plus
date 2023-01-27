@@ -1,1 +1,1 @@
-Scale height to 350
+Scale height to 350, HD scale to 1050, Gaussian Blur 5
