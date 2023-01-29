@@ -1468,11 +1468,6 @@ Hitstun Modifier [Phantom Wings, spunit262]
 * 02B88F48 00030001
 #* 04B87AA8 3ECCCCCD # Hitstun mult written by code menu, so disabled here
 
-##########################################
-Tripping Rate is 0 V2 [ds22, KirbyIsCool]
-##########################################
-* 0489E910 FFE0F090
-
 ##################################################
 Triple Jump Glitch Fix [Phantom Wings, spunit262]
 ##################################################
