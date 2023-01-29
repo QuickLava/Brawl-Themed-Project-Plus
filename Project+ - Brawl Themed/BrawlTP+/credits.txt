@@ -19,9 +19,9 @@ Brawl P+ Dev
 ################
 Brawl P+ Testers
 ################
-FingerStripes
-SoulOfficer
-SparkSwordKirby
+-FingerStripes
+-SoulOfficer
+-SparkSwordKirby
 
 ########################################
 PSA + Motion + Fighter Modules:
@@ -57,7 +57,7 @@ Kapedani for his incredible work to make Roy, Mewtwo, Knuckles, Giga Bowser, and
 
 Codes - 
 
-QuickLava for porting his CSS Roster Switch code to P+, to allow for different Melee Randoms per toggle, different Hold Shield for Special Fighter per toggle, and for Zelda/Sheik and Samus/ZSS' slots to work porperly when switched; for the 50CC for SSS code; and for helping get Brawl's "boom" sound effect for Classic mode
+QuickLava for porting his CSS Roster Switch code to P+, to allow for different Melee Randoms per toggle, different Hold Shield for Special Fighter per toggle, and for Zelda/Sheik and Samus/ZSS' slots to work porperly when switched; for the 50CC for SSS code; for the tripping toggles; and for helping get Brawl's "boom" sound effect for Classic mode
 
 Spigel for his help with moving Mewtwo and Wario-Man to a different Cosmetic ID, and for the Hold Shield for Special Fighter toggle code for the Brawl CSS Roster
 
@@ -206,9 +206,11 @@ Base - Battlefield by PMDT with lighting fixes by DukeItOut and Mawwwk
 L - Brawl Battlefield
 
 FINAL DESTINATION
-
+Base - PM-Themed FD by soopercool101
+L - Brawl Battlefield
 
 DELFINO'S SECRET [DELFINO PLAZA]
+L - Delfino Plaza
 
 LUIGI'S MANSION
 
@@ -250,21 +252,26 @@ PORT TOWN: AERO DIVE
 
 INFINITE GLACIER
 Base  - Infinite Glacier by the PMDT, always set in water by DukeItOut with fixes by malistaticy
+L - Summit
 
 FLAT ZONE 2
 
 CASTLE SIEGE
 Base - Castle Siege (P+) by DukeItOut, MarioDox, mawwwk and Sandfall
+L - Brawl Castle Siege
 
 WARIO LAND [WARIOWARE INC.]
 
 DISTANT PLANET 
+L - Brawl Distant Planet
 
 SKYWORLD
+L - Brawl Skyworld
 
 FOUNTAIN OF DREAMS [MARIO BROS.]
 
 FOURSIDE [NEW PORK CITY]
+L - New Pork City
 
 SMASHVILLE
 
@@ -272,11 +279,13 @@ SHADOW MOSES ISLAND
 
 GREEN HILL ZONE
 Base  - Green Hill Zone by the PMDT, with texture fixes by DukeItOut and mawwwk, shadow fixes by mawwwk and WorseDoughnut, and redirect improvements by soopercool101, optimization by Snoe
+L - Brawl Green Hill Zone
 
 PICTOCHAT
 Base stage displays "Zero Suit Samus" using module edit by DukeItOut. 
 
 HANENBOW
+L - Brawl Hanenbow
 
 TEMPLE
 
@@ -287,12 +296,12 @@ JUNGLE JAPES
 ONETT
 
 DREAM LAND
+L - Green Greens
 
 PEACH'S CASTLE [RAINBOW CRUISE]
 Base - Texture optimizations by Cahalan. 
 
 CORNERIA
-L   - Sector Z - Star Fox 64 3D-styled by Allav866, Mewtwo2000, Mawwwk
 
 BIG BLUE
 
@@ -356,7 +365,7 @@ POKE FLOATS
 Port done by Soopercool101 and the Smash 2 dev team
 
 RESULTS SCREEN
-Project+ Result Screen by Motobug, denz with credit to the PMDT
+Base - Brawl Results Screen with edits by ilikepizza107
 
 CONTROL CONFIGURATION STAGE 
 Config Training Room by soopercool101 with credit to the PMDT
@@ -373,7 +382,7 @@ Custom Special Mode icons by Puzzled
 "Bomb Rain" & "Wild" Special Mode button icons by Motobug
 Mewtwo, Roy, and Knuckles Brawl nameplates for CSS and battle HUD by ilikepizza107
 Team Glow button icon by ilikepizza107
-Brawl shields by ilikepizza107
+Shields -> Brawl Colors by ilikepizza107
 
 ########################################
 Dolphin Files
@@ -387,7 +396,7 @@ Music Off - Netplay Safe Patch by Eon
 Wii Files
 ########################################
 
-Launcher by Glitch, Kirbeast, and DiXaR with credit to ShortFuse, and the USB Loader GX Team
+Launcher by Glitch, Kirbeast, and DiXaR with credit to ShortFuse, and the USB Loader GX Team, with edits by ilikepizza107
 
 #################
 Special Thanks
@@ -395,3 +404,5 @@ Special Thanks
 Yorch, Tatsuya, and Pnut for stage help
 MaybeGreg for the Project+ CSS order and input on Mewtwo, Roy, and Knuckles' SSE levels
 Kapedani for input on Mewtwo, Roy, and Knuckles' SSE levels
+Quicklava - You're the GOAT
+Efisio - Your quality is unmatched
