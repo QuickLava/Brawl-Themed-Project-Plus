@@ -339,7 +339,7 @@ OIL DRUM ALLEY
 Base  - Oil Drum Alley by Nezha the Scout, BustedSoda with credit to Mattress87, Tonberry2k, MarioDox, SooperCool, Umbravivens, Peardian, Russmars2, FancyEX, mawwwk
 
 COOKIE COUNTRY
-Base  - Cookie Country v3 by Nezha the Scout, Angelglory, Codex-9, soopercool101
+Base  - Cookie Country Revamp by NNEBF, with credit to Nezha the Scout, Angelglory, Codex-9, soopercool101
 
 METROID LAB
 Base  - Metroid Lab by Ryztiq
@@ -368,7 +368,7 @@ RESULTS SCREEN
 Base - Brawl Results Screen with edits by ilikepizza107
 
 CONTROL CONFIGURATION STAGE 
-Config Training Room by soopercool101 with credit to the PMDT
+Base - Config Training Room by soopercool101 with credit to the PMDT
 
 ########################################
 Menus/UI/HUD
