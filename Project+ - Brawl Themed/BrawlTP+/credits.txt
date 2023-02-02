@@ -24,7 +24,7 @@ Brawl P+ Testers
 -SparkSwordKirby
 
 ########################################
-PSA + Motion + Fighter Modules:
+PSA + GFX + Motion + Fighter Modules:
 ########################################
 
 PSA -
@@ -41,17 +41,26 @@ Charizard Win 3 -> Brawl by ilikepizza107
 
 Diddy Kong Win 3 -> Brawl by ilikepizza107
 
-Ike Neutral Special GFX -> Brawl by ilikepizza107
-
-Kirby Ike Copy Neutral Special GFX -> Brawl by ilikepizza107
-
 Samus Win1 -> Brawl by ilikepizza107
 
 Link Entry -> Brawl by ilikepizza107
 
 Sheik Entry -> Brawl by ilikepizza107
 
+
+GFX -
+
+Ike Neutral Special GFX -> Brawl by ilikepizza107
+
+Kirby Ike Copy Neutral Special GFX -> Brawl by ilikepizza107
+
 Zelda/Sheik Down Special GFX -> Brawl by ilikepizza107
+
+Link Boomerang and Bombs -> Brawl by ilikepizza107, with credit to Yorch
+
+Link Up Special GFX -> Brawl by ilikepizza107
+
+Falco Neutral Special color -> Brawl by ilikepizza107
 
 Module - 
 
