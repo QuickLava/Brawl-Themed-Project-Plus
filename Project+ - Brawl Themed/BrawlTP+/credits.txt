@@ -406,5 +406,6 @@ Special Thanks
 Yorch, Tatsuya, and Pnut for stage help
 MaybeGreg for the Project+ CSS order and input on Mewtwo, Roy, and Knuckles' SSE levels
 Kapedani for input on Mewtwo, Roy, and Knuckles' SSE levels
+Layell for sharing their CSS Icon template
 Quicklava - You're the GOAT
 Efisio - Your quality is unmatched
