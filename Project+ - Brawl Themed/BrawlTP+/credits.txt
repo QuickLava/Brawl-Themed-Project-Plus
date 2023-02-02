@@ -64,6 +64,10 @@ Falco Neutral Special color -> Brawl by ilikepizza107
 
 Kirby Falco Copy Neutral Special GFX -> Brawl by ilikepizza107
 
+Lucas Down Special color -> Brawl by ilikepizza107
+
+Marth sword trail -> Brawl by Yorch
+
 
 Module - 
 
