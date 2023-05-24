@@ -8,8 +8,8 @@ string "/menu2/sc_selcharacter2.pac"    @ $806FF308
 string "sc_selcharacter2_en.pac"        @ $817F634D
 string "/menu2/sc_selmap.pac"           @ $806FF3F0
 string "sc_selmap_en.pac"               @ $817F637C
-string "stageslot/"                     @ $80550C58 # This address might change and crash
-string "stageinfo/"                     @ $80550C68 # This address might change and crash
+string "stageslot/"                     @ $80550B08 # This address might change and crash
+string "stageinfo/"                     @ $80550B18 # This address might change and crash
 * E0000000 80008000
 
 ###############################################################
@@ -22,6 +22,6 @@ string "/menu2/br_selcharacter2.pac"    @ $806FF308
 string "br_selcharacter2_en.pac"        @ $817F634D
 string "/menu2/br_selmap.pac"           @ $806FF3F0
 string "br_selmap_en.pac"               @ $817F637C
-string "stageslotbr/"                   @ $80550C58 # This address might change and crash
-string "stageinfo/"                   @ $80550C68 # This address might change and crash
+string "stageslotbr/"                   @ $80550B08 # This address might change and crash
+string "stageinfo/"                     @ $80550B18 # This address might change and crash
 * E0000000 80008000

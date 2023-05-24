@@ -15,7 +15,7 @@ op stb r0, -0x1(r5) @ $8003CB1C
 op NOP				@ $8003CB28
 
 ##############################################################################################
-File Patch Code REDUX v0.95 (/Project+) [Sammi Husky]
+File Patch Code REDUX v0.95 (/BrawlTP+/) [Sammi Husky]
 ##############################################################################################
 .alias _pf               = 0x80507b70
 .alias FPC_PATH          = 0x805a7c00
@@ -660,11 +660,47 @@ op  blr  @ $8001eb94
 
 .RESET
 
-#####################################################################################################################
-[Project+] RSBE v1.30-QL (SAWND Files Properly Report Their Sizes to the Game) [InternetExplorer, DukeItOut, QuickLava]
-# Note: Requires "FilePatchCodeSawndHeader.asm" as well to work properly.
-#####################################################################################################################
+#############################################################################################################################################################
+[Project+] RSBE v1.32 (/Project+/pf/sfx, can load soundbank clones for stages and items) (requires CSSLE) [InternetExplorer, DukeItOut, QuickLava, Kapedani]
+#
+# 1.31: The RWSD location check is now independent of Sound Resource size.
+# 1.31a: SAWNDs Can Now Overwrite vBrawl's Header/Data Lengths (Requires FilePatchCodeSawndHeader.asm)
+# 1.32: Allow SSE stages and items to have soundbank clones 
+#############################################################################################################################################################
 .include Source/Project+/FilePatchCodeSawndHeader.asm
+
+.alias sprintf                      = 0x803F89FC
+.alias strcat                       = 0x803FA384
+.alias itoa                         = 0x803fcb50
+.alias g_GameGlobal                 = 0x805a00E0
+.alias g_itKindPkmSoundGroups       = 0x80ADBD18
+.alias CustomSDLoadRoutine          = 0x805A7900
+.alias STEX                         = 0x8053F000
+.alias ITM_OVERRIDE_STR_ADDR        = 0x80B524EC 
+.alias PKM_OVERRIDE_STR_ADDR        = 0x80B52582
+
+.macro lwd(<reg>, <addr>)
+{
+    .alias  temp_Lo = <addr> & 0xFFFF
+    .alias  temp_Hi_ = <addr> / 0x10000
+    .alias  temp_r = temp_Lo / 0x8000
+    .alias  temp_Hi = temp_Hi_ + temp_r
+    lis     <reg>, temp_Hi
+    lwz     <reg>, temp_Lo(<reg>)
+}
+.macro lwi(<reg>, <val>)
+{
+    .alias  temp_Hi = <val> / 0x10000
+    .alias  temp_Lo = <val> & 0xFFFF
+    lis     <reg>, temp_Hi
+    ori     <reg>, <reg>, temp_Lo
+}
+.macro call(<addr>)
+{
+  %lwi(r12, <addr>)
+  mtctr r12
+  bctrl    
+}
 
 * 80000000 80406920
 * 80000001 805A7D18
@@ -685,6 +721,8 @@ HOOK @ $801C8370
   stw r26, -0x20(r3)	# place r26 in 805A7CE0 after adding 7 to it. This will be the soundbank.
 
   li r4, 0x0
+  stw r4, 0x88(r1)  # zero item variant
+
   stw r4, 0xC(r1)		# zero 805A700C, 805A7010 and 805A7018
   stw r4, 0x10(r1)		#\
   stw r27, 0x14(r1)		# | save r27 to 805A7014 
@@ -696,35 +734,96 @@ HOOK @ $801C8370
   lis r4, 0x805A		#\set r4 to 805A7D18
   ori r4, r4, 0x7D18	#/
   subi r5, r26, 7		#move the soundbank to r5, but remove the 7 that wasn't needed before
-  lis r12, 0x803F		#\
-  ori r12, r12, 0x89FC	# |
-  mtctr r12				# |branch to 803F89FC (sprintf/printf.o)
-  bctrl 				#/
+  %call (sprintf)
+
+  cmpwi r26, 0xE0
+  blt+ notSubspaceBank
+  cmpwi r26, 0x14A
+  ble+ altBank
+
+notSubspaceBank:
   cmpwi r26, 0x53		#\ Skip if not a normal stage soundbank
   blt+ NormalBank		# |
-  cmpwi r26, 0x77		# |Stage soundbanks are range 0x53-0x77	(really 0x4C-70)
+  cmpwi r26, 0xB6		# |Stage soundbanks are range 0x53-0xB6	(really 0x4C-0xAF)
   bgt+ NormalBank		#/
   
+altBank:  
   mr r4, r5				#
   lis r5, 0x5F00		# \ Concatenate "_"
   stw r5, 0x20(r1)		# /
   addi r4, r1, 0x20		#
   addi r3, r1, 0x24		# place the string character in r1+0x24
-  lis r12, 0x803F		#
-  ori r12, r12, 0xA384	# strcat
-  mtctr r12				#
-  bctrl 				#
+  %call (strcat)
   addi r3, r1, 0x24
   
-  lis r12, 0x8053		# \ STEX pointer
-  ori r12, r12, 0xF000	# /
+  %lwi (r12, STEX)
   lwz r4, 0x1C(r12)		# Pointer to offset in string block for filename
   lwz r5, 0x4(r12)		# Pointer to string block
   add r4, r4, r12		# \ Obtain address for string of stage filename
   add r4, r4, r5		# /
   addi r3, r1, 0x24
+  %lwd (r11, g_GameGlobal)
+  lwz r10, 0x8(r11)           # \ 
+  lhz r10, 0x1A(r10)          # |
+  
+  cmpwi r10, 0x3d             # | Check if gmGlobalModeMelee->meleeInitData.stageKind is SSE
+  bne+ notSubspace            # /
+  lwz r9, 0x30(r11)          # \ &advSaveData->lastJumpBone[20] 
+  addi r4, r9, 1604          # /
+  cmpwi r26, 0x0E0        # \ Check if SSE common bank
+  beq+ pkmOverride:       # /
+  b notAssistOverride
+notSubspace:
+  cmpwi r26, 0x07E        # \
+  blt+ notAssistOverride  # | 
+  beq- pkmOverride        # | Check if Pokemon/Assist range
+  cmpwi r26, 0x099        # |
+  ble+ assistOverride     # /
+  cmpwi r26, 0x0E1        # \
+  blt+ notAssistOverride  # | Check if Subspace stage range (during Vs mode)
+  cmpwi r26, 0x11C        # |
+  ble+ assistOverride     # /
+  b pkmOverride
+assistOverride:  
+  %lwi (r10, g_itKindPkmSoundGroups)
+  subi r7, r26, 7
+  li r12, 316
+loopCheckForVariant:
+  addi r9, r12, 2   # \
+  lhzx r8, r10, r9  # |
+  cmpw r7, r8       # | Check for desired sawnd associated with Assist/Pokemon
+  bne+ notSfxGroup  # /
+  lhzx r8, r10, r12 # \ Get variant and store
+  stw r8, 0x88(r1)  # /
+  b pkmOverride     # break
+notSfxGroup:                # \
+  subi r12, r12, 4          # | Loop through itKindSndGroupIds for Pokemon/Assists
+  cmpwi r12, 0x0            # |
+  bge+ loopCheckForVariant  # /
+pkmOverride:
+  %lwi (r4, PKM_OVERRIDE_STR_ADDR)
+notAssistOverride:
+  cmpwi r26, 0x07D
+  bne+ notItmOverride
+  %lwi (r4, ITM_OVERRIDE_STR_ADDR)
+notItmOverride:
   bctrl					# strcat again
   
+  lwz r11, 0x88(r1) # \
+  cmpwi r11, 0x0    # | check if variant > 0
+  beq+ notVariant   # /
+  addi r3, r1, 0x24 # \
+  addi r4, r1, 0x20 # | concat '_'
+  bctrl             # /
+  lwz r3, 0x88(r1)  # \
+  addi r4, r1, 0x8c # | turn variant into string
+  li r5, 8          # |
+  %call (itoa)      # /
+  addi r3, r1, 0x24 # \
+  addi r4, r1, 0x8c # | concat variant string
+  %call (strcat)    # /
+notVariant:  
+
   lis r4, 0x805A		# ".sawnd"	
   ori r4, r4, 0x7D2E	# 
   bctrl 				# strcat, yet again!
@@ -732,10 +831,7 @@ HOOK @ $801C8370
   mr r3, r27
   li r5, 0x0
   li r6, 0x0
-  lis r12, 0x805A		# \ use file patch code to retrieve file 
-  ori r12, r12, 0x7900	# |
-  mtctr r12				# |
-  bctrl 				# /
+  %call (CustomSDLoadRoutine)
   cmpwi r3, 0x0			# \ but if it exists . . . . 
   beq+ gotSawnd			# /
   addi r3, r1, 0x24 	# \
@@ -743,27 +839,28 @@ HOOK @ $801C8370
   lis r4, 0x805A		# \	
   ori r4, r4, 0x7D18	# / get the pointer to "/legacyte/pf/sfx/%03X"
   subi r5, r26, 7		# r5 contains the decimal value of the soundbank ID . . . . which was given 7 earlier
-  lis r12, 0x803F		# \
-  ori r12, r12, 0x89FC	# | sprintf
-  mtctr r12				# |
-  bctrl 				# / 
+  %call (sprintf)
 
 NormalBank:
+  lwz r11, 0x88(r1)         # \
+  cmpwi r11, 0x0            # | check if variant > 0
+  beq+ notVariantNormalBank # / 
+  addi r3, r1, 0x24 # \
+  addi r4, r1, 0x20 # | concat '_'
+  %call (strcat)    # /
+  addi r3, r1, 0x24 # \  
+  addi r4, r1, 0x8c # | concat variant string
+  bctrl             # /
+notVariantNormalBank:
   addi r3, r1, 0x24		# r3 contains the pointer to where the string should be written  
-  lis r12, 0x803F		# \
-  ori r12, r12, 0xA384	# | move strcat to the count register 
-  mtctr r12				# /
   lis r4, 0x805A		
   ori r4, r4, 0x7D2E	# ".sawnd"
-  bctrl 				# strcat! 
+  %call (strcat)
   addi r4, r1, 0x24		# retrieve the string 
   mr r3, r27			
   li r5, 0x0			#\
   li r6, 0x0			#/ zero out r5 and r6
-  lis r12, 0x805A		#\
-  ori r12, r12, 0x7900	# | File Patch Code	
-  mtctr r12				# |
-  bctrl 				#/
+  %call (CustomSDLoadRoutine)
   cmpwi r3, 0x0			#\
   bne- noSawnd			#/ If this file doesn't exist, load from the BRSAR.
 
@@ -784,9 +881,13 @@ findRWSD:
   bne+ findRWSD			# At this point, r4 points to first RWSD in SAWND
   sub r4, r4, r27		# Calculate Sawnd Header length, store in r4?
   stw r4, -0x40(r3)		# Store header length
-  lis r9, 0x90E6
-  ori r9, r9, 0xF10
-  lwz r9, 0(r9)			# Load pointer to BRSAR INFO Section?
+  # lis r9, 0x90E6		# \ Sound Data Block (90E60820) + 6F0 
+  # ori r9, r9, 0xF10	# / Normally at 90E60F10, which is the end of the Sound Resource - 0x4F0
+
+  lis r9, 0x9019		# \
+  ori r9, r9, 0x9800	# | Get end of Sound Resource heap. 
+  lwz r9, 0x8(r9)		# /
+  lwz r9, -0x4F0(r9)	# 4F0 from end (Loads BRSAR INFO Section Address)
   mr r4, r9
   mr r6, r4
   addi r6, r6, 0x8
@@ -1023,4 +1124,52 @@ HOOK @ $803EE0BC
   %LoadAddress(r3,0x805A9350)
   stw r0, 0(r3)
   lis r3, 0x805A
+}
+
+
+###############################
+checkModSDFile [DukeItOut] 
+#
+# Gives an easy way to check
+# if a file is in the SD card
+# for the mod WITHOUT checking 
+# first if it is on the DVD. 
+#
+# r3 returns 0 if FOUND
+# NOT if FALSE
+###############################
+HOOK @ $8001F598
+{
+	addi r1, r1, 0xA0		# Make room for the following hook
+	blr
+}
+HOOK @ $8001F59C			# call this function
+{
+	stwu r1, -0x100(r1)
+	mflr r0
+	stw r0, 0x104(r1)
+	mr r7, r3				# string of file requested
+	addi r3, r1, 0x20
+	lis r4, 0x8048			# \ %s%s%s
+	ori r4, r4, 0xEFF6      # /
+	lis r5, 0x8040			# \ mod name folder
+	ori r5, r5, 0x6920		# / 
+	lis r6, 0x8050			# \ pf
+	ori r6, r6, 0x7B70		# /
+	
+	lis r12, 0x803F			# \
+	ori r12, r12, 0x89FC	# | sprintf
+	mtctr r12				# |
+	bctrl 					# /		
+	addi r3, r1, 0x20
+	stw r3, 0xC(r1)
+	addi r3, r1, 0x0C
+	lis r12, 0x8001			# \ 
+	ori r12, r12, 0xF5A0	# | checkFileSD
+	mtctr r12				# |
+	bctrl					# /
+	lwz r0, 0x104(r1)
+	mtlr r0
+	addi r1, r1, 0x100
+	blr
 }
