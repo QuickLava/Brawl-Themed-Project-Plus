@@ -84,6 +84,7 @@ byte[4] 0x30, 0x34, 0x64, 0 @ $806A17D8
 
 ################################################################
 [Brawl-Themed P+] Stage Select Screen Supports 50CC [QuickLava]
+V2: Slight instruction optimization using LFS [ilikepizza107]
 ################################################################
 # Stage Select Stock Icons 50CC Fix
 HOOK @ $806b2ffc
@@ -96,23 +97,19 @@ notWarioman:
 # Stage Select Random Player Stock Icons Fix
 HOOK @ $806b2fdc
 {
-	lis r12, 0x40C1				# \
-	ori r12, r12, 0xAD80		# | Write first word worth of 9051 into memory
+	lis r12, 0x460D			# \
+	ori r12, r12, 0x6C00		# | Write first word worth of 9051 into memory
 	stw r12, 0x08(r1)			# | Store it at 0x08(r1)
-	li r12, 0x00				# | Zero out r12
-	stw r12, 0x0C(r1)			# | Store it at 0x0C(r1)
-	lfd f0, 0x08(r1)			# / Load it into fr0, overwriting the normal 501.
+	lfs f0, 0x08(r1)			# / Load it into fr0, overwriting the normal 501.
 	fsubs f1,f1,f2				# Restore original instruction.
 }
 # Stage Select Random CPU Stock Icons Fix
 HOOK @ $806b2fe8
 {
-	lis r12, 0x40C1				# \
-	ori r12, r12, 0xAF80		# | Write first word worth of 9055 into memory
+	lis r12, 0x460D				# \
+	ori r12, r12, 0x7C00		# | Write first word worth of 9055 into memory
 	stw r12, 0x08(r1)			# | Store it at 0x08(r1)
-	li r12, 0x00				# | Zero out r12
-	stw r12, 0x0C(r1)			# | Store it at 0x0C(r1)
-	lfd f31, 0x08(r1)			# / Load it into fr31, overwriting the normal 505.
+	lfs f31, 0x08(r1)			# / Load it into fr31, overwriting the normal 505.
 }
 
 ###################################################################
