@@ -84,10 +84,10 @@ byte[4] 0x30, 0x34, 0x64, 0 @ $806A17D8
 
 ################################################################
 [Brawl-Themed P+] Stage Select Screen Supports 50CC [QuickLava]
-V2: Slight instruction optimization using LFS [ilikepizza107]
+V1.1: Slight instruction optimization [QuickLava, ilikepizza107]
 ################################################################
 # Stage Select Stock Icons 50CC Fix
-HOOK @ $806b2ffc
+HOOK @ $806B2FFC
 {
   	cmpwi r25, 0x36;   bne+ notWarioman		# 0x36 isn't a mistake.
  	li r3, 9000; b %END%					# Not sure why it's not 0x35 like in the above codes.
@@ -95,21 +95,22 @@ notWarioman:
  	mulli r3, r3, 50
 }
 # Stage Select Random Player Stock Icons Fix
-HOOK @ $806b2fdc
+HOOK @ $806B2FD4
 {
-	lis r12, 0x460D			# \
-	ori r12, r12, 0x6C00		# | Write first word worth of 9051 into memory
-	stw r12, 0x08(r1)			# | Store it at 0x08(r1)
-	lfs f0, 0x08(r1)			# / Load it into fr0, overwriting the normal 501.
-	fsubs f1,f1,f2				# Restore original instruction.
+  bl floatEncode
+  word 0x460d6c00   # 9051 in hex encoding
+  floatEncode:
+  mflr r12          # Move ptr to float hex to r12
+  lfs f0, 0x00(r12) # Load the encoded float into f0
 }
 # Stage Select Random CPU Stock Icons Fix
-HOOK @ $806b2fe8
+HOOK @ $806B2FE8
 {
-	lis r12, 0x460D				# \
-	ori r12, r12, 0x7C00		# | Write first word worth of 9055 into memory
-	stw r12, 0x08(r1)			# | Store it at 0x08(r1)
-	lfs f31, 0x08(r1)			# / Load it into fr31, overwriting the normal 505.
+  bl floatEncode
+  word 0x460D7C00    # 9055 in hex encoding
+  floatEncode:
+  mflr r12           # Move ptr to float hex to r12
+  lfs f31, 0x00(r12) # Load the encoded float into f31
 }
 
 ###################################################################
