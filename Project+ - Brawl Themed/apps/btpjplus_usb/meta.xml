@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+	<name>Brawl Themed Project+</name>
+	<coder>ilikepizza107 w/ credit to the P+DT</coder>
+	<version>2.3.2</version>
+	<release_date>202301311200</release_date>
+	<short_description>Brawl Themed Project+ USB Loader</short_description>
+<long_description>Brawl Themed Project+ is a mod of Project+ with the gameplay and QoL of P+ and the asthetics of Brawl. This mod would not be possible without the longstanding support of the Brawl Modding community. Thank you for playing!</long_description>
+<ahb_access/>
+<arguments>
+<arg>RSBE01</arg>
+<arg>intro = 0</arg>
+<arg>device = usb</arg>
+<arg>partition = auto</arg>
+<arg>ios = 249</arg>
+<arg>video = system</arg>
+<arg>video_patch = all</arg>
+<arg>ocarina = 1</arg>
+<arg>hooktype = axframe</arg>
+</arguments>
+</app>
