@@ -15,7 +15,7 @@ op stb r0, -0x1(r5) @ $8003CB1C
 op NOP				@ $8003CB28
 
 ##############################################################################################
-File Patch Code REDUX v0.95 (/Project+) [Sammi Husky]
+File Patch Code REDUX v0.95 (/Project+/) [Sammi Husky]
 ##############################################################################################
 .alias _pf               = 0x80507b70
 .alias FPC_PATH          = 0x805a7c00
@@ -660,15 +660,52 @@ op  blr  @ $8001eb94
 
 .RESET
 
-##############################################################################################################################
-[Project+] RSBE v1.31 (/Project+/pf/sfx, can load soundbank clones for stages) (requires CSSLE) [InternetExplorer, DukeItOut]
+#############################################################################################################################################################
+[Project+] RSBE v1.32 (/Project+/pf/sfx, can load soundbank clones for stages and items) (requires CSSLE) [InternetExplorer, DukeItOut, QuickLava, Kapedani]
 #
 # 1.31: The RWSD location check is now independent of Sound Resource size.
-##############################################################################################################################
+# 1.31a: SAWNDs Can Now Overwrite vBrawl's Header/Data Lengths (Requires FilePatchCodeSawndHeader.asm)
+# 1.32: Allow SSE stages and items to have soundbank clones 
+#############################################################################################################################################################
+.include Source/Project+/FilePatchCodeSawndHeader.asm
+
+.alias sprintf                      = 0x803F89FC
+.alias strcat                       = 0x803FA384
+.alias itoa                         = 0x803fcb50
+.alias g_GameGlobal                 = 0x805a00E0
+.alias g_itKindPkmSoundGroups       = 0x80ADBD18
+.alias CustomSDLoadRoutine          = 0x805A7900
+.alias STEX                         = 0x8053F000
+.alias ITM_OVERRIDE_STR_ADDR        = 0x80B524EC 
+.alias PKM_OVERRIDE_STR_ADDR        = 0x80B52582
+
+.macro lwd(<reg>, <addr>)
+{
+    .alias  temp_Lo = <addr> & 0xFFFF
+    .alias  temp_Hi_ = <addr> / 0x10000
+    .alias  temp_r = temp_Lo / 0x8000
+    .alias  temp_Hi = temp_Hi_ + temp_r
+    lis     <reg>, temp_Hi
+    lwz     <reg>, temp_Lo(<reg>)
+}
+.macro lwi(<reg>, <val>)
+{
+    .alias  temp_Hi = <val> / 0x10000
+    .alias  temp_Lo = <val> & 0xFFFF
+    lis     <reg>, temp_Hi
+    ori     <reg>, <reg>, temp_Lo
+}
+.macro call(<addr>)
+{
+  %lwi(r12, <addr>)
+  mtctr r12
+  bctrl    
+}
+
 * 80000000 80406920
 * 80000001 805A7D18
 address $805A7D18 @ $805A7D00
-string[2] "/Project+/pf/sfx/%03X",".sawnd" @ $805A7D18
+string[2] "/BrawlTP+/pf/sfx/%03X",".sawnd" @ $805A7D18
 * 045A7D10 919B6600		# What is this?
 HOOK @ $801C8370																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 {
@@ -684,6 +721,8 @@ HOOK @ $801C8370
   stw r26, -0x20(r3)	# place r26 in 805A7CE0 after adding 7 to it. This will be the soundbank.
 
   li r4, 0x0
+  stw r4, 0x88(r1)  # zero item variant
+
   stw r4, 0xC(r1)		# zero 805A700C, 805A7010 and 805A7018
   stw r4, 0x10(r1)		#\
   stw r27, 0x14(r1)		# | save r27 to 805A7014 
@@ -695,35 +734,96 @@ HOOK @ $801C8370
   lis r4, 0x805A		#\set r4 to 805A7D18
   ori r4, r4, 0x7D18	#/
   subi r5, r26, 7		#move the soundbank to r5, but remove the 7 that wasn't needed before
-  lis r12, 0x803F		#\
-  ori r12, r12, 0x89FC	# |
-  mtctr r12				# |branch to 803F89FC (sprintf/printf.o)
-  bctrl 				#/
+  %call (sprintf)
+
+  cmpwi r26, 0xE0
+  blt+ notSubspaceBank
+  cmpwi r26, 0x14A
+  ble+ altBank
+
+notSubspaceBank:
   cmpwi r26, 0x53		#\ Skip if not a normal stage soundbank
   blt+ NormalBank		# |
-  cmpwi r26, 0x77		# |Stage soundbanks are range 0x53-0x77	(really 0x4C-70)
+  cmpwi r26, 0xB6		# |Stage soundbanks are range 0x53-0xB6	(really 0x4C-0xAF)
   bgt+ NormalBank		#/
   
+altBank:  
   mr r4, r5				#
   lis r5, 0x5F00		# \ Concatenate "_"
   stw r5, 0x20(r1)		# /
   addi r4, r1, 0x20		#
   addi r3, r1, 0x24		# place the string character in r1+0x24
-  lis r12, 0x803F		#
-  ori r12, r12, 0xA384	# strcat
-  mtctr r12				#
-  bctrl 				#
+  %call (strcat)
   addi r3, r1, 0x24
   
-  lis r12, 0x8053		# \ STEX pointer
-  ori r12, r12, 0xF000	# /
+  %lwi (r12, STEX)
   lwz r4, 0x1C(r12)		# Pointer to offset in string block for filename
   lwz r5, 0x4(r12)		# Pointer to string block
   add r4, r4, r12		# \ Obtain address for string of stage filename
   add r4, r4, r5		# /
   addi r3, r1, 0x24
+  %lwd (r11, g_GameGlobal)
+  lwz r10, 0x8(r11)           # \ 
+  lhz r10, 0x1A(r10)          # |
+  
+  cmpwi r10, 0x3d             # | Check if gmGlobalModeMelee->meleeInitData.stageKind is SSE
+  bne+ notSubspace            # /
+  lwz r9, 0x30(r11)          # \ &advSaveData->lastJumpBone[20] 
+  addi r4, r9, 1604          # /
+  cmpwi r26, 0x0E0        # \ Check if SSE common bank
+  beq+ pkmOverride:       # /
+  b notAssistOverride
+notSubspace:
+  cmpwi r26, 0x07E        # \
+  blt+ notAssistOverride  # | 
+  beq- pkmOverride        # | Check if Pokemon/Assist range
+  cmpwi r26, 0x099        # |
+  ble+ assistOverride     # /
+  cmpwi r26, 0x0E1        # \
+  blt+ notAssistOverride  # | Check if Subspace stage range (during Vs mode)
+  cmpwi r26, 0x11C        # |
+  ble+ assistOverride     # /
+  b pkmOverride
+assistOverride:  
+  %lwi (r10, g_itKindPkmSoundGroups)
+  subi r7, r26, 7
+  li r12, 316
+loopCheckForVariant:
+  addi r9, r12, 2   # \
+  lhzx r8, r10, r9  # |
+  cmpw r7, r8       # | Check for desired sawnd associated with Assist/Pokemon
+  bne+ notSfxGroup  # /
+  lhzx r8, r10, r12 # \ Get variant and store
+  stw r8, 0x88(r1)  # /
+  b pkmOverride     # break
+notSfxGroup:                # \
+  subi r12, r12, 4          # | Loop through itKindSndGroupIds for Pokemon/Assists
+  cmpwi r12, 0x0            # |
+  bge+ loopCheckForVariant  # /
+pkmOverride:
+  %lwi (r4, PKM_OVERRIDE_STR_ADDR)
+notAssistOverride:
+  cmpwi r26, 0x07D
+  bne+ notItmOverride
+  %lwi (r4, ITM_OVERRIDE_STR_ADDR)
+notItmOverride:
   bctrl					# strcat again
   
+  lwz r11, 0x88(r1) # \
+  cmpwi r11, 0x0    # | check if variant > 0
+  beq+ notVariant   # /
+  addi r3, r1, 0x24 # \
+  addi r4, r1, 0x20 # | concat '_'
+  bctrl             # /
+  lwz r3, 0x88(r1)  # \
+  addi r4, r1, 0x8c # | turn variant into string
+  li r5, 8          # |
+  %call (itoa)      # /
+  addi r3, r1, 0x24 # \
+  addi r4, r1, 0x8c # | concat variant string
+  %call (strcat)    # /
+notVariant:  
+
   lis r4, 0x805A		# ".sawnd"	
   ori r4, r4, 0x7D2E	# 
   bctrl 				# strcat, yet again!
@@ -731,10 +831,7 @@ HOOK @ $801C8370
   mr r3, r27
   li r5, 0x0
   li r6, 0x0
-  lis r12, 0x805A		# \ use file patch code to retrieve file 
-  ori r12, r12, 0x7900	# |
-  mtctr r12				# |
-  bctrl 				# /
+  %call (CustomSDLoadRoutine)
   cmpwi r3, 0x0			# \ but if it exists . . . . 
   beq+ gotSawnd			# /
   addi r3, r1, 0x24 	# \
@@ -742,27 +839,28 @@ HOOK @ $801C8370
   lis r4, 0x805A		# \	
   ori r4, r4, 0x7D18	# / get the pointer to "/legacyte/pf/sfx/%03X"
   subi r5, r26, 7		# r5 contains the decimal value of the soundbank ID . . . . which was given 7 earlier
-  lis r12, 0x803F		# \
-  ori r12, r12, 0x89FC	# | sprintf
-  mtctr r12				# |
-  bctrl 				# / 
+  %call (sprintf)
 
 NormalBank:
+  lwz r11, 0x88(r1)         # \
+  cmpwi r11, 0x0            # | check if variant > 0
+  beq+ notVariantNormalBank # / 
+  addi r3, r1, 0x24 # \
+  addi r4, r1, 0x20 # | concat '_'
+  %call (strcat)    # /
+  addi r3, r1, 0x24 # \  
+  addi r4, r1, 0x8c # | concat variant string
+  bctrl             # /
+notVariantNormalBank:
   addi r3, r1, 0x24		# r3 contains the pointer to where the string should be written  
-  lis r12, 0x803F		# \
-  ori r12, r12, 0xA384	# | move strcat to the count register 
-  mtctr r12				# /
   lis r4, 0x805A		
   ori r4, r4, 0x7D2E	# ".sawnd"
-  bctrl 				# strcat! 
+  %call (strcat)
   addi r4, r1, 0x24		# retrieve the string 
   mr r3, r27			
   li r5, 0x0			#\
   li r6, 0x0			#/ zero out r5 and r6
-  lis r12, 0x805A		#\
-  ori r12, r12, 0x7900	# | File Patch Code	
-  mtctr r12				# |
-  bctrl 				#/
+  %call (CustomSDLoadRoutine)
   cmpwi r3, 0x0			#\
   bne- noSawnd			#/ If this file doesn't exist, load from the BRSAR.
 
@@ -770,9 +868,9 @@ gotSawnd:
   lis r3, 0x805A
   ori r3, r3, 0x7D00
   lwz r4, -0x170(r1)
-  stw r4, -0x30(r3)
+  stw r4, -0x30(r3)		# Store address of loaded sawnd
   mr r4, r27
-  subi r4, r4, 0x3
+  subi r4, r4, 0x3		# Shift r4 address back by 3 to load whole words from sawnd
   lis r6, 0x5257		# \
   ori r6, r6, 0x5344	# /  "RWSD"
 
@@ -780,73 +878,96 @@ findRWSD:
   addi r4, r4, 0x4
   lwz r9, 0(r4)
   cmpw r9, r6
-  bne+ findRWSD
-  sub r4, r4, r27
-  stw r4, -0x40(r3)
+  bne+ findRWSD			# At this point, r4 points to first RWSD in SAWND
+  sub r4, r4, r27		# Calculate Sawnd Header length, store in r4?
+  stw r4, -0x40(r3)		# Store header length
   # lis r9, 0x90E6		# \ Sound Data Block (90E60820) + 6F0 
   # ori r9, r9, 0xF10	# / Normally at 90E60F10, which is the end of the Sound Resource - 0x4F0
 
   lis r9, 0x9019		# \
   ori r9, r9, 0x9800	# | Get end of Sound Resource heap. 
   lwz r9, 0x8(r9)		# /
-  lwz r9, -0x4F0(r9)	# 4F0 from end
+  lwz r9, -0x4F0(r9)	# 4F0 from end (Loads BRSAR INFO Section Address)
   mr r4, r9
   mr r6, r4
   addi r6, r6, 0x8
-  lwz r5, 0x2C(r4)
-  add r4, r4, r5
-  addi r4, r4, 0x8
+  lwz r5, 0x2C(r4)		# Get offset of Groups Section Ref Vector
+  add r4, r4, r5		# Add that to r4 to get address of Ref Vec
+  addi r4, r4, 0x8		# (also add 8 afterwards to account for tag and size in header)
   lis r7, 0x805A
   ori r7, r7, 0x7D00
-  lwz r11, -0x20(r7)
+  lwz r11, -0x20(r7)	# Probably string ID of group (as opposed to info id)
 
 loc_0x24C:
-  addi r4, r4, 0x8
-  lwz r5, 0(r4)
-  add r5, r5, r6
-  lwz r7, 0(r5)
-  cmpw r7, r11
+  addi r4, r4, 0x8		# Iterate through the group header references
+  lwz r5, 0(r4)			# Store offset in r5...
+  add r5, r5, r6		# ... then add it to r6 (8 past INFO start, offset base)...
+  lwz r7, 0(r5)			# ... landing at the group's header, first word of which is ID
+  cmpw r7, r11			# If that ID is the one we're looking for, continue.
   bne+ loc_0x24C
-  mr r4, r9
-  lwz r6, 0x24(r5)
-  add r5, r4, r6
-  addi r5, r5, 0x8
-  lwz r7, 0(r5)
-  addi r5, r5, 0x8
+  mr r4, r9				# Set r4 back to INFO section start
+  lwz r6, 0x24(r5)		# Get the offset to this group's entry list
+  add r5, r4, r6		# Add this together with INFO section address...
+  addi r5, r5, 0x8		# then add 8 to account for tag and size in INFO header...
+  lwz r7, 0(r5)			# To land at entry list. First word is count.
+  addi r5, r5, 0x8		# Skip forward another 8 for address of first group entry
+							# New Stuff Indented Like This
+  lwz r8, -0x40(r3)			# Grab Sawnd Header Length again before we change r3
   mr r3, r27
-  addi r3, r3, 0x9
-
+  addi r3, r3, 0x9		# Move r3 forward to File Info Triplets
+  add r8, r8, r27			# Add r27 to r8, r8 is now first RWSD addr
+  li r9, 0x00				# Initialize Header Offset Accumulator to 0x00
+  
 loc_0x284:
-  lwz r6, 0(r5)
-  add r6, r4, r6
-  subi r7, r7, 0x1
-  lwz r10, 0(r3)
-  stw r10, 8(r6)
-  lwz r10, 4(r3)
-  stw r10, 20(r6)
-  lwz r10, 8(r3)
-  stw r10, 24(r6)
-  addi r3, r3, 0xC
-  addi r5, r5, 0x8
-  cmpwi r7, 0x0
+  lwz r11, 0x24(r4)			# Get offset of File Header Reference Vec
+  add r11, r11, r4			# Add r4 to it to get address of Ref Vec
+  addi r11, r11, 0x8		# (also add 8 to account for tag and size in header)
+  addi r11, r11, 0x4		# (then also add 4 to account for vec length)
+  
+  lwz r6, 0(r5)			# Get offset of first group entry (these list included files)
+  add r6, r4, r6		# Add r4 to it to get proper address (we add 8 on store below)
+  subi r7, r7, 0x1		# Subtract 1 from file count
+  lwz r10, 0(r3)		# Load File ID from Sawnd,
+  stw r10, 8(r6)		# Write it over File ID for our group entry
+  
+  mulli r10, r10, 0x08		# Multiply File ID by 0x08 to index into File Ref Vec
+  add r11, r11, r10			# Add that to r11 so r11 points to File Header offset
+  lwz r11, 0x04(r11)		# Grab the File Header Address
+  add r11, r11, r4			# Add r4 to r11 to turn it into an Address
+  addi r11, r11, 0x08		# Account for INFO tag and size, r11 is now Header Addr 
+  
+  stw r9, 0xC(r6)			# Write Accumulated Header Offset to group entry
+  lwz r10, 0x08(r8)			# Load RWSD Length from Sawnd
+  stw r10, 0x10(r6)			# Write it over Header Length for our group entry
+  stw r10, 0x00(r11)		# Write it over Header Length for File Header
+  add r9, r9, r10			# Add loaded RWSD Length to Offset Accumulator
+  add r8, r8, r10			# Advance RWSD Address to next RWSD
+  lwz r10, 4(r3)		# Load File's data offset from Sawnd, 
+  stw r10, 20(r6)		# Write it over data offset for our group entry
+  lwz r10, 8(r3)		# Load File's data length from Sawnd,
+  stw r10, 24(r6)		# Write it over data length for our group entry
+  stw r10, 0x04(r11)		# Write it over Data Length for File Header
+  addi r3, r3, 0xC		# Move forward in Sawnd to next File Info Triplet
+  addi r5, r5, 0x8		# Move our reference iterator forward to next ref
+  cmpwi r7, 0x0			# Continue while there are still files to process.
   bgt+ loc_0x284
   lis r3, 0x805A
-  ori r3, r3, 0x7D00
-  lwz r4, -48(r3)
-  lwz r5, -64(r3)
-  sub r4, r4, r5
-  mr r6, r27
-  add r7, r6, r5
+  ori r3, r3, 0x7D00	# I don't know what this location is, but it's important.
+  lwz r4, -48(r3)		# Total file length I believe
+  lwz r5, -64(r3)		# Retrieve header length we stashed earlier
+  sub r4, r4, r5		# Store length of sawnd body (everything post header)
+  mr r6, r27			# Set r6 back to address of Sawnd
+  add r7, r6, r5		# Set r7 to beginning of sawnd body
 
 loc_0x2D4:
-  lbz r8, 0(r7)
-  stb r8, 0(r6)
+  lbz r8, 0(r7)			# Get first byte from Sawnd body?
+  stb r8, 0(r6)			# Store byte at beginning of Sawnd region?
   addi r6, r6, 0x1
   addi r7, r7, 0x1
   subi r4, r4, 0x1
-  cmpwi r4, 0x0
-  bgt+ loc_0x2D4
-  li r3, 0x0
+  cmpwi r4, 0x0			# Ahhh, this is a loop to copy sawnd body backwards
+  bgt+ loc_0x2D4		# such that it starts where the sawnd used to
+  li r3, 0x0			# And here, we set r3 to zero to skip the below section?
 
 noSawnd:
   cmpwi r3, 0x0			# if r3 is zero, skip loading later

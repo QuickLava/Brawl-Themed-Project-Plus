@@ -18,16 +18,8 @@ op beq- 0x3C @ $8068DBD0
 ########################################################
 CSS Fixes for Samus/ZSS and Zelda/Shiek v2.2 [spunit262]
 ########################################################
-op li r4, 0x4	@ $80693D50
-CODE @ $80693D6C
-{
-  li r0, 0x0
-  li r4, 0xF	
-}
-op NOP 			@ $806900E8
-op NOP 			@ $80697F58
-op NOP 			@ $80697EEC
-op li r0, 0x0	@ $80684EE0
+op li r4, 0x4	@ $80693D50	# ZSS return cursor fix
+op li r0, 0x0	@ $80684EE0	# Allows selecting the same Costume ID
 
 #############################################
 CSS Fixes for Giga and Company v2 [spunit262]
@@ -66,30 +58,16 @@ CODE @ $806900D8
 }
 * 02680DE0 0022FFFF
 
-##################################
-CSS Fixes for Knuckles [spunit262]
-##################################
-* C268DBCC 00000002
-* 2C1D0028 41820008
-* 2C1D0029 00000000
-* 0468DBD0 4182003C
-* 04693D50 38800004
-* 06693D6C 00000008
-* 38000000 3880000F
-* 046900E8 60000000
-* 04697F58 60000000
-* 04697EEC 60000000
-* 04684EE0 38000000
 ##############################################################################
-[Project+] CSS Roster Data v3&K [spunit262, order by Bird, DukeItOut, Motobug]
+[Project+] CSS Roster Data v3&K [spunit262, order by ilikepizza107]
 ##############################################################################
 byte[43] |
-0x00, 0x09, 0x0D, 0x15, 0x05, 0x0C, 0x01, 0x1A, |
-0x0A, 0x07, 0x13, 0x25, 0x02, 0x24, 0x0E, 0x0F, |
-0x14, 0x08, 0x23, 0x2E, 0x2B, 0x2C, 0x2A, 0x20, |
-0x03, 0x04, 0x0B, 0x19, 0x06, 0x16, 0x1F, 0x11, |
-0x2D, 0x21, 0x12, 0x22, 0x10, 0x17, 0x29, 0x18, |
-0x26, 0x27, 0x30 | 
+0x00, 0x01, 0x02, 0x03, 0x06, 0x08, 0x07, 0x11, |
+0x12, 0x09, 0x1A, 0x0E, 0x04, 0x16, 0x23, 0x13, |
+0x2D, 0x26, 0x0D, 0x05, 0x0F, 0x0A, 0x1F, 0x2B, |
+0x25, 0x21, 0x27, 0x0C, 0x15, 0x14, 0x17, 0x18, |
+0x2C, 0x20, 0x0B, 0x30, 0x22, 0x24, 0x10, 0x29, |
+0x2A, 0x2E, 0x19 | 
 @ $80680DE0
 
 #######
@@ -191,8 +169,8 @@ word[4] 0x22FF1B1E, 0x19C6, 0x80547BF4, 0x80000000  @ $80585DC0
 ###################################################################
 Special Fighter CSS slots + CSS HRC Fix (Modular) [ds22, DukeItOut]
 ###################################################################
-word[4] 0x2D171114, 0x19D2, 0x8054785E, 0		    @ $80585E60
-word[4] 0x11FF0E0F, 0x19B5, 0x80547660, 0			@ $80585E70
-byte[4] 0xF, 0x1, 0x10, 0x11 						@ $804557C8
-word 0xF 											@ $80AD836C
-word[4] 0x2C0C0B30, 0x19BD, 0x805474C8, 0x80000000	@ $80585E80
+word[4] 0x2DFF1135, 0x19D2, 0x8054785E, 0		    @ $80585E60			#Wario-Man CSS Slot
+word[4] 0x11100E0F, 0x19B5, 0x80547660, 0			@ $80585E70			#Sopo CSS Slot
+byte[4] 0xF, 0x1, 0x10, 0x11 						@ $804557C8			#Sopo Cosmetics
+word 0xF 											@ $80AD836C			#IC Secondary Character
+word[4] 0x2CFF0B30, 0x19BD, 0x805474C8, 0x80000000	@ $80585E80			#Giga Bowser CSS Slot

@@ -97,7 +97,11 @@ HOOK @ $8084CF64
 notSSE:
   cmplwi r23, 61			# is it AltR?
 }
-word[4] 0x4800001C, 0x416C7452, 0x00416C74, 0x5A000000 @ $8084CF38 # b 0x1C, "AltR", "AltZ"
+# This following line is the original, unmodified one that normally writes the "AltR" and "AltZ" strings in place.
+# I've modified it to instead write in place "00" for both of those, which should force the default costume to load.
+# If you ever want to re-enable Alt Costumes, comment out the modified line and uncomment this one. - QuickLava
+# word[4] 0x4800001C, 0x416C7452, 0x00416C74, 0x5A000000 @ $8084CF38 # b 0x1C, "AltR", "AltZ"
+word[4] 0x4800001C, 0x30300000, 0x00303000, 0x00000000 @ $8084CF38 # b 0x1C, "00", "00"
 op b 0x1C @ $8084CFBC
 HOOK @ $8084CF54
 {

@@ -3073,12 +3073,12 @@ Wario-Man Cosmetics [ds22]
 ##############################
 Giga Bowser Cosmetics [ds22]
 ##############################
-* 04408AF4 00002039
+* 04408AF4 0000200D  # Announcer Call
 * 04455788 0B010CFF
 * 0445578C 14000000
 * 044559D8 2C012CFF
 * 044559DC 14000000
-* 044559E0 00002039
+* 044559E0 0000200D  # Announcer Call
 
 #############################################
 Alloys Can Shield, Dodge & Grab Ledges [ds22]
