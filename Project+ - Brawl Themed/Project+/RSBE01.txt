@@ -2530,18 +2530,6 @@ SFX Survival -> Choose Your Character [Standardtoaster]
 op li r4, 0x2046 @ $80683998
 op li r4, 0x2046 @ $8068E590
 
-############################################################################
-No Audience SFX on Stage Selection v2 [Standardtoaster, DukeItOut, Kapedani]
-############################################################################
-op NOP @ $806b46d0
-op NOP @ $806b53b8
-
-###################################################################
-No Swoosh SFX on Character Selection v2 [standardtoaster, Kapedani]
-###################################################################
-op NOP         @ $8068ae54
-op li r4, -1     @ $8068D18C
-
 ############################################
 Random has Announcer Call [standardtoaster]
 ############################################
@@ -2887,13 +2875,6 @@ op NOP @ $80A64614
 [Project+] Dedede's Inhale Base Timer Reduction [Boiko]
 ##############################################################
 float 200.0 @ $80B88708
-
-################################
-DDD Result Name Modifier [ds22]
-################################
-* 064564D0 0000000C
-* 44656465 64650000
-* 00000000 00000000
 
 #################################
 [Project+] Roy Counter Fix [ds22] 
