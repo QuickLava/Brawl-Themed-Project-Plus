@@ -705,7 +705,7 @@ op  blr  @ $8001eb94
 * 80000000 80406920
 * 80000001 805A7D18
 address $805A7D18 @ $805A7D00
-string[2] "/BrawlTP+/pf/sfx/%03X",".sawnd" @ $805A7D18
+string[2] "/Project+/pf/sfx/%03X",".sawnd" @ $805A7D18
 * 045A7D10 919B6600		# What is this?
 HOOK @ $801C8370																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 {
