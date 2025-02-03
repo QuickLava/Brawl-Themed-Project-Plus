@@ -201,13 +201,13 @@ Result Camera Fixes [ds22]
 #####################
 Cosmetic Stuff [ds22]
 #####################
-word 0x2039 @ $80455890 # PT Announcer Call SFX
-byte[4] 0x27, 1, 0x32, -1 @ $80455918
+word 0x2039 @ $80455890                 # PT Announcer Call SFX
+byte[4] 0x27, 1, 0x32, -1 @ $80455918   # Roy Fighter ID, Slot
 byte[4] 0x0E, 0, 0, 0 @ $8045591C
-word 0x201D @ $80455920
-byte[4] 0x23, 1, 0x33, -1 @ $804559A8
+word 0x201D @ $80455920                 # Roy Announcer Call SFX
+byte[4] 0x23, 1, 0x33, -1 @ $804559A8   # Mewtwo Fighter ID, Slot
 byte[4] 0x07, 0, 0, 0 @ $804559AC
-word 0x202A @ $804559B0
+word 0x202A @ $804559B0                 # Mewtwo Announcer Call SFX
 
 ###############
 Clone CSS Slots
