@@ -92,25 +92,30 @@ TABLE_5:	# Unused
 
 TABLE_STAGES:
 # Table of icon<->stage slot associations
-half[63] |	# Stage Count + 2
+half[82] |	# Stage Count + 2
 | # OLD SLOTS
-0x0101, 0x0202, 0x0303, 0x0404, | # Battlefield, Final Destination, Delfino's Secret, Luigi's Mansion
-0x0505, 0x0606, 0x0707, 0x0808, | # Metal Cavern, Bowser's Castle, Kongo Jungle, Rumble Falls
-0x0909, 0x330A, 0x492C, 0x0C0C, | # Temple of Time, Hyrule Castle, Ceres Space Colony, Frigate Husk
+0x0101, 0x0202, 0x0303, 0x0404, | # Battlefield, Final Destination, Delfino's Plaza, Luigi's Mansion
+0x0505, 0x0606, 0x0707, 0x0808, | # Mario Bros., Bowser's Castle, 75m, Rumble Falls
+0x0909, 0x330A, 0x492C, 0x0C0C, | # Temple of Time, Bridge of Eldin, Ceres Space Colony, Frigate Orpheon
 0x0D0D, 0x0E0E, 0x130F, 0x1410, | # Yoshi's Island, Halberd, Lylat Cruise, Saffron City
-0x1511, 0x1612, 0x1713, 0x1814, | # Spear Pillar, Port Town Aero Dive, Infinite Glacier, Flat Zone 2
+0x1511, 0x1612, 0x1713, 0x1814, | # Spear Pillar, Port Town Aero Dive, Summit, Flat Zone 2
 0x1915, 0x1C16, 0x1D17, 0x1E18, | # Castle Siege, Wario Land, Distant Planet, Skyworld
-0x1F19, 0x201A, 0x211B, 0x221C, | # Fountain of Dreams, Fourside, Smashville, Shadow Moses Island
+0x1F19, 0x201A, 0x211B, 0x221C, | # Fountain of Dreams, New Pork City, Smashville, Shadow Moses Island
 0x231D, 0x241E, 0x4326, 0x2932, | # Green Hill Zone, PictoChat, Sky Sanctuary, Temple
-0x2A33, 0x472A, 0x2C35, 0x2D36, | # Yoshi's Story, Golden Temple, Onett, Dream Land
-0x2F37, 0x3038, 0x3139, 0x323A, | # Rainbow Cruise, Corneria, Big Blue, Planet Zebes
-0x2E3B, 0xFF64, 0xFF64, 0x373C, | # Pokemon Stadium 2, NOTHING, NOTHING, Training Room
+0x2A33, 0x472A, 0x2C35, 0x2D36, | # Yoshi's Story, Golden Temple, Onett, Green Greens
+0x2F37, 0x3038, 0x3139, 0x323A, | # Rainbow Cruise, Corneria, Big Blue, Brinstar
+0x2E3B, 0xFF64, 0xFF64, 0x373C, | # Pokemon Stadium, NOTHING, NOTHING, Training Room
 | # NEW SLOTS
 0x4023, 0x4124, 0x4225, 0x251F, | # Dracula's Castle, Mario Circuit, Clock Town, Hanenbow
 0x4427, 0x4528, 0x4629, 0x2B34, | # Dead Line, Dinosaur Land, Oil Drum Alley, Jungle Japes
 0x482B, 0x0B0B, 0x4A2D, 0x4B2E, | # Bell Tower, Norfair, Cookie Country, Venus Lighthouse
 0x4C2F, 0x4D30, 0x4E31, 0x4F3D, | # Mushroom Kingdom, WarioWare, Subspace, Rainbow Cruise
-0x503E, 0x513F, 0x5240			| # Poke Floats, Pirate Ship, Venom
+0x503E, 0x513F, 0x5240, 0x5341,	| # Poke Floats, Pirate Ship, Venom, Battlefield (P+)
+0x5442, 0x5543, 0x5644, 0x5745,	| # Final Destination (P+), Delfino's Secret, Luigi's Mansion (P+)
+0x5846, 0x5947, 0x5A48, 0x5B49,	| # Metal Cavern, Kongo Jungle, Rumble Falls (P+), Frigate Husk
+0x5C4A, 0x5D4B, 0x5E4C, 0x5F4D,	| # Yoshi's Island (P+), Infinite Glacier, Skyworld (P+), Fourside
+0x604E, 0x614F, 0x6250, 0x6351,	| # Green Hill Zone (P+), Hannenbow (P+), Dream Land, Pokemon Stadium 2
+0x6452, 0x6553					| # Planet Zebes, Hyrule Castle
 
 
 SkipStageTables:
