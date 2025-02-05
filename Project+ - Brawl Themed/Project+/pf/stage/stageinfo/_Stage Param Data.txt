@@ -457,13 +457,6 @@ Mushroom_Kingdom_ML_00.param
 	Flags: SlowStart
 
 ################
-Mushroom_Kingdom_R.param
-
-	STGMUSHROOMKINGDOM_R_MC_GROUND.pac
-	st_final.rel
-	Mushroom_Kingdom_Mix.tlst
-
-################
 Norfair.param
 
 	STGNORFAIR.pac
@@ -751,21 +744,6 @@ Temple_of_Time_Z.param
 	st_oldin.rel
 	Bridge_of_Eldin.tlst
 	SFX / GFX: 0x0054 / 0x0064
-
-################
-Temple_R.param
-
-	STGTEMPLE_R_LM_CASTLE.pac
-	st_final.rel
-	Temple.tlst
-
-################
-Temple_Z.param
-
-	STGTEMPLE_Z_SV_SKYLOFT.pac
-	st_smashville_noambience.rel
-	Skyloft.tlst
-	SFX / GFX: 0x0064 / 0x0032
 
 ################
 Training.param
