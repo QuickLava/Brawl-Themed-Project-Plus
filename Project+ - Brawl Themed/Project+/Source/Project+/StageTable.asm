@@ -1,1 +1,2 @@
-.include Source/Stagelists/Default.asm
+.include Source/Stagelists/Brawl.asm
+.include Source/Stagelists/Project+.asm
