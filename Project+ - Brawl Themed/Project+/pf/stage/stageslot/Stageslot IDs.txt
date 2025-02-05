@@ -1,28 +1,28 @@
 01 - Battlefield
 02 - Final Destination
-03 - Delfino Secret
+03 - Delfino Plaza
 04 - Luigi's Mansion
-05 - Metal Cavern
+05 - Mario Bros.
 06 - Bowser's Castle
-07 - Kongo Jungle
+07 - 75m
 08 - Rumble Falls
 09 - Temple of Time
 0B - Norfair
-0C - Frigate Husk
+0C - Frigate Orpheon
 0D - Yoshi's Island
 0E - Halberd
 13 - Lylat Cruise
 14 - Saffron City
 15 - Spear Pillar
 16 - Port Town
-17 - Infinite Glacier
-18 - Flat Zone
+17 - Summit
+18 - Flat Zone 2
 19 - Castle Siege
 1C - Wario Land
 1D - Distant Planet
 1E - Skyworld
 1F - Fountain of Dreams
-20 - Fourside
+20 - New Pork City
 21 - Smashville
 22 - Shadow Moses Island (written as Shadow Moses)
 23 - Green Hill Zone
@@ -34,13 +34,13 @@
 2A - Yoshi's Story
 2B - Jungle Japes
 2C - Onett
-2D - Dream Land
-2E - Pokemon Stadium 2
-2F - Peach Castle
+2D - Green Greens
+2E - Pokemon Stadium
+2F - Rainbow Cruise
 30 - Corneria
 31 - Big Blue
-32 - Planet Zebes
-33 - Hyrule Castle
+32 - Brinstar
+33 - Bridge of Eldin
 34 - Home Run (Home Run Contest Stage)
 35 - Edit Stage (Stage Builder Stages)
 36 - Rest Area (The rest area used in the solo modes)
@@ -59,10 +59,31 @@
 49 - Ceres Space Colony
 4A - Cookie Country
 4B - Venus Lighthouse
-4C - Mushroom Kingdom
+4C - Mushroomy Kingdom
 4D - WarioWare
 4E - Subspace
 4F - Rainbow Cruise
 50 - Poke Floats
 51 - Pirate Ship
 52 - Venom
+53 - Battlefield (P+)
+54 - Final Destination (P+)
+55 - Delfino Secret
+56 - Luigi's Mansion (P+)
+57 - Metal Cavern
+58 - Kongo Jungle
+59 - Rumble Falls (P+)
+5A - Frigate Husk
+5B - Yoshi's Island (P+)
+5C - Infinite Glacier
+5D - Distant Planet (P+)
+5E - Skyworld (P+)
+5F - Fourside (P+)
+60 - Green Hill Zone (P+)
+61 - Hannenbow (P+)
+62 - Dream Land
+63 - Pokemon Stadium 2
+64 - Planet Zebes
+65 - Hyrule Castle
+66 - Peach's Castle
+67 - Mushroom Kingdom
