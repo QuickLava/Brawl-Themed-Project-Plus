@@ -71,7 +71,6 @@ op blt- 0x34	   @ $8018CFC8
 .include Source/LegacyTE/UnboundedTeamEngine.asm
 
 .include Source/ProjectM/CustomAI.asm
-.include Source/ProjectM/Events.asm
 .include Source/ProjectM/Handicap.asm
 
 .include Source/Community/MusicSelect.asm
