@@ -33,7 +33,7 @@ TABLE_1:
 0x0C, | # Yoshi's Island
 0x0D, | # Halberd
 0x0E, | # Lylat Cruise
-0x4F, | # Pokemon Stadium 2
+0x50, | # Pokemon Stadium 2
 0x10, | # Spear Pillar
 0x11, | # Port Town Aero Dive
 0x14, | # Castle Siege
@@ -70,12 +70,12 @@ TABLE_5:	# Unused
 
 TABLE_STAGES:
 # Table of icon<->stage slot associations
-half[84] |	# Stage Count + 2
+half[85] |	# Stage Count + 2
 | # OLD SLOTS
 0x0101, 0x0202, 0x0303, 0x0404, | # Battlefield, Final Destination, Delfino Plaza, Luigi's Mansion (0-3)
 0x0505, 0x0606, 0x0707, 0x0808, | # Mario Bros., Bowser's Castle, 75m, Rumble Falls (4-7)
 0x0909, 0x330A, 0x492C, 0x0C0C, | # Temple of Time, Bridge of Eldin, Ceres Space Colony, Frigate Orpheon (8-B)
-0x0D0D, 0x0E0E, 0x130F, 0x1410, | # Yoshi's Island, Halberd, Lylat Cruise, Saffron City (C-F)
+0x0D0D, 0x0E0E, 0x130F, 0x1410, | # Yoshi's Island, Halberd, Lylat Cruise, Pokemon Stadium 2 (C-F)
 0x1511, 0x1612, 0x1713, 0x1814, | # Spear Pillar, Port Town Aero Dive, Summit, Flat Zone 2 (10-13)
 0x1915, 0x1C16, 0x1D17, 0x1E18, | # Castle Siege, Wario Land, Distant Planet, Skyworld (14-17)
 0x1F19, 0x201A, 0x211B, 0x221C, | # Fountain of Dreams, New Pork City, Smashville, Shadow Moses Island (18-1B)
@@ -91,9 +91,10 @@ half[84] |	# Stage Count + 2
 0x503E, 0x513F, 0x5240, 0x5341,	| # Poke Floats, Pirate Ship, Venom, Battlefield (P+) (3C-3F)
 0x5442, 0x5543, 0x5644, 0x5745,	| # Final Destination (P+), Delfino's Secret, Luigi's Mansion (P+), Metal Cavern (40-43)
 0x5846, 0x5947, 0x5A48, 0x5B49,	| # Kongo Jungle, Rumble Falls (P+), Frigate Husk, Yoshi's Island (P+) (44-47)
-0x5C4A, 0x5D4B, 0x5E4C, 0x5F4D,	| # Infinite Glacier, Distant Planet (P+), Skyworld (P+), Fourside (48-4B)
-0x604E, 0x614F, 0x6250, 0x6351,	| # Green Hill Zone (P+), Hannenbow (P+), Dream Land, Pokemon Stadium 2 (4C-4F)
-0x6452, 0x6553, 0x6654, 0x6755	| # Planet Zebes, Hyrule Castle, Peach's Castle, Mushroom Kingdom (50-53)
+0x5C4A, 0x5D4B, 0x5E4C, 0x5F4D,	| # Saffron City, Infinite Glacier, Distant Planet (P+), Skyworld (P+)(48-4B)
+0x604E, 0x614F, 0x6250, 0x6351,	| # Fourside, Green Hill Zone (P+), Hannenbow (P+), Dream Land (4C-4F)
+0x6452, 0x6553, 0x6654, 0x6755,	| # Pokemon Stadium 2 (P+), Planet Zebes, Hyrule Castle, Peach's Castle (50-53)
+0x6856							| # Mushroom Kingdom (54)
 
 
 SkipStageTables:

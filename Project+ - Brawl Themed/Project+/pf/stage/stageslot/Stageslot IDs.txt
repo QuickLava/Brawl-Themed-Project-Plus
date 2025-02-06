@@ -12,7 +12,7 @@
 0D - Yoshi's Island
 0E - Halberd
 13 - Lylat Cruise
-14 - Saffron City
+14 - Pokemon Stadium 2
 15 - Spear Pillar
 16 - Port Town
 17 - Summit
@@ -75,15 +75,16 @@
 59 - Rumble Falls (P+)
 5A - Frigate Husk
 5B - Yoshi's Island (P+)
-5C - Infinite Glacier
-5D - Distant Planet (P+)
-5E - Skyworld (P+)
-5F - Fourside (P+)
-60 - Green Hill Zone (P+)
-61 - Hannenbow (P+)
-62 - Dream Land
-63 - Pokemon Stadium 2
-64 - Planet Zebes
-65 - Hyrule Castle
-66 - Peach's Castle
-67 - Mushroom Kingdom
+5C - Saffron City
+5D - Infinite Glacier
+5E - Distant Planet (P+)
+5F - Skyworld (P+)
+60 - Fourside
+61 - Green Hill Zone (P+)
+62 - Hannenbow (P+)
+63 - Dream Land
+64 - Pokemon Stadium 2 (P+)
+65 - Planet Zebes
+66 - Hyrule Castle
+67 - Peach's Castle
+68 - Mushroom Kingdom
