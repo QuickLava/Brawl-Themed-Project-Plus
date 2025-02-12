@@ -28,7 +28,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": true,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 1,
@@ -58,7 +59,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": true,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 3,
@@ -107,7 +109,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": false,
-      "Enabled": false
+      "Enabled": false,
+      "Selectable": false
     },
     {
       "CosmeticType": 2,
@@ -137,7 +140,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 8,
@@ -167,7 +171,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 0,
@@ -207,7 +212,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 0,
@@ -247,7 +253,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 6,
@@ -287,7 +294,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 9,
@@ -317,7 +325,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": false,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 7,
@@ -357,7 +366,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 7,
@@ -387,7 +397,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 10,
@@ -417,7 +428,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": false,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 11,
@@ -447,7 +459,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": false,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 12,
@@ -496,7 +509,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 13,
@@ -536,7 +550,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 14,
@@ -576,7 +591,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 14,
@@ -598,15 +614,6 @@
           "Offset": null,
           "AddTerminatorFrame": false,
           "NormalizeTextureIds": false
-        },
-        {
-          "Path": "Misc Data [80]/AnmTexPat(NW4R)/MenSelmapIcon/iconM/Texture0",
-          "FramesPerImage": 1,
-          "IdType": 10,
-          "Multiplier": 1,
-          "Offset": 400,
-          "AddTerminatorFrame": false,
-          "NormalizeTextureIds": false
         }
       ],
       "Prefix": "MenSelmapIcon",
@@ -625,7 +632,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 14,
@@ -647,15 +655,6 @@
           "Offset": null,
           "AddTerminatorFrame": false,
           "NormalizeTextureIds": false
-        },
-        {
-          "Path": "Misc Data [0]/AnmTexPat(NW4R)/MenSelmapIcon/iconM/Texture0",
-          "FramesPerImage": 1,
-          "IdType": 10,
-          "Multiplier": 1,
-          "Offset": 400,
-          "AddTerminatorFrame": false,
-          "NormalizeTextureIds": false
         }
       ],
       "Prefix": "MenSelmapIcon",
@@ -674,7 +673,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 13,
@@ -714,7 +714,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 12,
@@ -763,7 +764,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 15,
@@ -812,7 +814,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 15,
@@ -861,7 +864,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 16,
@@ -901,7 +905,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 14,
@@ -941,7 +946,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 21,
@@ -971,7 +977,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": true,
       "Required": false,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 7,
@@ -1011,7 +1018,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 7,
@@ -1051,7 +1059,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 7,
@@ -1091,7 +1100,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 7,
@@ -1131,7 +1141,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 7,
@@ -1171,7 +1182,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 7,
@@ -1211,7 +1223,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 7,
@@ -1251,7 +1264,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 8,
@@ -1281,7 +1295,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": true,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 7,
@@ -1321,7 +1336,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 6,
@@ -1351,7 +1367,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 6,
@@ -1400,7 +1417,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": false,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 18,
@@ -1449,7 +1467,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": false,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 18,
@@ -1498,7 +1517,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": false,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 19,
@@ -1538,7 +1558,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": false,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": true
     },
     {
       "CosmeticType": 20,
@@ -1578,7 +1599,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": false,
-      "Enabled": false
+      "Enabled": false,
+      "Selectable": false
     },
     {
       "CosmeticType": 8,
@@ -1608,7 +1630,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": false,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 8,
@@ -1638,7 +1661,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": false,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 5,
@@ -1678,7 +1702,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 8,
@@ -1718,7 +1743,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 8,
@@ -1748,7 +1774,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     },
     {
       "CosmeticType": 8,
@@ -1788,7 +1815,8 @@
       "FileType": 1,
       "AlwaysInheritStyle": false,
       "Required": true,
-      "Enabled": true
+      "Enabled": true,
+      "Selectable": false
     }
   ],
   "SoundSettings": {
