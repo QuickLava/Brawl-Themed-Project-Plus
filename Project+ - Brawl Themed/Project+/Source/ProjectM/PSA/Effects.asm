@@ -368,7 +368,7 @@ op word PSA_Off+0xA0 @ $80FA581C
 op word PSA_Off+0xA0 @ $80FA6380
 
 #############################################
-Warioman Fart Overlay is Purple [ds22, Magus]
+!Warioman Fart Overlay is Purple [ds22, Magus]
 #############################################
 .alias PSA_Off = 0x80540E10
 CODE @ $80540E10
