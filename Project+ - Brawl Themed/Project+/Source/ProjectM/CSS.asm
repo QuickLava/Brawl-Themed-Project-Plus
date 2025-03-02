@@ -166,7 +166,7 @@ HOOK @ $8068482C    # 0x14C bytes into symbol "setToGlobal/[muSelCharTask]/mu_se
   mr r0, r29                                  # Copy Char ID to r0 so we can still compare after modifying r29
   cmpwi r0, 0x10; li r29, 0x37; beq- %END%    # Check for     ICs -> Sopo
   cmpwi r0, 0x15; li r29, 0x36; beq- %END%    # Check for   Wario -> Warioman
-  li r29, 0x38                                # If neither of the above, assume we're looking at Bowser -> Giga Bowser
+  cmpwi r0, 0x0C; li r29, 0x38; beq- %END%    # If neither of the above, assume we're looking at Bowser -> Giga Bowser
   %isBrawlRoster()                            # Check if the vBrawl Roster is the selected version at the moment.
   bne cr7, %END%                              # If it isn't, then skip the following checks and exit early!
   cmpwi r0, 0x03; li r29, 0x04; beq- %END%    # Check for   Samus -> ZSS
