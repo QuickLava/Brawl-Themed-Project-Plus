@@ -1,8 +1,17 @@
+
 #########################################################
 [Legacy TE] Masquerade Costume Flags V2 [ds22, DukeItOut]
 #########################################################
 op subi r0, r31, 0x32 @ $8084CD48
 * 02AD817C 003200FF
+
+#################################################################################
+[Brawl-Themed Project+] Giga Bowser and Wario-Man force Fit00.pac [ilikepizza107]
+
+Reverts transforms to vBrawl behavior while keeping .masq compatability. 
+To use costume-specific transforms, comment out this code
+#################################################################################
+word 0x0 @ $80AD81DC
 
 ############################################################################################
 [Legacy TE] Set Masquerade Costume Count to Zero to have up to 50 costumes v1.1a [DukeItOut]
