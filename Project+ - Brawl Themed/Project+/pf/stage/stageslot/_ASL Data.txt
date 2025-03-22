@@ -1,66 +1,55 @@
 ################
 01.asl - 1 alt stage
 
-Base: Battlefield.param
+Base: Battlefield_Brawl.param
 
 
 ################
-02.asl - 3 entries
+02.asl - 1 alt stage
 
-Base: Final_Destination.param
-L: Final_Destination_L.param
-0x8001: Final_Destination_ML_01.param
+Base: Final_Destination_Brawl.param
 
 
 ################
-03.asl - 2 entries
+03.asl - 1 alt stage
 
-Base: Delfino_Secret.param
-L: Delfino_Secret_L.param
-
-
-################
-04.asl - 2 entries
-
-Base: Luigis_Mansion.param
-Z: Luigis_Mansion_Z.param
+Base: Delfino_Plaza.param
 
 
 ################
-05.asl - 2 entries
+04.asl - 1 alt stage
 
-Base: Metal_Cavern.param
-L: Metal_Cavern_L.param
+Base: Luigis_Mansion_Brawl.param
 
 
 ################
-06.asl - 2 entries
+05.asl - 1 alt stage
+
+Base: Mario_Bros.param
+
+
+################
+06.asl - 1 alt stage
 
 Base: Bowser_Castle.param
-0x4000: Bowser_Castle_MR_00.param
 
 
 ################
 07.asl - 1 alt stage
 
-Base: Kongo_Jungle.param
+Base: 75_m.param
 
 
 ################
-08.asl - 3 entries
+08.asl - 1 alt stage
 
-Base: Rumble_Falls.param
-0x8000: Rumble_Falls_ML_00.param
-0x8001: Rumble_Falls_ML_01.param
+Base: Rumble_Falls_Brawl.param
 
 
 ################
-09.asl - 4 entries
+09.asl - 1 alt stage
 
 Base: Temple_of_Time.param
-Z: Temple_of_Time_Z.param
-0x8000: Temple_of_Time_ML_00.param
-0xC000: Event_31.param
 
 
 ################
@@ -70,35 +59,33 @@ Base: Norfair.param
 
 
 ################
-0C.asl - 2 entries
+0C.asl - 1 alt stage
 
-Base: Frigate_Husk.param
-0x8000: Frigate_Husk_ML_00.param
+Base: Frigate_Orpheon.param
 
 
 ################
-0D.asl - 2 entries
+0D.asl - 1 alt stage
 
-Base: Yoshis_Island.param
-0x8000: Yoshis_Island_ML_00.param
+Base: Yoshis_Island_Brawl.param
 
 
 ################
 0E.asl - 1 alt stage
 
-0x8000: Halberd_ML_00.param
+Base: Halberd.param
 
 
 ################
 13.asl - 1 alt stage
 
-0x8000: Lylat_Cruise_ML_00.param
+Base: Lylat_Cruise.param
 
 
 ################
 14.asl - 1 alt stage
 
-Base: Saffron_City.param
+Base: Pokemon_Stadium_2_Brawl.param
 
 
 ################
@@ -108,17 +95,15 @@ Base: Spear_Pillar.param
 
 
 ################
-16.asl - 2 entries
+16.asl - 1 alt stage
 
 Base: Port_Town.param
-0x8000: Port_Town_ML_00.param
 
 
 ################
-17.asl - 2 entries
+17.asl - 1 alt stage
 
-Base: Infinite_Glacier.param
-L: Infinite_Glacier_L.param
+Base: Summit.param
 
 
 ################
@@ -130,7 +115,7 @@ Base: Flat_Zone.param
 ################
 19.asl - 1 alt stage
 
-X: Castle_Siege_X.param
+X: Castle_Siege.param
 
 
 ################
@@ -140,17 +125,15 @@ Base: Wario_Land.param
 
 
 ################
-1D.asl - 2 entries
+1D.asl - 1 alt stage
 
-Base: Distant_Planet.param
-L: Distant_Planet_L.param
+Base: Distant_Planet_Brawl.param
 
 
 ################
-1E.asl - 2 entries
+1E.asl - 1 alt stage
 
-Base: Skyworld.param
-L: Skyworld_L.param
+Base: Skyworld_Brawl.param
 
 
 ################
@@ -160,10 +143,9 @@ Base: Fountain_of_Dreams.param
 
 
 ################
-20.asl - 2 entries
+20.asl - 1 alt stage
 
-Base: Fourside.param
-L: Fourside_L.param
+Base: New_Pork_City.param
 
 
 ################
@@ -180,24 +162,21 @@ Base: Shadow_Moses.param
 
 
 ################
-23.asl - 2 entries
+23.asl - 1 alt stage
 
-Base: Green_Hill_Zone.param
-0x8000: Green_Hill_Zone_ML_00.param
+Base: Green_Hill_Zone_Brawl.param
 
 
 ################
-24.asl - 2 entries
+24.asl - 1 alt stage
 
 Base: PictoChat.param
-0x8000: PictoChat_ML_00.param
 
 
 ################
-25.asl - 2 entries
+25.asl - 1 alt stage
 
-Base: Hanenbow.param
-L: Hanenbow_L.param
+Base: Hanenbow_Brawl.param
 
 
 ################
@@ -239,20 +218,19 @@ Base: Onett.param
 ################
 2D.asl - 1 alt stage
 
-Base: Dream_Land.param
+Base: Green_Greens.param
 
 
 ################
-2E.asl - 2 entries
+2E.asl - 1 alt stage
 
-Base: Pokemon_Stadium_2.param
-0x8000: Pokemon_Stadium_2_ML_00.param
+Base: Pokemon_Stadium.param
 
 
 ################
 2F.asl - 1 alt stage
 
-Base: Peach_Castle.param
+Base: Rainbow_Cruise.param
 
 
 ################
@@ -268,17 +246,16 @@ Base: Big_Blue.param
 
 
 ################
-32.asl - 3 entries
+32.asl - 2 entries
 
-Base: Planet_Zebes.param
-0x8001: Planet_Zebes_ML_01.param
-0xC000: Planet_Zebes_ML_01.param
+Base: Brinstar.param
+0xC000: Brinstar.param
 
 
 ################
 33.asl - 1 alt stage
 
-Base: Hyrule_Castle.param
+Base: Bridge_of_Eldin.param
 
 
 ################
@@ -392,20 +369,19 @@ Base: Venus_Lighthouse.param
 
 
 ################
-4C.asl - 3 entries
+4C.asl - 5 entries
 
-Base: Mushroom_Kingdom.param
-L: Mushroom_Kingdom_L.param
-0x8000: Mushroom_Kingdom_ML_00.param
+Base: Mushroomy_Kingdom.param
+X: Mushroomy_Kingdom_X.param
+Base: Mushroomy_Kingdom_Y.param
+L: Mushroomy_Kingdom_L.param
+Base: Mushroomy_Kingdom_R.param
 
 
 ################
-4D.asl - 4 entries
+4D.asl - 1 alt stage
 
 Base: WarioWare.param
-0x8000: WarioWare_ML_00.param
-0x8001: WarioWare_ML_01.param
-0xC000: Event_30.param
 
 
 ################
@@ -417,25 +393,150 @@ Base: Subspace.param
 ################
 4F.asl - 1 alt stage
 
-Base: Rainbow_Cruise.param
-
-
-################
-50.asl - 2 entries
-
 Base: Poke_Floats.param
-L: Poke_Floats_L.param
 
 
 ################
-51.asl - 1 alt stage
+50.asl - 1 alt stage
 
 Base: Pirate_Ship.param
 
 
 ################
-52.asl - 1 alt stage
+51.asl - 1 alt stage
 
 Base: Venom.param
+
+
+################
+52.asl - 1 alt stage
+
+Base: Battlefield.param
+
+
+################
+53.asl - 1 alt stage
+
+Base: Final_Destination.param
+
+
+################
+54.asl - 1 alt stage
+
+Base: Delfino_Secret.param
+
+
+################
+55.asl - 1 alt stage
+
+Base: Luigis_Mansion.param
+
+
+################
+56.asl - 1 alt stage
+
+Base: Metal_Cavern.param
+
+
+################
+57.asl - 1 alt stage
+
+Base: Kongo_Jungle.param
+
+
+################
+58.asl - 1 alt stage
+
+Base: Rumble_Falls.param
+
+
+################
+59.asl - 1 alt stage
+
+Base: Frigate_Husk.param
+
+
+################
+5A.asl - 1 alt stage
+
+Base: Yoshis_Island.param
+
+
+################
+5B.asl - 1 alt stage
+
+Base: Saffron_City.param
+
+
+################
+5C.asl - 1 alt stage
+
+Base: Infinite_Glacier.param
+
+
+################
+5D.asl - 1 alt stage
+
+Base: Distant_Planet.param
+
+
+################
+5E.asl - 1 alt stage
+
+Base: Skyworld.param
+
+
+################
+5F.asl - 1 alt stage
+
+Base: Fourside.param
+
+
+################
+60.asl - 1 alt stage
+
+Base: Green_Hill_Zone.param
+
+
+################
+61.asl - 1 alt stage
+
+Base: Hanenbow.param
+
+
+################
+62.asl - 1 alt stage
+
+Base: Dream_Land.param
+
+
+################
+63.asl - 1 alt stage
+
+Base: Pokemon_Stadium_2.param
+
+
+################
+64.asl - 1 alt stage
+
+Base: Planet_Zebes.param
+
+
+################
+65.asl - 1 alt stage
+
+Base: Hyrule_Castle.param
+
+
+################
+66.asl - 1 alt stage
+
+Base: Peach_Castle.param
+
+
+################
+67.asl - 1 alt stage
+
+Base: Mushroom_Kingdom.param
 
 

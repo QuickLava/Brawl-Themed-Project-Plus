@@ -184,6 +184,21 @@ Castle_Siege.tlst - 12 tracks
 	Song delay: 108
 
 ################
+Ceres_Space_Colony.tlst - 3 tracks
+
+	Vs. Ridley
+	D04.brstm (0x2749)
+	Frequency: 40
+
+	Sector 1
+	D06.brstm (0x274B)
+	Frequency: 40
+
+	Vs. Meta Ridley
+	D09.brstm (0x274E)
+	Frequency: 40
+
+################
 Clock_Town.tlst - 5 tracks
 
 	Temple
@@ -824,21 +839,6 @@ Metal_Cavern.tlst - 2 tracks
 
 	Underground (Super Mario Land)
 	A04.brstm (0x2717)
-	Frequency: 40
-
-################
-Metroid_Lab.tlst - 3 tracks
-
-	Vs. Ridley
-	D04.brstm (0x2749)
-	Frequency: 40
-
-	Sector 1
-	D06.brstm (0x274B)
-	Frequency: 40
-
-	Vs. Meta Ridley
-	D09.brstm (0x274E)
 	Frequency: 40
 
 ################
@@ -1579,6 +1579,33 @@ Smashville.tlst - 5 tracks
 	Frequency: 20
 
 ################
+Smashville_Concert.tlst - 6 tracks
+
+	K.K. Cruisin'
+	N07.brstm (0x27B9)
+	Frequency: 40
+
+	K.K. Western
+	N08.brstm (0x27BA)
+	Frequency: 40
+
+	K.K. Gumbo
+	N09.brstm (0x27BB)
+	Frequency: 40
+
+	Rockin' K.K.
+	N10.brstm (0x27BC)
+	Frequency: 40
+
+	DJ K.K.
+	N11.brstm (0x27BD)
+	Frequency: 40
+
+	K.K. Condor
+	N12.brstm (0x27BE)
+	Frequency: 40
+
+################
 Spear_Pillar.tlst - 5 tracks
 
 	Victory Road
@@ -1660,6 +1687,41 @@ Temple.tlst - 2 tracks
 	Frequency: 35
 
 ################
+Temple_of_Time.tlst - 8 tracks
+
+	Main Theme (Twilight Princess ver.)
+	C17.brstm (0x2743)
+	Frequency: 40
+
+	The Hidden Village
+	C18.brstm (0x2744)
+	Frequency: 40
+
+	The Dark World
+	C04.brstm (0x2736)
+	Frequency: 40
+
+	Black Mist
+	C05.brstm (0x2737)
+	Frequency: 40
+
+	Temple
+	W24.brstm (0x2816)
+	Frequency: 40
+
+	Great Temple / Temple
+	C03.brstm (0x2735)
+	Frequency: 40
+
+	Title (The Legend of Zelda)
+	C01.brstm (0x2733)
+	Frequency: 10
+
+	Main Theme (The Legend of Zelda)
+	C02.brstm (0x2734)
+	Frequency: 10
+
+################
 Training_Room.tlst - 3 tracks
 
 	Online Practice Stage
@@ -1672,6 +1734,17 @@ Training_Room.tlst - 3 tracks
 
 	Coin Launcher
 	X21.brstm (0x270D)
+	Frequency: 40
+
+################
+Venom.tlst - 2 tracks
+
+	Venom (Star Fox)
+	W08.brstm (0x2806)
+	Frequency: 40
+
+	Main Theme (Star Fox 64)
+	W28.brstm (0x281A)
 	Frequency: 40
 
 ################

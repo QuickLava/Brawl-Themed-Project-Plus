@@ -62,29 +62,28 @@
 4C - Mushroomy Kingdom
 4D - WarioWare
 4E - Subspace
-4F - Rainbow Cruise
-50 - Poke Floats
-51 - Pirate Ship
-52 - Venom
-53 - Battlefield (P+)
-54 - Final Destination (P+)
-55 - Delfino Secret
-56 - Luigi's Mansion (P+)
-57 - Metal Cavern
-58 - Kongo Jungle
-59 - Rumble Falls (P+)
-5A - Frigate Husk
-5B - Yoshi's Island (P+)
-5C - Saffron City
-5D - Infinite Glacier
-5E - Distant Planet (P+)
-5F - Skyworld (P+)
-60 - Fourside
-61 - Green Hill Zone (P+)
-62 - Hannenbow (P+)
-63 - Dream Land
-64 - Pokemon Stadium 2 (P+)
-65 - Planet Zebes
-66 - Hyrule Castle
-67 - Peach's Castle
-68 - Mushroom Kingdom
+4F - Poke Floats
+50 - Pirate Ship
+51 - Venom
+52 - Battlefield (P+)
+53 - Final Destination (P+)
+54 - Delfino Secret
+55 - Luigi's Mansion (P+)
+56 - Metal Cavern
+57 - Kongo Jungle
+58 - Rumble Falls (P+)
+59 - Frigate Husk
+5A - Yoshi's Island (P+)
+5B - Saffron City
+5C - Infinite Glacier
+5D - Distant Planet (P+)
+5E - Skyworld (P+)
+5F - Fourside
+60 - Green Hill Zone (P+)
+61 - Hannenbow (P+)
+62 - Dream Land
+63 - Pokemon Stadium 2 (P+)
+64 - Planet Zebes
+65 - Hyrule Castle
+66 - Peach's Castle
+67 - Mushroom Kingdom
