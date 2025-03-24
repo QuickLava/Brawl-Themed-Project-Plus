@@ -1437,10 +1437,10 @@
     "DisplayName": "Mewtwo",
     "Ids": {
       "FighterConfigId": 38,
-      "CosmeticConfigId": 35,
+      "CosmeticConfigId": 27,
       "SlotConfigId": 51,
       "CSSSlotConfigId": 46,
-      "CosmeticId": 27,
+      "CosmeticId": 35,
       "FranchiseId": 8,
       "TrophyThumbnailId": null,
       "RecordsIconId": null,
