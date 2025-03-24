@@ -190,7 +190,7 @@ CODE @ $80545000
 	word 6; word 7
 	word 5; IC_Basic 1005
 	word 0; word 5
-	word 1; scalar 5.7 # med sfx kb value
+	word 1; scalar 4.5 # med sfx kb value
 	word 6; word 7
 	word 5; IC_Basic 1005
 	word 0; word 5
@@ -216,34 +216,24 @@ CODE @ $80545000
 	word 1; scalar 0.0
 	
 	word 3; word 0
-	word 0; word 0x2A
-	word 0; word 0
-	word 1; scalar 0.0
-	word 1; scalar 5.0
-	word 1; scalar 0.0
-	word 1; scalar 270.0
-	word 1; scalar 90.0
-	word 1; scalar 0.0
-	word 1; scalar 1.1
 	
-	word 1; scalar 0.0
-	word 1; scalar 0.0
-	word 1; scalar 0.0
+	word 0; word 0x44
 	
-	word 1; scalar 0.0
-	word 1; scalar 0.0
-	word 1; scalar 0.0
-	word 3; word 0
+	word 6; word 7
+	word 5; IC_Basic 1005
+	word 0; word 5
+	word 1; scalar 1.0
 	
 }
 CODE @ $80FB3E6C
 {
 	word 0x000A0400; word PSA_Off+0x20
-	word 0x0A000100; word PSA_Off+0x40
+	word 0x0A020100; word PSA_Off+0x40
 	word 0x11001000; word PSA_Off+0x50
-	word 0x11001000; word PSA_Off+0xD0
 	word 0x000D0400; word PSA_Off
-	word 0x0A000100; word PSA_Off+0x48
+	word 0x0A020100; word PSA_Off+0x48
+	word 0x000D0400; word PSA_Off+0xD8
+	word 0x0A020100; word PSA_Off+0xD0
 	word 0x000F0000; word 0
 }
 
