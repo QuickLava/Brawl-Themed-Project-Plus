@@ -1,7 +1,7 @@
 ######################################################################################
 Project+ Default [Moto]
 ######################################################################################
-* 286AEDF4 00000001 # If 806AEDF4 is equal to 1
+* 286AEDF4 00000005 # If 806AEDF4 is equal to 5
 
 .BA<-TABLE_STAGES
 .BA->$80495D00
@@ -20,25 +20,25 @@ Project+ Default [Moto]
 TABLE_1:
 	byte[21] |
 0x20,  | # Yoshis_Story
-0x05,  | # Bowser_Castle
 0x14,  | # Castle_Siege
 0x1E,  | # Sky_Sanctuary
 0x21,  | # Golden_Temple
 0x0A,  | # Ceres_Space_Colony
 0x49,  | # Distant_Planet
 0x46,  | # Yoshis_Island
+0x45,  | # Frigate_Husk
 0x15,  | # Wario_Land
 0x18,  | # Fountain_of_Dreams
-0x3F,  | # Final_Destination
 0x42,  | # Metal_Cavern
+0x3F,  | # Final_Destination
 0x4E,  | # Dream_Land
-0x45,  | # Frigate_Husk
-0x08,  | # Temple_of_Time
 0x4C,  | # Green_Hill_Zone
 0x1A,  | # Smashville
 0x3E,  | # Battlefield
 0x4F,  | # Pokemon_Stadium_2
 0x40,  | # Delfino_Secret
+0x08,  | # Temple_of_Time
+0x05,  | # Bowser_Castle
 0x41 # Luigis_Mansion
 
 TABLE_2:
@@ -116,7 +116,7 @@ TABLE_STAGES:
 
 SkipStageTables:
 .RESET
-* 286AEDF4 00000001 # If 806AEDF4 is equal to 1
+* 286AEDF4 00000005 # If 806AEDF4 is equal to 5
 byte 21 @ $806B929C # Page 1
 byte 21 @ $806B92A4 # Page 2
 byte 19 @ $80496002 # Page 3

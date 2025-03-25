@@ -2154,7 +2154,23 @@
       },
       {
         "FileType": 24,
-        "Path": "Source\\Stagelists\\Project+.asm"
+        "Path": "Source\\Stagelists\\PMBR.asm"
+      },
+      {
+        "FileType": 24,
+        "Path": "Source\\Stagelists\\2023.asm"
+      },
+      {
+        "FileType": 24,
+        "Path": "Source\\Stagelists\\2024.asm"
+      },
+      {
+        "FileType": 24,
+        "Path": "Source\\Stagelists\\Aus.asm"
+      },
+      {
+        "FileType": 24,
+        "Path": "Source\\Stagelists\\Japan.asm"
       }
     ],
     "RandomStageNamesLocations": [
