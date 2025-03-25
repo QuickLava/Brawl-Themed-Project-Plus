@@ -1035,7 +1035,7 @@
       "PatSettings": [],
       "Prefix": "tex_face",
       "Multiplier": 1,
-      "Offset": 16,
+      "Offset": 1,
       "SuffixDigits": 3,
       "GroupMultiplier": 1,
       "FilePrefix": "",
@@ -1044,7 +1044,7 @@
         "Width": 80,
         "Height": 56
       },
-      "Format": 14,
+      "Format": 9,
       "FirstOnly": true,
       "SeparateFiles": true,
       "CompressionType": 0,
