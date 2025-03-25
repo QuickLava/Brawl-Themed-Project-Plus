@@ -111,8 +111,8 @@ TABLE_STAGES:
 0x5442, 0x5543, 0x5644, 0x5745,  | # Delfino_Secret, Luigis_Mansion, Metal_Cavern, Kongo_Jungle
 0x5846, 0x5947, 0x5A48, 0x5B49,  | # Rumble_Falls, Frigate_Husk, Yoshis_Island, Saffron_City
 0x5C4A, 0x5D4B, 0x5E4C, 0x5F4D,  | # Infinite_Glacier, Distant_Planet, Skyworld, Fourside
-0x604E, 0x614F, 0x6250, 0x6351,  | # Green_Hill_Zone, Hanenbow, Dream_Land, Pokemon_Stadium_2
-0x6452, 0x6553, 0x6654, 0x6755 # Planet_Zebes, Hyrule_Castle, Peach_Castle, Mushroom_Kingdom
+0x604E, 0x614F, 0x6256, 0x6357,  | # Green_Hill_Zone, Hanenbow, Dream_Land, Pokemon_Stadium_2
+0x6458, 0x6559, 0x665A, 0x675B # Planet_Zebes, Hyrule_Castle, Peach_Castle, Mushroom_Kingdom
 
 SkipStageTables:
 .RESET
