@@ -15,7 +15,7 @@ op stb r0, -0x1(r5) @ $8003CB1C
 op NOP				@ $8003CB28
 
 ##############################################################################################
-File Patch Code REDUX v0.95 (/Project+/) [Sammi Husky]
+File Patch Code REDUX v0.95 (/BrawlTP+/) [Sammi Husky]
 ##############################################################################################
 .alias _pf               = 0x80507b70
 .alias FPC_PATH          = 0x805a7c00
@@ -77,7 +77,7 @@ File Patch Code REDUX v0.95 (/Project+/) [Sammi Husky]
 .RESET
 * 225664EC 00000000 # only execute if value at 0x805664EC != 0x0 (sd mounted)
 
-string    "/Project+/"                          @ $80406920 # Sets path used for SD lookups / reads
+string    "/BrawlTP+/"                          @ $80406920 # Sets path used for SD lookups / reads
 string    "pf"                                  @ $80507b70
 string    "SDStreamOpen (slot:%d): %s"          @ $80507b80
 uint8_t   0xA                                   @ $80507b9a
@@ -705,7 +705,7 @@ op  blr  @ $8001eb94
 * 80000000 80406920
 * 80000001 805A7D18
 address $805A7D18 @ $805A7D00
-string[2] "/Project+/pf/sfx/%03X",".sawnd" @ $805A7D18
+string[2] "/BrawlTP+/pf/sfx/%03X",".sawnd" @ $805A7D18
 * 045A7D10 919B6600		# What is this?
 HOOK @ $801C8370																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 {

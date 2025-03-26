@@ -1431,11 +1431,11 @@ loc_0x34F:
 	divwu r20, r4, r3
 	mullw r20, r20, r3
 	subf r20, r20, r4
-	lis r4, 0x2f50
-	ori r4, r4, 0x726f
+	lis r4, 0x2f42
+	ori r4, r4, 0x7261
 	stw r4, 0x0(r26)
-	lis r4, 0x6a65
-	ori r4, r4, 0x6374
+	lis r4, 0x776c
+	ori r4, r4, 0x5450
 	stw r4, 0x4(r26)
 	lis r4, 0x2b2f
 	ori r4, r4, 0x7270
@@ -3183,11 +3183,11 @@ loc_0x094:
 	divwu r20, r4, r3
 	mullw r20, r20, r3
 	subf r20, r20, r4
-	lis r4, 0x2f50
-	ori r4, r4, 0x726f
+	lis r4, 0x2f42
+	ori r4, r4, 0x7261
 	stw r4, 0x0(r26)
-	lis r4, 0x6a65
-	ori r4, r4, 0x6374
+	lis r4, 0x776c
+	ori r4, r4, 0x5450
 	stw r4, 0x4(r26)
 	lis r4, 0x2b2f
 	ori r4, r4, 0x7270
@@ -3484,11 +3484,11 @@ HOOK @ $8002D4F4                # Address = $(ba + 0x0002D4F4)
 	ori r30, r30, 0xffff
 	stw r30, 0x14(r31)
 	addi r30, r31, 0x18
-	lis r4, 0x5072
-	ori r4, r4, 0x6f6a
+	lis r4, 0x4272
+	ori r4, r4, 0x6177
 	stw r4, 0x0(r30)
-	lis r4, 0x6563
-	ori r4, r4, 0x742b
+	lis r4, 0x6c54
+	ori r4, r4, 0x502b
 	stw r4, 0x4(r30)
 	lis r4, 0x2f70
 	ori r4, r4, 0x662f
@@ -4122,12 +4122,12 @@ loc_0x021:
 	lis r31, 0x804e
 	ori r31, r31, 0x648
 	lis r4, 0x413a
-	ori r4, r4, 0x2f50
+	ori r4, r4, 0x2f42
 	stw r4, 0x0(r31)
-	lis r4, 0x726f
-	ori r4, r4, 0x6a65
+	lis r4, 0x7261
+	ori r4, r4, 0x776c
 	stw r4, 0x4(r31)
-	lis r4, 0x6374
+	lis r4, 0x5450
 	ori r4, r4, 0x2b2f
 	stw r4, 0x8(r31)
 	lis r4, 0x7066
