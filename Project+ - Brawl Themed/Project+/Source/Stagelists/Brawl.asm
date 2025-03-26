@@ -25,8 +25,8 @@ TABLE_1:
 0x03,  | # Luigis_Mansion_Brawl
 0x38,  | # Mushroomy_Kingdom
 0x2D,  | # Mario_Circuit
-0x09,  | # Bridge_of_Eldin
 0x07,  | # Rumble_Falls_Brawl
+0x09,  | # Bridge_of_Eldin
 0x3C,  | # Pirate_Ship
 0x35,  | # Norfair
 0x0B,  | # Frigate_Orpheon
