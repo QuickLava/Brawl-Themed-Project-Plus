@@ -184,57 +184,51 @@ CODE @ $80FB3FF4
 ##############################################
 Launch Speed Sound + Graphic Effects [camelot]
 ##############################################
-.alias PSA_Off = 0x80545000
+.alias Code_Loc = 0x80545000
 CODE @ $80545000
 {
-	word 6; word 7
-	word 5; IC_Basic 1005
-	word 0; word 5
-	word 1; scalar 4.5 # med sfx kb value
-	word 6; word 7
-	word 5; IC_Basic 1005
-	word 0; word 5
-	word 1; scalar 7.7 # high sfx kb value
-	word 0; word 0x45
-	word 0; word 0x46
-	word 0; word 0x2A
-	word 0; word 0
-	word 1; scalar 0.0
-	word 1; scalar 5.0
-	word 1; scalar 0.0
-	word 1; scalar 90.0
-	word 1; scalar 90.0
-	word 1; scalar 0.0
-	word 1; scalar 3.7 # low sfx kb value
-	
-	word 1; scalar 0.0
-	word 1; scalar 0.0
-	word 1; scalar 0.0
-	
-	word 1; scalar 0.0
-	word 1; scalar 0.0
-	word 1; scalar 0.0
-	
-	word 3; word 0
-	
-	word 0; word 0x44
-	
-	word 6; word 7
-	word 5; IC_Basic 1005
-	word 0; word 5
-	word 1; scalar 1.0
-	
+  word 6; word 0x00000007
+  word 5; IC_Basic 1005
+  word 0; word 0x00000005
+  word 1; scalar 5.0	# high kb value
+  word 0; word 0x00000046
+  word 6; word 0x00000007
+  word 5; IC_Basic 1005
+  word 0; word 0x00000005
+  word 1; scalar 3.9	# med kb value
+  word 0; word 0x00000045
+  word 6; word 0x00000007
+  word 5; IC_Basic 1005
+  word 0; word 0x00000005
+  word 1; scalar 2.8	# low kb value
+  word 0; word 0x00000044
+  word 6; word 0x00000008
+  word 5; RA_Bit 18
+  word 0; word 0x80FB3C74
+  word 0; word 0x80FAB264 
+  word 0; word 0x80FAB33C
+  word 0; word 0x80FAB3DC
+  word 0; word 0x00000009
+  word 0; word 0x80FB378C
 }
+
 CODE @ $80FB3E6C
 {
-	word 0x000A0400; word PSA_Off+0x20
-	word 0x0A020100; word PSA_Off+0x40
-	word 0x11001000; word PSA_Off+0x50
-	word 0x000D0400; word PSA_Off
-	word 0x0A020100; word PSA_Off+0x48
-	word 0x000D0400; word PSA_Off+0xD8
-	word 0x0A020100; word PSA_Off+0xD0
-	word 0x000F0000; word 0
+  word 0x000A0400; word Code_Loc+0x000
+  word 0x0A020100; word Code_Loc+0x020
+  word 0x000D0400; word Code_Loc+0x028
+  word 0x0A020100; word Code_Loc+0x048
+  word 0x000D0400; word Code_Loc+0x050
+  word 0x0A020100; word Code_Loc+0x070
+  word 0x000F0000; word 0x00000000     
+  word 0x000A0200; word Code_Loc+0x078
+  word 0x00070100; word Code_Loc+0x088
+  word 0x000F0000; word 0x00000000    
+  word 0x00070100; word Code_Loc+0x090
+  word 0x00070100; word Code_Loc+0x098
+  word 0x00070100; word Code_Loc+0x0A0
+  word 0x0D000200; word Code_Loc+0x0A8
+  word 0x00080000; word 0x00000000
 }
 
 #################################################
