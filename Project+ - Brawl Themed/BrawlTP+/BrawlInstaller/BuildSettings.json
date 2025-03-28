@@ -1838,50 +1838,6 @@
       "CosmeticType": 8,
       "Style": "P+",
       "InstallLocation": {
-        "FilePath": "pf\\info2\\info.pac",
-        "NodePath": "Misc Data [30]",
-        "FileExtension": "pac"
-      },
-      "HDImageLocation": "BrawlInstaller\\Character Cosmetics\\",
-      "CreateHDTextureFolder": true,
-      "ModelPath": null,
-      "PatSettings": [
-        {
-          "Path": "Misc Data [30]/AnmTexPat(NW4R)/InfStockface_TopN__0/lambert87/Texture0",
-          "FramesPerImage": 1,
-          "IdType": null,
-          "Multiplier": null,
-          "Offset": null,
-          "AddTerminatorFrame": false,
-          "NormalizeTextureIds": false
-        }
-      ],
-      "Prefix": "InfStc",
-      "Multiplier": 50,
-      "Offset": 0,
-      "SuffixDigits": 4,
-      "GroupMultiplier": 1,
-      "FilePrefix": "",
-      "IdType": 4,
-      "Size": {
-        "Width": 32,
-        "Height": 32
-      },
-      "Format": 9,
-      "FirstOnly": false,
-      "SeparateFiles": false,
-      "CompressionType": 0,
-      "FileType": 1,
-      "AlwaysInheritStyle": false,
-      "Required": true,
-      "Enabled": true,
-      "Selectable": false,
-      "AlwaysCreateArchive": true
-    },
-    {
-      "CosmeticType": 8,
-      "Style": "P+",
-      "InstallLocation": {
         "FilePath": "pf\\menu2\\sc_selcharacter.pac",
         "NodePath": "Misc Data [90]",
         "FileExtension": "pac"
@@ -1934,6 +1890,40 @@
           "NormalizeTextureIds": false
         }
       ],
+      "Prefix": "InfStc",
+      "Multiplier": 50,
+      "Offset": 0,
+      "SuffixDigits": 4,
+      "GroupMultiplier": 1,
+      "FilePrefix": "",
+      "IdType": 4,
+      "Size": {
+        "Width": 32,
+        "Height": 32
+      },
+      "Format": 9,
+      "FirstOnly": false,
+      "SeparateFiles": false,
+      "CompressionType": 0,
+      "FileType": 1,
+      "AlwaysInheritStyle": false,
+      "Required": true,
+      "Enabled": true,
+      "Selectable": false,
+      "AlwaysCreateArchive": true
+    },
+    {
+      "CosmeticType": 8,
+      "Style": "P+",
+      "InstallLocation": {
+        "FilePath": "pf\\menu2\\sc_selmap.pac",
+        "NodePath": "Misc Data [40]",
+        "FileExtension": "pac"
+      },
+      "HDImageLocation": "",
+      "CreateHDTextureFolder": false,
+      "ModelPath": null,
+      "PatSettings": [],
       "Prefix": "InfStc",
       "Multiplier": 50,
       "Offset": 0,
