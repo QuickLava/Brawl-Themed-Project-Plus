@@ -219,8 +219,8 @@
       "FilePrefix": "",
       "IdType": 4,
       "Size": {
-        "Width": 80,
-        "Height": 56
+        "Width": 64,
+        "Height": 64
       },
       "Format": 9,
       "FirstOnly": false,
